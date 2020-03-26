@@ -1,0 +1,135 @@
+body {color:#ccc; overflow:hidden; background: #d7d7d7;margin:0;padding:0;font-family:Arial, verdana, sans-serif;}
+#tetris {
+  width: 320px;
+  height: 460px;
+  background:#000;
+}
+.credits, .creditsright {color: #999;font-size:0.6em;width:155px;float:left;}
+.credits {text-align:left;margin-left:5px;}
+.creditsright {text-align:right;white-space:nowrap;margin-right:5px;}
+#canvas {
+  position:absolute;
+  background-color: #000;
+  color: #ccc;
+  height: 440px;
+  border-right:1px solid #ccc;
+  top:20px;
+  left:0;
+}
+#canvas h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 200px;
+}
+.piece {
+  border: 1px solid #ccc;
+  position: absolute;
+}
+.square {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #ccc;
+}
+.type0 {background-color: #A000C0;}
+.type1 {background-color: #00F0C0;}
+.type2 {background-color: #C0A000;}
+.type3 {background-color: #0000C0;}
+.type4 {background-color: #00C000;}
+.type5 {background-color: #C00000;}
+.type6 {background-color: #C0C000;}
+#next_shape {position: relative; top:20px;background-color: #000; border: 1px solid #ccc;width: 100px; height: 90px;border-left:none;}
+#info {background-color: #000; color: #ccc; width: 100px; float:left;}
+#info p {padding-left: 8px;}
+#level {padding-top:10px;}
+.game_area {
+  width:220px;
+  height:460px;
+  float:left;
+}
+.control {
+  position:absolute;
+  background-color:transparent;
+  border:1px solid #ccc;
+}
+.move_left, .move_right {
+  height:98px;
+  width:108px;
+  top:260px;
+}
+.move_left {
+  left:0px;
+}
+.move_right {
+  left:110px;
+}
+.move_rotate {
+  height:238px;
+  width:218px;
+  left:0px;
+  top:20px;
+}
+.move_down, .move_show_controls {
+  width:218px;
+  height:98px;
+}
+.move_down {  
+  top:360px;
+  left:0px;
+}
+
+.move_pause, .move_show_controls {
+  width:98px;
+  height:98px;
+
+}
+.move_show_controls {
+  top:260px;
+  left:220px;
+}
+.move_pause {
+  top:360px;
+  left:220px;
+}
+.move_pause div,.move_show_controls div {
+  color:#ccc;
+  text-align:center;
+  font-size:150%;
+}
+.for_help {
+  display:none;
+}
+.for_help span {
+  position:relative;
+  top:25px;
+}
+.show_controls .for_help {
+  color:#ccc;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  vertical-align:middle;
+  /*padding-top:25%;*/
+  font-size:150%;
+}
+
+#controls {
+  display:inline;
+  height:1px;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+#ownz {
+  position:absolute;
+  top:0;
+  left:0;
+  height:20px;
+  color:#ccc;
+}
+#ownz a {
+  color:#999;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="none" --><!--#set var="page_name" value="public research" --><!--#set var="directory_name" value="research" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container" class="research headerpic">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content" class="headerpic">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<img src="../images/research.png" alt="research" width="775" height="110" />
+
+		<h1>Research and papers</h1>
+		<p>This section contains papers and other research undertaken with various partners for arts projects, academic establishments and conferences; concentrating on emerging technology, programming culture, creativity and complexity, disability and technology, and the cultural impact and uptake of computing culture.</p>
+		
+		<p>Most of the published work is trans- or multi-disciplinary, and covers complexity, art-science-technology, human-computer interfaces, creativity and social issues.</p>
+		
+		<p>Please respect ownership and take care to reference the work if quoted elsewhere.</p>
+
+		<h2>Published research</h2>
+		<ul>
+			<li><a href="http://dmu.academia.edu/DavidEveritt/Papers">Academia.edu/DavidEveritt/Papers</a> (updated frequently - see recent work here)</li>
+			<li><a href="http://www.mendeley.com/profiles/dave-everitt/">Mendeley.com/profiles/dave-everitt/</a> (updated periodically)</li>
+		</ul>
+
+		<h2>Earlier work for direct download</h2>
+		<ul>
+			<li><a href="./disability-tech.shtml">Arts and disability interfaces</a> (for <a href="http://www.artscouncil.org.uk">Arts Council England</a>, 2002), with Greg Turner and Mike Quantrill;</li>
+			<li><a href="./papers/dis-strategy-web-tech.rtf">Web, Information and Technology draft discussion paper</a> (format: RTF. <cite>Disability Arts Strategy Group</cite>, Arts Council England, 2004).</li>
+		</ul>
+		
+	</div>
+</div>
+</body>
+</html>

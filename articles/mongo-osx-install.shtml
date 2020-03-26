@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Installing MongoDB on OS X" --><!--#set var="directory_name" value="articles" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Installing MongoDB on OS X <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro">The 'quickstart' for OS X on the MongoDB site could be clearer. Here's a condensed version with more info&hellip;</p>
+		
+		<p>Copy the download URL on the MongoDB site (don't click) for the latest download for your system:<br />
+		<a href="http://www.mongodb.org/downloads">www.mongodb.org/downloads</a></p>
+		
+		<p>Open Terminal and go to where you keep source files (good to create a directory if you don't have it already with <code>mkdir src</code>) e.g.:<br />
+		<code class="input">cd ~/src</code></p>
+		
+		<p>Use <code>curl</code> with the URL you've copied, plus <code>&gt;</code> (between spaces) and the filename you'll save it as e.g. (for the 64-bit version of Mongo 1.8.1):</p>
+		
+		<p><code class="input">curl http://fastdl.mongodb.org/osx/mongodb-osx-x86_64-1.8.1.tgz &gt; mongo.tgz</code></p>
+		
+		<p>Make the default directory for MongoDB to store it's data - enter:<br />
+		<code class="input">mkdir -p /data/db</code></p>
+		
+		<p>(-p also creates the intermediate directory <code>data</code>)</p>
+		
+		<p>If you want see what's there after you've used MongoDB, type:<br />
+		<code class="input">cd /data/db;ls -al</code></p>
+		
+		<p>Add a couple of aliases to your <code>.bash_profile</code>, <code>.bashrc</code>, <code>.bash_login</code> file (or wherever you keep your custom bash stuff) e.g. for the above version of MongoDB downloaded to <code>~/src</code>:</p>
+		<p>
+    		<code class="input">
+    		alias mongod="/Users/yourusername/src/mongodb-osx-x86_64-1.8.1/bin/mongod"<br />
+    		alias mongo="/Users/yourusername/src/mongodb-osx-x86_64-1.8.1/bin/mongo"
+    		</code>
+		</p>
+		
+		<p>To use these new aliases, close the Terminal window and open a new one. You can now start the MongoDB server with:<br />
+		<code class="input">mongod</code></p>
+		
+		<p>then open another Terminal window and launch the MongoDB shell by typing:<br />
+		<code class="input">mongo
+		</code></p>
+		
+		<p>In the MongoDB shell that's now started up, create and retrieve a test document e.g. 'foo':</p>
+		<p>
+    		<code class="input">
+    		&gt; db.foo.save( { a : 1 } )<br />
+    		&gt; db.foo.find()
+    		</code>
+		</p>
+		
+		<p>You'll see the result. Now you can start using MongoDB.</p>
+		
+		<h2 class="notes">References and further information</h2>
+		
+		<p><a href="http://www.mongodb.org/display/DOCS/Quickstart+OS+X">www.mongodb.org/display/DOCS/Quickstart+OS+X</a></p>
+		
+		<p><a href="http://linguisticlogic.wordpress.com/2010/09/18/bashing-up-mongodb-on-mac-os-x-10-6/">linguisticlogic.wordpress.com/2010/09/18/bashing-up-mongodb-on-mac-os-x-10-6/</a></p>
+		
+		<h2 class="notes">Tags</h2>
+		
+		<p class="tags">MongoDB, OS X, bash, Terminal, Leopard, Snow Leopard</p>
+		
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+	</div>
+</div>
+</body>
+</html>

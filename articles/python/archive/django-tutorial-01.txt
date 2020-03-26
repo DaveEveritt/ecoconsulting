@@ -1,0 +1,186 @@
+Learning Django 0.96 with Python 2.5.1 on Mac OS X 10.4
+http://www.djangoproject.com/documentation/0.96/tutorial01/
+
+1. Decide where to put the files for your Django project
+Using the Finder, go to the place you want your files to be created and stored. If you're not sure where, for this tutorial create a folder called 'django-learning' in your Home directory [how]. Don't put your project inside any folders called 'Sites' [why]
+
+
+2. Create the project
+In Terminal:
+go to your new folder:
+cd django-project
+type:
+django-admin.py startproject mysite
+You'll see the new files in ~/django-learning/mysite [where]
+
+In Terminal go to your new mysite driectory:
+	cd mysite
+
+Keep a Finder window open for 'mysite' to see the files Django creates.
+
+You will be opening them for editing later.
+
+
+3. Start the Python server
+In Terminal:
+python manage.py runserver
+
+You should see something like:
+	Validating models...
+	0 errors found.
+	
+	Django version 0.96, using settings 'mysite.settings'
+	Development server is running at http://127.0.0.1:8000/
+	Quit the server with CONTROL-C.
+
+Test above the address in your browser:
+http://127.0.0.1:8000/
+
+You should see a web page with the title:
+	"It worked!
+	Congratulations on your first Django-powered page.
+
+
+4. Edit settings.py
+
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = '/Users/YOUR_USERNAME/django-learning/mysite/mydata.db'
+
+Get the above path accurately by typing pwd in Terminal and copying the result.
+
+
+5. Make the database
+
+In Terminal, go to mysite and type:
+	python manage.py syncdb
+
+You'll see some lines of text, then be prompted with this (answer with 'yes' as shown below):
+	You just installed Django's auth system, which means you don't have any superusers defined.
+	Would you like to create one now? (yes/no): yes
+
+You'll be asked to set up a Username enter your email and a Password
+	Username (Leave blank to use 'YOUR_USER_NAME_WILL_BE_HERE'): 
+	E-mail address: 
+	Password: 
+
+You'll see somthing like:
+	Superuser created successfully.
+	Installing index for auth.Message model
+	Installing index for auth.Permission model
+	Loading 'initial_data' fixtures...
+	No fixtures found.
+
+Which is fine.
+
+(Optional) See the database by entering in Terminal:
+	sqlite3 ~/django-learning/mysite/mydata.db
+
+To get out of the SQLite shell and back to the Terminal command line, type:
+	.quit
+	
+
+6. Create an application
+
+In Terminal, type:
+	python manage.py startapp polls
+
+
+
+7. Add your 'models'
+
+The first step in writing a web application in Django is to define your 'models'.
+These provide your database layout, with additional metadata.
+
+Open the new 'polls' folder in 'mysite', find 'models.py' and open it in a good text editor [why].
+
+Replace its contents with:
+-----------
+
+from django.db import models
+
+class Poll(models.Model):
+    question = models.CharField(maxlength=200)
+    pub_date = models.DateTimeField('date published')
+
+class Choice(models.Model):
+    poll = models.ForeignKey(Poll)
+    choice = models.CharField(maxlength=200)
+    votes = models.IntegerField()
+
+-----------
+
+
+8. Tell Django to include your new application
+
+Open the file 'settings.py' in the mysite directory.
+
+Find the block (towards the end) that starts:
+INSTALLED_APPS = (
+
+Add the following line (with the indent) before the right bracket:
+	'mysite.polls'
+
+The block should now look like this:
+
+-----------
+
+INSTALLED_APPS = (
+	'django.contrib.auth',
+	'django.contrib.contenttypes',
+	'django.contrib.sessions',
+	'django.contrib.sites',
+	'mysite.polls'
+)
+
+-----------
+
+In Terminal, type:
+	python manage.py sql polls
+
+You should then see this:
+
+BEGIN;
+CREATE TABLE "polls_poll" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "question" varchar(200) NOT NULL,
+    "pub_date" datetime NOT NULL
+);
+CREATE TABLE "polls_choice" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "poll_id" integer NOT NULL REFERENCES "polls_poll" ("id"),
+    "choice" varchar(200) NOT NULL,
+    "votes" integer NOT NULL
+);
+COMMIT;
+
+If there's an error at this stage, I can help you no more.
+
+
+9. Create the new model tables in the database
+
+In Terminal, type:
+	manage.py syncdb
+
+You should then see this:
+
+Creating table polls_poll
+Creating table polls_choice
+Installing index for polls.Choice model
+Loading 'initial_data' fixtures...
+No fixtures found.
+
+
+GOT TO HERE:
+Playing with the API
+http://www.djangoproject.com/documentation/0.96/tutorial01/
+
+----
+REFS:
+http://www2.jeffcroft.com/blog/2006/may/02/django-non-programmers/
+http://blog.vixiom.com/2006/07/23/how-to-install-django-on-os-x-tiger-104/
+http://triopter.com/archive/adventures-in-darwinports-installing-apache2-php5-mysql-41-postgresql-and-django/
+http://www.rhonabwy.com/wp/2006/07/20/installing-django-on-macos-x-development-version/
+http://www.23excuses.com/2006/Jul/07/23-excuses-release-and-introduction/
+
+Subversion:
+http://downloads.open.collab.net/binaries.html

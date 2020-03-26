@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="simple freelancing" --><!--#set var="directory_name" value="strategy" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Simple guidelines for freelancing <!--#include virtual="/includes/addthis.shtml"--></h1>
+				
+		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+
+		<dl>
+			<dt>1. minimal overheads</dt>
+				<dd>if you work with other freelancers and don't need space to put equipment, use a room at home or arrange space at a friend's. If you really don't need office space, don't have an office. Use one good laptop, with a large screen and keyboard to plug into when you're at your usual desk (and <a href="https://mozy.com/?ref=3QG565" title="free online backup from Mozy">backup regularly</a>!).</dd>
+		
+			<dt>2. avoid being an employer</dt>
+				<dd>encourage collaboration or 'co-opetition' (see David Parrish: <a href="http://www.davidparrish.com/page.asp?pgid=125&pgsid=33" title="free e-book on creativity and business">T-shirts and Suits</a>) with other freelancers and avoid the complications of PAYE, sick and holiday pay, and employer liability.</dd>
+		
+			<dt>3. nurture relationships</dt>
+				<dd>identify those you get on with who have complementary or similar skills, and make mutual arrangements to exchange excess or unwanted work, retaining a small handling percentage agreed by both.</dd>
+		
+			<dt>4. make your money work</dt>
+				<dd>avoid costly business accounts from banks. Instead, open an interest-bearing account to hold all incoming funds (such as Nationwide's 'Business Investor'), then pay yourself a salary from it. If you reach a monthly account cheque limit and need to pay others, pay yourself enough to cover them too.</dd>
+		
+			<dt>5. enjoy your time off</dt>
+				<dd>plan time off, and do something constructive with it. Don't work without taking as many breaks as an employed person.</dd>
+		
+			<dt>6. train yourself</dt>
+				<dd>use the web to find online learning resources, and plan in enough time without distractions to give them a fair amount of your attention. This is especially relevant to those working with digital technology, since the most useful resources are often free (e.g. <a href="http://www.osrc.org.pk/" title="free guides from the Open Source Resource Center (OSRC), Pakistan">Open Source programming languages</a>, or <a href="http://search.atomz.com/search/?sp-q=Frameworks&query=Frameworks&sp-t=general&sp-a=sp1000a5a9&sp-p=all&sp-q-1=ONLamp&sp-x-1=cat&c=ONLamp&sp-p-1=phrase" title="articles from O'Reilly's OnLamp site">web frameworks</a>).</dd>
+		
+			<dt>7. forget the business plan</dt>
+				<dd>if you try to plan your business from the top down, you'll lose sight of the essentials and end up plan-watching instead of working. Identify your overall aims, then just do the next thing you need to start achieving them.</dd>
+		</dl>
+
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+	</div>
+</div>
+</body>
+</html>
+<!-- also see: Greg Jorgensen's <a href="http://typicalprogrammer.com/?p=111">Tips for successful freelancing</a> -->

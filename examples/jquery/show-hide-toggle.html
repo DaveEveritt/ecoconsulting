@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JQuery show/hide toggle with link label switch</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    var show; // declare variable to hold show/hide state
+
+    $(".article .thebody").hide(); // hide articles at first
+     
+    $(".readme a").click(function(event){ // show/hide articles
+
+      if (!show) { showhide($(this),"Hide me",true); } // show, change label
+      else { showhide($(this),"Read me",false); } // or hide, change label
+
+      return false; // u know: disable usual link click function
+
+      function showhide(what,swaptext,swapstate){
+        $(what).parents(".readme").prev(".thebody").toggle('fast');
+        $(what).text(swaptext);
+        show = swapstate; // pass the current state to... oops! Fails if > 1 article showing...
+      }
+    });
+
+  });
+  </script>
+
+  <style>
+    .article { width:50%; padding-bottom:1em; border-bottom:4px solid #ccc;}
+    p + .article { border-top:4px solid #ccc;}
+  </style>
+</head>
+
+<body>
+
+  <a style="float:right" href="/training/"><img src="/images/eco-logo.gif" width="132" height="82"></a>
+
+  <h1>Show/hide with matching link text change</h1>
+  
+  <p style="width:50%;">JQuery's <code>.toggle</code> is all very well, but common usage doesn't change the text from 'show' to 'hide'. After throwing this together I realised that the parameter <code>.toggle(showOrHide)</code> might also be employed to the same effect, but I've spent enough time doing it this way now, so that's another snippet. Oh yes, and no fancy code snippet widgets here—you know where to find <em>view source</em>, don't you? Oh yes, this fails if more than one article is kept open, but look—it's late, and I need a break, okay?</p>
+  
+  <div class="article">
+    <h2>Article one</h2>
+    <p class="summary">Some interesting latin vegetables&hellip;</p>
+    <div class="thebody">
+      <p>Veggies sunt bona vobis, proinde vos postulo esse magis fennel bean pea sprouts horseradish chickpea artichoke.</p>
+      <p>Carrot broccoli kale radish brussels sprout black-eyed pea squash caulie beet greens. Cauliflower pea courgette avocado lettuce okra celery rock melon. Water spinach watercress zucchini pumpkin peanut eggplant corn welsh onion aubergine.</p>
+    </div>
+    <div class="readme">
+      <a href='' title='Read the article'>Read Me</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <h2>Article two</h2>
+    <p class="summary">Spot the Japanese vegetables scattered throughout&hellip;</p>
+    <p class="thebody">Epazote prairie turnip rutabaga grape parsley courgette soko brussels sprout. Shallot parsley courgette chicory gram bamboo shoot. Bush tomato quandong kale maize silver beet azuki bean bamboo shoot epazote daikon cress broccoli water chestnut. Nori cauliflower beetroot fava bean daikon ricebean azuki bean garlic. Green bean nori tatsoi coriander wakame lettuce garlic parsley prairie turnip burdock.</p>
+    <div class="readme">
+      <a href='' title='Read the article'>Read Me</a>
+    </div>
+  </div>
+
+  <div class="article">
+    <h2>Article two</h2>
+    <p class="summary">Further vegetable adventures, with the occasional fruit&hellip;</p>
+    <p class="thebody">Grape garbanzo onion tomato winter purslane celery amaranth fava bean broccoli pumpkin eggplant gumbo zucchini cucumber celtuce watercress. Sorrel sorrel watercress bok choy bell pepper cabbage parsley kombu corn aubergine peanut wattle seed taro daikon chard potato maize water chestnut. Grape garlic lettuce courgette potato gram celery broccoli courgette groundnut aubergine maize nori winter purslane bush tomato bell pepper.</p>
+    <div class="readme">
+      <a href='' title='Read the article'>Read Me</a>
+    </div>
+  </div>
+  
+  <p style="width:50%;font-size:0.6em;color:#999;text-align:right">Veggie Ipsum text by, errr... go on—try to guess... no? Oh, alright then: <a href="http://veggieipsum.com">veggieipsum.com</a></p>
+
+</body>
+</html>

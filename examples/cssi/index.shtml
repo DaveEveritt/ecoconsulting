@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="CSSI: CSS variables" --><!--#set var="directory_name" value="examples" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/styles.cssi" />
+</head>
+
+<body>
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>CSSI - variables in CSS files using Apache SSI</h1>
+		
+		<p>A normal paragraph</p>
+		
+		<p class="someclass">A 'someclass' paragraph that demonstrates the css variable colour.</p>
+		
+	</div>
+</div>
+</body>
+</html>

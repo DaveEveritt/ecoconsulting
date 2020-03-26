@@ -1,0 +1,47 @@
+Python setuptools (for easy_install):
+http://peak.telecommunity.com/dist/ez_setup.py
+
+install instructions:
+http://pypi.python.org/pypi/setuptools
+
+using easy_install:
+http://peak.telecommunity.com/DevCenter/EasyInstall
+
+uninstall
+easy_install -m PackageName
+delete the PackageName.egg
+make sure -m removed the package line in easy-install.pth
+(http://thingsilearned.com/2009/04/13/easy_install-uninstalling/)
+
+---
+Django
+
+Updating Django
+(http://docs.djangoproject.com/en/dev/topics/install/)
+
+go into src/django-trunk
+svn update
+
+Django docs says link or pythonpath rather than do:
+sudo python setup.py install
+because then you can just svn update
+but I installed because I couldn't import django.
+It's now in
+cd /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages
+
+---
+virtualenv and virtualenvwrapper
+
+see: http://www.doughellmann.com/docs/virtualenvwrapper/
+
+path in .bash_profile (or whatever it is on your machine) might vary:
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+source /Library/Frameworks/Python.framework/Versions/2.6/bin/virtualenvwrapper.sh
+
+See: http://www.doughellmann.com/docs/virtualenvwrapper/install.html
+
+error on removing a virtualenv from within it's dir:
+ImportError: No module named virtualenvwrapper.hook_loader
+
+see: http://ubuntu-ky.ubuntuforums.org/showthread.php?p=9827636
+

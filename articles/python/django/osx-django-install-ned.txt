@@ -1,0 +1,27 @@
+A few more comments after trying things on a vanilla 10.4.10 system.
+
+One, now that the recipe doesn't use MacPorts, installing the Apple Developer Tools (Xcode) isn't needed. They would only be needed to build any C extensions and Django doesn't appear to have any.
+
+Two, one's mileage may vary of course but I think it's much easier to use the power of easy_install in setuptools. So step 3 could be replaced by:
+
+  [if easy_install not already available:}
+  curl http://peak.telecommunity.com/dist/ez_setup.py -O
+  python ez_setup.py
+
+  easy_install http://www.djangoproject.com/download/0.96/tarball/
+
+That's it: you're now ready for the tutorials.
+
+[Note, in theory one should be able to just type something like:
+     easy_install Django096
+and setuptools will search the Python Package Index for the latest Django download. Unfortunately, the PyPi entry for Django doesn't seem to work with easy_install at the moment, hence the lengthier URL versionabove.]
+
+In the spirit of keeping things "absurdly simple", with the above recipe there is no need to worry about the Django admin script not being executable, so you can safely remove the directions for the chmod. And the django-admin.py script is installed into the 
+/Library/Frameworks/Python.framework/Versions/Current/bin
+directory which the Python 2.5.1 installer automatically adds to one's path so the directions to manually manipulate the PATH variable aren't needed, either. And there's no need to test for SQLite. It's just there in 2.5.1.
+
+Finally, I'd limit the References to just the first www.python.org mac link. The others and more are referenced from there (and the one link isn't really relevant to current OSX stuff anyway).
+
+Thanks again for doing this.
+
+-- Ned Deily

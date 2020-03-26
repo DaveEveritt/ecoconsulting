@@ -1,0 +1,107 @@
+body {
+  margin:0;
+  padding:0;
+  color:#000;
+  background:#eee;
+  font-family:Georgia,serif;
+/*  font-size:105%;*/ /*global font size setting in 'body' tag*/
+}
+
+div {
+  margin:0 auto;
+  width:60%;
+  background:#fff;
+}
+
+/* basic styles for paragraphs and level 1 and 2 headings */
+
+div h1 {
+  padding:5px 10px 0.5em;
+  margin:0;
+  text-align:center;
+  margin-bottom:0.5em;
+  font-size:2em;
+  font-family:Verdana,sans-serif;
+  font-family: 'Trade Winds'; /*Google web font*/
+  color:#900;
+  background-color:silver;
+  border-bottom:1px solid #999;
+  text-shadow:2px 4px 2px #999; /* horiz, vertic, blur, colour */
+}
+
+div h2 {
+  padding:0.25em 10px;
+  margin:0;
+  font-size:1.25em;
+  font-family:Verdana,sans-serif;
+  font-family: 'Concert One'; /*Google web font*/
+  color:#333;
+  letter-spacing:0.1em;
+  background-image:url(background_fade.gif);
+  background-repeat:no-repeat;
+}
+
+div h2 + p {
+  padding-top:0.5em;
+}
+
+div p {
+  padding:0 10px 1em;
+  margin:0;
+  font-size:0.9em;
+  line-height:1.6em;
+}
+
+div p strong {
+  color:#900;
+}
+
+div p em {
+  letter-spacing:0.05em;
+  background:#ccf;
+  padding:0 0.2em;
+}
+
+div p abbr {
+  border-bottom:1px dotted #636;
+  cursor:help;
+}
+
+div p.firstpara:first-letter {
+  padding:2px;
+  border:1px solid #999;
+  background:#ccc;
+  float:left;
+  font-size:4.5em;
+  margin-top:0.1em;
+  margin-right:0.1em;
+}
+
+blockquote {
+  font-family:arial,helvetica,verdana,sans-serif;
+  background:#eee;
+  padding:1em 1em 0 4em;
+  margin:0 2em 1em;
+  font-size:0.8em;
+  font-variant:italic;
+  border:1px solid #999;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  position:relative; /*allow us to place the quotes within the boockquote box*/
+}
+
+blockquote p {
+  font-size:0.85em;
+}
+
+blockquote p.quotes {
+  position:absolute; /*allows placing the quotes where we want*/
+  top:-16px; /*negative values work too*/
+  left:-28px;
+  font-size:20em;
+  line-height:1em; /*make the line-height the same as one character*/
+  padding:0;
+  margin:0;
+  color:#bbb;
+}

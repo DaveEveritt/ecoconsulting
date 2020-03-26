@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="none" --><!--#set var="page_name" value="contact spam" --><!--#set var="directory_name" value="contact" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+	<meta name="robots" content="none" />
+</head>
+
+<body>
+<div id="container">
+<!--#set var="section" value="contact" -->
+<!--#include virtual="/includes/menu.shtml"-->
+   
+   <div id="content">
+      <!--#include virtual="/includes/top_rule.shtml"-->
+
+      <h1>contact eco consulting</h1>
+      <p>
+         Your message had some elements that appear to match our spam filter.<br />
+         please either:
+      </p>
+      <ul>
+         <li>click the back button (to preserve your data);</li>
+         <li>or <a href="./"title="back to contact form">use this link to go back</a> (the form will be blank);</li>
+      </ul>
+      <p>then please edit your message.</p>
+   </div>
+</div>
+</body>
+</html>

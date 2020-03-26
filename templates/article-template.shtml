@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="PAGE_NAME_HERE" --><!--#set var="directory_name" value="training" -->
+<!--#set var="description" value="longer_description" -->
+<!--#set var="keywords" value="comma_separated_words" -->
+<!--#set var="dc_subject" value="Brief_factual_description" -->
+<!--#include virtual="/includes/title_meta_article.shtml"-->
+<!--#include virtual="/includes/dc_article.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<h1>MAIN_HEADING <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit"><a href="/contact">Dave Everitt</a> 00 Mmm YYYY, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro">INTRO</p>
+		
+		<h2>SUBHEAD</h2>
+		
+		<dl title="a_list">
+			
+			<dt><a href="">ITEM_TITLE</a></dt>
+			<dd>ITEM_TEXT</dd>
+		</dl>
+
+		<h2>SUBHEAD</h2>
+		
+		<p>MORE_CONTENT</p>
+		
+		<p><code class="input">COMMAND_LINE</code></p>
+		
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+
+	</div>
+</div>
+<!--#include virtual="/includes/google_analytics.shtml"-->
+</body>
+</html>

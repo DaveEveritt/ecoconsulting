@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="a nanoc quick start for OS X" --><!--#set var="directory_name" value="articles" -->
+<!--#set var="description" value="Get started with nanoc - generate easily-updateable websites using only text files, simple templates and easily-understood settings" -->
+<!--#set var="keywords" value="nanoc,framework,templates,static,website,generator,html,ruby,markdown,textile" -->
+<!--#set var="dc_subject" value="Generating and maintaining static websites with nanoc" -->
+<!--#include virtual="/includes/title_meta_article.shtml"-->
+<!--#include virtual="/includes/dc_article.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<h1>Get up and running with nanoc on OS X <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit"><a href="/contact">Dave Everitt</a> 22 Jan 2012, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro"><a href="http://nanoc.stoneship.org/">Nanoc</a> is an easily-learned system for making static websites from templates, text files and other components, because sometimes WordPress, Drupal or Joomla is too much, and you don't want to learn Ruby on Rails or set up databases. The nanoc developer and other users also <a href="https://github.com/ddfreyne/nanoc-site">share the code</a> for <a href="https://github.com/mconigliaro/blog">their nanoc-powered sites</a>. The <a href="http://nanoc.stoneship.org/docs/3-getting-started/">nanoc 'getting started' tutorial</a> is excellent, but this is a minimal version for real beginners.</p>
+		
+		
+		<h2>Necessary skills</h2>
+		
+		<p>For nanoc to be of use, you need to be able to:</p>
+		
+		<ul>
+    		<li>type into the command line (use Terminal, in Applications/Utilities on OS X)</li>
+    		<li>install Ruby gems</li>
+    		<li>understand enough HTML and CSS</li>
+		</ul>
+		
+		
+		<h2>Install nanoc</h2>
+		
+		<p>You will need Ruby 1.8.6 or greater (you may need Ruby 1.8.7). The <a href="http://nanoc.stoneship.org/docs/2-installation/">nanoc installation guide</a> is brief and effective.</p>
+		
+		
+		<h2>Create a site</h2>
+		
+		<p>Make a folder to contain your website - for instance inside your 'Sites' folder - let's call it 'new-website'.</p>
+		
+		<p>Open Terminal and go to this folder by typing the command below (or you can type <code>cd</code>, a space, and drag the folder to Terminal window and hit return);</p>
+		
+		<p><code class="input">cd Sites/new-website</code></p>
+		
+		<p>Then type:</p>
+		
+		<p><code class="input">nanoc create_site mysite</code></p>
+		
+		<p>&hellip;or name the site as you wish (i.e. something other than 'mysite').</p>
+		
+		<p>You'll see some feedback in Terminal telling you that nanoc has created a site inside a folder called 'mysite'.</p>
+		
+		<p>Now move into the new site's folder by typing:</p>
+		
+		<p><code class="input">cd mysite</code></p>
+		
+		<p>(or whatever you named the site)</p>
+		
+		
+		<h2>Compile (create) the site's html files</h2>
+		
+		<p><code class="input">nanoc compile</code></p>
+		
+		<p>A few lines starting 'Loading site data' will appear in the Terminal window.</p>
+        
+
+		<h2>Start the inbuilt web server:</h2>
+		
+		<p>Open another Terminal window (so you can keep the web server running <em>and</em> continue to compile your site after making changes) and type:</p>
+		
+		<p><code class="input">cd Sites/new-website</code></p>
+		
+		<p>to move to the folder containing your website, then run the <dfn title="A web server that runs on your own computer, not on the internet">local server</dfn> so you can view your site before uploading it to a liver server on the web:</p>
+		
+		<p><code class="input">nanoc view</code></p>
+
+		<p>You can now see the site in your browser at <a href="http://localhost:3000/">http://localhost:3000/</a>. You should see nanoc's default content and styles:</p>
+
+		<p><img src="/articles/images/default-site.png" alt="nanoc default site appearance" width="600" height="356" /></p>
+		
+		<p>You can leave the server running in the new Terminal window, but if you want to stop it, hit <code>control-C</code>.</p>
+		
+		
+		<h2>Edit your site</h2>
+		
+		<p>The files you'll want to edit are in two folders named <strong>content</strong> and <strong>layouts</strong>; another folder <strong>output</strong> contains the generated pages:</p>
+		
+		<dl class="extrainfo">
+    		<dt>content</dt>
+    		<dd>this folder contains an index.html file, but this is not a full html page - at the top it has only a heading (using <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> rather than html) and some html content.</dd>
+    		
+    		<dt>layouts</dt>
+    		<dd>this contains your site's main html template. The content in index.html is inserted into the <code>div id="main"</code> tag in default.html, which contains a <dfn title="A tag that reads data, written in Ruby rather than HTML">template tag</dfn> containing <code>yeild</code> i.e. <em>put content here</em>.</dd>
+    		
+    		<dt>output</dt>
+    		<dd>nanoc creates this folder for html pages it generates - <strong>you don't need to touch anything in output</strong> as it's all created automatically with <code>nanoc compile</code>.</dd>
+		</dl>
+		
+		<p>Make changes to the html in these files so that your home page and overall site appears as you want it to. After each change, type:</p>
+
+		<p><code class="input">nanoc compile</code></p>
+		
+		<p>and reload the page in your browser to see the changes.</p>
+		
+		<p>The section at the top of the content page with <code>---</code> top and bottom is for adding data that files in the layouts folder can use, for instance:</p>
+		
+        <p class="codeblock">
+            <code>
+            ---<br/>
+            title: "My New Home Page"<br/>
+            ---
+            </code>
+        </p>
+        
+        <p>supplies text for the browser's title bar by filling out the HTML <code>title</code> tag in layouts/default.html by using this template tag: (<code>&lt;%= @item[:title] %&gt;</code>).</p>
+        
+        
+		<h2>Add another page</h2>
+		
+		<p>Adding another page means that you will create another file (e.g. 'about.html') in the <strong>content</strong> folder. To create an 'about' page, type into terminal:</p>
+
+		<p><code class="input">nanoc create_item about</code></p>
+		
+		<p>You can also use the shortcut:</p>
+		
+		<p><code class="input">nanoc ci about</code></p>
+		
+		<p>Open the new file (content/about.html) and add some text, e.g.</p>
+		
+		<p class="codeblock">
+    		<code>
+    		&lt;h1&gt;About this website&lt;/h1&gt;<br/>
+    		<br/>
+            &lt;p&gt;This is the about page for my new nanoc site.&lt;/p&gt;
+            </code>
+        </p>
+        
+        <p>Now change the title and add some <code>author</code> data to the top section so that it looks like this (use your real name!):</p>
+        
+        <p class="codeblock">
+            <code>
+            ---<br/>
+            title: "My About Page"<br/>
+            author: "My Name Here"<br/>
+            ---
+            </code>
+        </p>
+        
+        <p>Next, open layouts/default.html and add a <dfn title="Something that happens only if a certain condition is met">conditional</dfn> template tag so that the author's name <em>only</em> appears on pages <em>if 'author' exists</em> in the top section:</p>
+        
+        <p class="codeblock">
+            <code>
+            &lt;% if @item[:author] %&gt;<br/>
+            &lt;p&gt;This page was written by &lt;%= @item[:author] %&gt;.&lt;/p&gt;<br/>
+            &lt;% end %&gt;<br/>
+            </code>
+        </p>
+		
+		<p>Then <code>nanoc compile</code> again. You'll now be able to visit this page at <a href="http://localhost:3000/about/">http://localhost:3000/about/</a>. You'll see your new text, and your name. If you visit <a href="http://localhost:3000/">http://localhost:3000/</a> your name won't appear because there's no <code>author</code> data in content/index.html</p>
+		
+		<p>You've now created a basic website using nanoc. You can add new pages with some basic 'holding' content until you have it all working well looking good, then you'll be ready for the next step, which is…</p>
+		
+		
+		<h2>Using simple markup languages to avoid writing HTML</h2>
+		
+		<p>You don't have to use HTML in your content pages—nanoc can also read <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>, <a href="http://redcloth.org/">Textile</a>, and several other markup languages that make it easier to edit web content. The <a href="http://nanoc.stoneship.org/docs/3-getting-started/#writing-pages-in-markdown">nanoc guide</a> covers this in detail, and although <a href="http://kramdown.rubyforge.org/">Kramdown</a> (Markdown to HTML) failed with an <code><a href="https://github.com/ddfreyne/nanoc/issues/87">uninitialized constant REXML</a></code> error on my OS X Leopard setup with Ruby 1.8.6, a prompt email from Kramdown developer Thomas Leitner provided the solution, now appended to the GitHub issue and fixed in the next Kramdown release.</p>
+		
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+
+	</div>
+</div>
+<!--#include virtual="/includes/google_analytics.shtml"-->
+</body>
+</html>
+
+<!--
+uninitialized constant REXML::Parsers::BaseParser::UNAME_STR (NameError)
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown/html.rb:23
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown/paragraph.rb:27
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown.rb:312
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/document.rb:90:in `const_get'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/document.rb:90:in `initialize'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/bin/kramdown:72:in `new'
+       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/bin/kramdown:72
+       from /usr/local/bin/kramdown:19:in `load'
+       from /usr/local/bin/kramdown:19
+       
+The problem causing the stack trace below seems to be easy to fix since the same issue was reported for RedHat Linux and Ruby 1.8.5 some time ago (see `lib/kramdown/compatibility.rb` and change `== '1.8.5'` to `<= '1.8.6'`). Will do this for the next release.
+-->

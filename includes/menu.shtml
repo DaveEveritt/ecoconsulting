@@ -1,0 +1,25 @@
+  <div id="menu" class="perspective">
+      <a href="/"><img id="logo" src="/images/eco-logo.gif" alt="Eco Consulting logo" width="132" height="82" /></a>
+      <div class="menu_perspective">
+        <ul>
+          <li><!--#if expr="${index}='research'"  --><strong>research</strong><!--#else  --><a <!--#if expr="${directory_name}='research'"  -->class="here" <!--#endif -->href="/research/" >research</a><!--#endif --></li>
+          <li><!--#if expr="${index}='strategy'"  --><strong>strategy</strong><!--#else  --><a <!--#if expr="${directory_name}='strategy'"  -->class="here" <!--#endif -->href="/strategy/" >strategy</a><!--#endif --></li>
+          <li><!--#if expr="${index}='webtech'"   --><strong>webtech</strong><!--#else   --><a <!--#if expr="${directory_name}='webtech'"   -->class="here" <!--#endif -->href="/webtech/" >webtech</a><!--#endif --></li>
+          <li><!--#if expr="${index}='articles'"  --><strong>articles</strong><!--#else  --><a <!--#if expr="${directory_name}='articles'"  -->class="here" <!--#endif -->href="/articles/" >articles</a><!--#endif --></li>
+          <li><!--#if expr="${index}='solutions'" --><strong>solutions</strong><!--#else --><a <!--#if expr="${directory_name}='solutions'" -->class="here" <!--#endif -->href="/solutions/" >solutions</a><!--#endif --></li>
+        </ul>
+        <ul>
+          <li><!--#if expr="${index}='about'"    --><strong>about</strong><!--#else    --><a <!--#if expr="${directory_name}='about'"    -->class="here" <!--#endif -->href="/about/" >about</a><!--#endif --></li>
+          <li><!--#if expr="${index}='contact'"  --><strong>contact</strong><!--#else  --><a <!--#if expr="${directory_name}='contact'"  -->class="here" <!--#endif -->href="/contact/" >contact</a><!--#endif --></li>
+        </ul>
+      </div>
+        <div id="amazon">
+<!--
+            <p style="font-size:0.8em;margin-left:10px;border:0;text-align:center;"><a href='http://rimuhosting.com/landing.jsp?r=144508441621768363463973495138451658958' title='Linux VPS Hosting by RimuHosting'>Our VPS Hosting By RimuHosting</a></p><p style="margin-left:6px;border:0"><a href='http://rimuhosting.com/landing.jsp?r=144508441621768363463973495138451658958' title='Java and Linux VPS Hosting by RimuHosting'><img src='http://rimuhosting.com/images/promo/rh_vpspowered_120_60.png' alt='Java and Linux VPS Hosting by RimuHosting' /></a></p>
+-->
+            <script type="text/javascript">
+            amazon_ad_tag = "daveeveritt"; amazon_ad_width = "120"; amazon_ad_height = "240"; amazon_ad_logo = "hide"; amazon_ad_border = "hide"; amazon_color_border = "441144"; amazon_color_text = "441144"; amazon_color_link = "116600"; amazon_color_price = "116600"; amazon_color_logo = "FFFFFF"; amazon_ad_include = "css;html;html5;apache;linux;web+design"; amazon_ad_categories = "afe";</script>
+            <script type="text/javascript" src="http://www.assoc-amazon.co.uk/s/ads.js"></script>
+        </div>
+        <!-- amazon_color_background = "transparent"; -->
+  </div>

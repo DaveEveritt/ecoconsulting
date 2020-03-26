@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Greg Turner, Ned Deily" --><!--#set var="page_name" value="installing Python 2.5.1 and Django 0.96 on OS X" --><!--#set var="directory_name" value="articles" --><!--#set var="subdirectory_name" value="python" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<h1>Minimal Django and Python for Mac OS X 10.4 <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit"><a href="/contact">Dave Everitt</a> 3 Feb 2005, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro"><strong>STOP PRESS!</strong> ('STOP WEB'?) originally written in 2005 when - in response - Ned Deily from the Pythonmac-SIG list sent a far more <cite>absurdly simple</cite> <a title="plain text file" href="./django/osx-django-install-ned.txt">Django install on a Vanilla 10.4 system</a> and Greg Tuner also responded with a detailed <a title="plain text file" href="./django/installing-django-greg.txt">get started with Django on 10.5</a>, so some of this article is now only of historic value. Instead, I'd recommend James Bennet's wonderful <a href="http://www.amazon.co.uk/gp/product/1430219386?ie=UTF8&amp;tag=daveeveritt&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1430219386">Practical Django Projects (2nd Edition)</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=daveeveritt&amp;l=as2&amp;o=2&amp;a=1430219386" width="1" height="1" alt="" /> which covers Django 1.1 (subsequent Django versions are 1.1-compatible). Now Django has taken off there are other guides out there (not all absurdly simple) and the <a href="http://bitnami.org/stack/djangostack">Bitnami Django Stack</a>, which installs a whole working environment. However, (when I don't actually have <cite>to do some work</cite>) I might still update it. After a long gap (serious family stuff) my Django use resumed in 2009 (1.2 'from trunk' and Python 2.6 at this update), so I'm finally getting to <cite>do some work</cite> with it. Which is nice. I'd also recommend <a href="http://www.b-list.org/">James Bennett</a>'s <a href="http://www.amazon.co.uk/gp/product/1430219386?ie=UTF8&amp;tag=daveeveritt&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1430219386">Practical Django Projects (2nd Edition)</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=daveeveritt&amp;l=as2&amp;o=2&amp;a=1430219386" width="1" height="1" alt="Practical Django Projects" /> - ignore the reviews, it's a great book and mine is well-thumbed or, if you're just beginning, <a href="http://www.holovaty.com/">Adrian Holovaty</a>'s <a href="http://www.amazon.co.uk/gp/product/143021936X?ie=UTF8&amp;tag=daveeveritt&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=143021936X">The Definitive Guide To Django (2nd Edition)</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=daveeveritt&amp;l=as2&amp;o=2&amp;a=143021936X" width="1" height="1" alt="Definitive Guide to Django" />.</p>
+		
+		<p>On Jeff Croft's blog entry <a href="http://www2.jeffcroft.com/blog/2006/may/02/django-non-programmers/">Django for non-programmers</a>, Mihira Jayasekera left a comment&hellip;</p>
+		
+		<blockquote title="blog comment posted May 16th, 2006">I am blown away by what you're doing (and are able to do) with Django. I'd love to start playing with it but I have you beat in the non-programming department. Do you know of any absurdly simple instructions for getting Django installed on Mac OS X (10.4.6)?</blockquote>
+		
+		<p>&hellip;that inspired me, as another beginner, to write this 'absurdly simple' guide, condensed from the official page on the <a href="http://www.djangoproject.com">Django</a> site <a href="https://docs.djangoproject.com/en/dev/intro/install/">How to install Django</a> (DON'T use the <a href="http://www.djangoproject.com/documentation/install/">instructions for the SVN version of Django</a> by mistake). So, if you want to see this, read on:</p>
+				
+		<p class="image"><img src="django/django-it-worked.jpg" alt="django-it-worked" width="531" height="198" /></p>
+
+		<p>Some words have a dotted underline - hover over them for more. The [why], [how] and [more] links (might someday) provide more information (but things have moved on, so probably not&hellip;). The <a href="#references">references</a> at the end offer further information.</p>
+		
+		<p>Parts you might need (according to what happens) start with words in bold that begin:<br />
+		<strong>If (followed by a description)</strong>.</p>
+
+		<div class="extrainfo">
+			<p><strong>Parts you only need if something goes wrong</strong> are in boxes like this - skip over them if things go okay.</p>
+		</div>
+		
+		
+		<h2><dfn title="in programming, counting starts with zero, like this guide...">0</dfn>. Will this guide be useful for you?</h2>
+		
+		<p>This covers <strong>only</strong> what's needed to try out Django to do some tutorials, using SQLite as a database (already installed in OS X). It isn't for production-level development, and I don't yet have an 'absurdly simple' guide for that yet :-). So the answer is <em>yes</em> only if you:</p>
+		
+		<ul type="square">
+			<li>run a version of Mac OS X 10.4,</li>
+			<li>haven't already installed Django,</li>
+			<li>don't yet need to build a high-traffic or multi-user site with Django,</li>
+			<li>want to get a feel for the Django by doing the tutorials,</li>
+			<li>find other instructions confusing or conflicting,</li>
+			<li>know how to open Apple's Terminal application,</li>
+			<li>can see that Apple's Terminal is using <dfn title="just check the title bar of Terminal's window reads 'Terminal - bash'">Bash</dfn> [more],</li>
+			<li>have admin privileges in OS X and know your password [ title="plain text file"why</dfn>].</li>
+		</ul>
+		
+		<p>You may have read about installing Subversion or Macports, but they aren't required for this guide. If want to try Django on OS X in a development environment, you could use Apache2 and MySQL with <a href="http://www.mamp.info/en/">MAMP</a>.</p>
+		
+		<p>Where it reads 'I can help no more', this is only because I cannot control your computer to find out what's wrong.</p>
+		
+		<p>Whenever there's an instruction to type something into Terminal, type in the exact command shown on the separate line (copy and paste if you like), check what you've entered, then press return. When entering stuff in Terminal, <em>check what you've entered</em> is a golden rule.</p>
+		
+
+		<h2>1. Check you have Apple's Xcode Tools</h2>
+		
+		<p>Look in the root directory of your computer (not in 'Home') for a folder called 'Developer' [<dfn title="Apple's developer tools installs system-level components and tools, but they aren't actually needed for Django">why</dfn>], or use Command-F from the finder and search for 'Xcode'.</p>
+		
+		<p><strong>If XCode isn't installed</strong>, you can get the latest version from Apple's developer site (join if you need to):<br />
+		<a class="input" href="http://developer.apple.com/tools/xcode/">http://developer.apple.com/tools/xcode/</a></p>
+		
+		
+		<h2>2. Check your version of Python</h2>
+		
+		<p>In Terminal, type:
+		<code class="input">python -V</code></p>
+		
+		<p>(that's a minus sign and a capital V)</p>
+		
+		<p><strong>If the version is 2.3</strong>, download the Python 2 [<dfn title="because Django will work with the Python 2, but is experimental with version 3">why</dfn>] directly from:
+		<a class="input" href="http://www.python.org/ftp/python/2.5.1/python-2.5.1-macosx.dmg">http://www.python.org/ftp/python/2.5.1/python-2.5.1-macosx.dmg</a> (<a href="http://www.python.org/ftp/python/2.7.3/">Python 2.7.3 is here</a>)</p>
+		
+		<p>Double-click the disc image, then double-click the package to install it. Easy!</p>
+		
+		<p>The installer preserves the Python 2.3 already on OS X [why] and makes Python 2.5.1 the current version on OS X, so it's called up by default. To check the new version number, in Terminal type:
+		<code class="input">python -V</code></p>
+<!--
+Python 2.5: /Library/Frameworks/Python.framework/Versions/Current/bin/python
+extra Python applications: "Applications/MacPython 2.5",
+Python command-line tools: /usr/local/bin
+underlying Python machinery: /Library/Frameworks/Python.framework.
+-->
+
+		<div class="extrainfo">
+			<p><strong>If this still reads 2.3</strong>, try the following (untested but based on OS X and Python users' experience). Type into Terminal:
+			<code class="input">echo $PATH</code></p>
+			
+			<p>if you get an error, check for files called .bash_profile, .bash_login or .profile (there should only be one [why]) by opening a new Terminal window and typing:
+			<code class="input">ls -al</code>
+			(look towards the top of the list for files beginning with a dot.)</p>
+			
+			<p>If one of the three named above exists, open it (e.g. if it is '.profile') by typing:
+			<code class="input">open .profile</code>
+			the file will open in a text editor. Add the following on a new line at the bottom:
+			<code class="textline">export&nbsp;PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:$PATH"</code></p>
+
+			<p>Save the file and open a new Terminal window. Type:
+			<code class="input">echo $PATH</code>
+			to check that the new path is being seen.</p>
+			
+			<p>If no files with these names exist, create one by typing in Terminal:
+			<code class="input">touch .bash_profile</code>
+			<code class="input">open .bash_profile</code>
+			then copy and add the following two lines [why]<!-- the first is used by various other things too -->:<br />
+			<code class="textline">export PATH="/usr/local/bin:/usr/local/sbin:$PATH"</code>
+			<code class="textline">export&nbsp;PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:$PATH"</code>
+			</p>
+			
+			<p>close that Terminal window, open a new one and check the new paths appear in the readout (they'll be separated by : one after the other):
+			<code class="input">echo $PATH</code></p>
+			
+			<p>Now check the version of Python again:
+			<code class="input">python -V</code></p>
+			
+			<p>If it still reads 2.3 I can help no more.</p>
+		</div>
+		
+		
+		<h2>3. Install Django 0.96</h2>
+		
+		<p>Download the latest stable version directly [more<!-- (To find out more, <a href="http://www.djangoproject.com/download/">see the page that links to the above</a>.) -->] from:
+		<a class="input" href="http://www.djangoproject.com/download/0.96/tarball/">http://www.djangoproject.com/download/0.96/tarball/</a></p>
+		
+		<p>In Terminal, go to where your downloads are (try the Desktop) [how]. There will be a file named 'Django-0.96.tar.gz'. It's a kind of archive, and we're going to unpack it and install it.</p>
+		
+		<p>Enter each of these in Terminal:<!-- If you double-click on the tarball in the finder, it will "automagically" be unpacked for you. -->
+		<code class="input">tar xzvf Django-0.96.tar.gz</code>
+		<code class="input">cd Django-0.96</code>
+		<code class="input">sudo python setup.py install</code>
+		</p>
+		
+		<p>When all that's finished and you're still in Terminal, type:
+		<code class="input">django-admin.py</code></p>
+		
+		<p>You should get a screen of instructions (ignore them at this stage).</p>
+		
+		<div class="extrainfo">
+			<p><strong>If it gives an error</strong> you may need to make 'django-admin.py' executable or <cite title="a path enables things to be found">add a path</cite> to your Terminal [more], so&hellip;</p>
+			
+			<p>&hellip;to make the Django administration script executable, type the following (should all be on a single line, so copy and paste carefully) into Terminal:
+			<code class="input">chmod +x /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/bin/django-admin.py</code></p>
+	
+			<p><strong>If typing django-admin.py into Terminal still fails</strong>, open your .bash_login or .profile file [how] and add the following path (all on one line) to django-admin.py:
+			<code class="textline">export PATH="/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/bin:$PATH"</code></p>
+		</div>
+		
+		<p>Now try <dfn title="asking Python to find the Django code">importing</dfn> Django. In Terminal, type:
+		<code class="input">python</code></p>
+		
+		<p>You'll get the Python prompt, which looks like this:
+		<code class="input">&gt;&gt;&gt; </code>
+		Whenever you see the Python prompt, you're speaking directly to Python via the <cite>Python Interpreter</cite>. You know the interpreter's running in Terminal because the input lines start with the <dfn title="you are expected to type something on the command line after the 'prompt'">prompt</dfn> &gt;&gt;&gt;</p>
+		
+		<p>Now after the &gt;&gt;&gt; prompt, type:
+		<code class="input">&gt;&gt;&gt; import django</code></p>
+		
+		<p>You should see a blank line and cursor (possibly blinking, depending on your Terminal settings), all is well.</p>
+		
+		<div class="extrainfo">
+			<p><strong>If you see an error message</strong> that ends with: ImportError: No module named django, I can help no more.</p>
+		</div>
+		
+		<p>Hit control-D to get out of the python shell.</p>
+		
+<!--		
+		<p>Download PySQLite [more] from:
+		<a class="input" href="http://initd.org/pub/software/pysqlite/releases/2.3/2.3.5/pysqlite-2.3.5.tar.gz">http://initd.org/pub/software/pysqlite/releases/2.3/2.3.5/pysqlite-2.3.5.tar.gz</a></p>
+		
+		<p>In Terminal, go to where your downloads are [how]. There will be a file named 'pysqlite-2.3.5.tar.gz'.</p>
+		
+		<p>Enter each of these [more] in Terminal:
+		<code class="input">tar xzvf pysqlite-2.3.5.tar.gz</code>
+		<code class="input">cd pysqlite-2.3.5</code>
+		<code class="input">python setup.py build</code>
+		<code class="input">sudo python setup.py install</code>
+		</p>
+-->
+<!-- See: <a href="http://initd.org/pub/software/pysqlite/doc/install-source.html">this PySQLite page</a> -->
+<!-- (SQLite To find out more, <a href="http://initd.org/tracker/pysqlite/wiki/pysqlite">see the page that links to the above</a>.) -->
+<!-- embedded in Py2.5? See: Gerhard: 'SQLite module for Python 2.5' http://mail.python.org/pipermail/python-dev/2004-October/049534.html -->		
+
+		<h2>4. Test SQLite</h2>
+		
+		<p>The SQLite database itself is enough only for trying out Django, and is already part of Mac OS X 10.4 (<code>/usr/bin/sqlite3</code>). <cite>PySQLite</cite> is embedded in Python 2.5 and allows Python to communicate with it. To test this, use the Python Interpreter - type the following into Terminal:
+		<code class="input">python</code>
+		when you see the Python prompt: &gt;&gt;&gt; type:
+		<code class="input">&gt;&gt;&gt; from sqlite3.test import dbapi</code>
+		then:
+		<code class="input">&gt;&gt;&gt; dbapi.test()</code>
+		</p>
+
+<!-- PySQLite2 for Python 2.4
+		<code class="input">&gt;&gt;&gt; from pysqlite2 import test</code>
+		<code class="input">&gt;&gt;&gt; test.test()</code>
+		<div class="extrainfo">
+			<p>Ignore any error that contains: FAIL: CheckOnConflictRollback (pysqlite2.test.regression.RegressionTests) [why].</p>
+		</div>
+		
+		Remove the manually installed PySQLite (sigh) from: /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/
+		Is the path to Django in .bash_login redundant? Try removing: /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/bin
+-->	
+		
+		<p>You'll get a line of dots - let it complete the test until you see 'OK' followed by the cursor on a blank line.</p>
+		
+		<p>Hit control-D to get out of the python shell.</p>
+		
+		
+		<p>YOU'RE FINALLY READY TO START <a href="https://docs.djangoproject.com/en/1.10/intro/tutorial01/" title="NOTE: this is the latest tutorial, which is dated some time after this page.">DJANGO TUTORIAL 01</a>! (Yes, I've thought about writing an 'absurdly simple' version :-)</p>
+		
+		<h2 class="notes"><a name="references"></a>References</h2>
+		
+		<!-- Add a ticket on the Django site's install page at http://www.djangoproject.com/documentation/0.96/install/ -->
+		<!-- Maybe this should be on the MacPython wiki? - Chris Barker, Ph.D. -->
+		
+		<dl>
+			<dt>Python on the Mac:</dt>
+			<dd><a href="http://www.python.org/download/mac/">www.python.org/download/mac/</a></dd>
+			<dt>MacPython Wiki:</dt>
+			<dd><a href="http://wiki.python.org/moin/MacPython">wiki.python.org/moin/MacPython</a></dd>
+		</dl>
+		
+		<p>Many thanks to <a href="http://gregturner.org/">Greg Turner</a> and all those (Kent, Nehemiah, Joel, Chris, Hraban, Chris Barker and especially Ned) on the: <a href="http://mail.python.org/mailman/listinfo/pythonmac-sig">Pythonmac-SIG mailing list</a>.</p>
+		
+		<p><a href="/contact">Contact me</a> or comment below if you have anything to say about this tutorial.</p>
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+
+	</div>
+</div>
+</body>
+</html>

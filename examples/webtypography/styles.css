@@ -1,0 +1,29 @@
+body {
+   margin:0;
+   padding:0;
+   color:#000;
+   background:#eee;
+   font-size:1em;
+   font-family:serif;
+}
+
+div {
+   margin:0 auto;
+   width:80%;
+   background:#fff;
+}
+
+/* set up basic styles for paragraphs and level 1 and 2 headings */
+
+div h1 {
+   padding:0 10px 1em;
+}
+
+div h2 {
+   padding:0 10px 1em;
+}
+
+div p {
+   padding:0 10px 1em;
+}
+

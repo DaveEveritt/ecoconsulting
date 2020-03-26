@@ -1,0 +1,5 @@
+<!--#set var="domain_name" value="www.ecoconsulting.co.uk"--><!--#set var="site_title" value="Eco Consulting"--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eco Consulting: <!--#echo var="page_name"--></title>
+<meta name="description" content="<!--#echo var='description'-->" />
+<meta name="keywords" lang="en" content="<!--#echo var='keywords'-->" />
+<link rel="stylesheet" type="text/css" href="/styles/body.css" />

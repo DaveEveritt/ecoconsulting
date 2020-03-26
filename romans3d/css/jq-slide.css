@@ -1,0 +1,16 @@
+html { font-size: 100%; }
+img { border: 0; }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#sidebar {
+	float:left;
+	height:100%;
+	width:200px;
+	position:fixed;
+	background-color:#999;
+}

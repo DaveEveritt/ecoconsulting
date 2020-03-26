@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><![endif]--> 
+  <title>CSS-only tooltip from title attribute</title>
+  <style>
+  /*
+  ==============
+  General styles
+  ==============
+  */
+  #container {
+    font-family:Arial, Verdana, sans-serif;
+    margin:1em 20%;
+  }
+  a { outline:none; }
+  a:link,
+  a:visited {
+    color:#336;
+  }
+  a:hover code {
+    color:#222;
+  }
+  code {
+    font-size:1.25em;
+    color:#664;
+  }
+  h2 {
+    font-size:1.25em;
+    margin-top:2em;
+  }
+  .fault {
+    color:red;
+  }
+  .author {
+    font-size:75%;
+    text-align:right;
+    border-top:3px solid #664;
+    padding-top:2px;
+  }
+  .mainimg {
+	  float:left;
+	  padding: 10px;
+	  background-color: #eee;
+	  margin: 0 20px 2em 0;
+	  border: 1px solid #aaa;
+  }
+  
+  /*
+  ================
+  1. Plain Tooltip
+  ================
+  */
+  
+  a:link.tooltipbasic {
+    position:relative;
+  }
+  a:hover.tooltipbasic {
+    text-decoration:none; /* remove underline on tooltip */
+  }
+  a:hover.tooltipbasic:before {
+    display:block;
+    background:#eef;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#ccf), to(#eef));
+    background:-moz-linear-gradient(#ccf, #eef);
+    background:-o-linear-gradient(#ccf, #eef);
+    background:linear-gradient(#ccf, #eef);
+    content:attr(data-tooltip);
+    position:absolute;
+    color:#333;
+    bottom:1.5em; /* ensure link is still visible under tooltip */
+    right:0px;
+    width:8em; /* a reasonable width to wrap the tooltip text */
+    text-align:center;
+    padding:4px;
+    border:2px solid #999;
+    -webkit-border-radius:6px;
+       -moz-border-radius:6px;
+        -ms-border-radius:6px;
+         -o-border-radius:6px;
+            border-radius:6px;
+    -webkit-box-shadow: -2px 2px 2px rgba(20, 20, 20, 0.4);
+       -moz-box-shadow: -2px 2px 2px rgba(20, 20, 20, 0.4);
+        -ms-box-shadow: -2px 2px 2px rgba(20, 20, 20, 0.4);
+         -o-box-shadow: -2px 2px 2px rgba(20, 20, 20, 0.4);
+            box-shadow: -2px 2px 2px rgba(20, 20, 20, 0.4);
+  }
+  
+  /*
+  ============================
+  2. Arrow tooltip (first try)
+  ============================
+  */
+
+  /* tooltip basic link styles */
+  .tooltipAlpha a:link,
+  .tooltipAlpha a:visited {
+    position:relative;
+    text-decoration:underline;
+  }
+  .tooltipAlpha a:hover {
+    text-decoration:none; /* remove underline on tooltip text */
+  }
+  .tooltipAlpha a:hover:before {
+    display:block;
+    background:#efe;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#cfc), to(#efe));
+    background:-moz-linear-gradient(#cfc, #efe);
+    background:-o-linear-gradient(#cfc, #efe);
+    background:linear-gradient(#cfc, #efe);
+    content:attr(data-tooltip);
+    position:absolute;
+    color:#333;
+    bottom:20px;/* ensure link is still visible under tooltip */
+    right:0px;
+    width:8em; /* a reasonable width to wrap the tooltip text */
+    text-align:center;
+    padding:4px;
+    border:2px solid #9c9;
+    -webkit-border-radius:6px;
+       -moz-border-radius:6px;
+        -ms-border-radius:6px;
+         -o-border-radius:6px;
+    border-radius:6px;
+  }
+  .tooltipAlpha {
+    position:relative;
+    visibility:hidden;
+  }
+  .tooltipAlpha a:link,
+  .tooltipAlpha a:visited {
+    position:relative;
+    visibility:visible;
+  }
+  /* styles shared by both triangles */
+  .tooltipAlpha:hover:before,
+  .tooltipAlpha a:hover:after {
+    content:"";
+    position:absolute;
+    border-style:solid;
+    z-index:900; /* makes arrows appear above link text */
+  }
+
+  /* outer triangle: for border */
+  .tooltipAlpha:hover:before {
+    visibility:visible;
+    bottom:6px; /* value = border-width*3 */
+    right:40px; /* horizontal position of arrow */
+    border-width:16px 16px 0;
+    border-color:#9c9 transparent;
+  }
+  /* inner triangle: for fill */
+  .tooltipAlpha a:hover:after {
+    bottom:9px; /* value = 3 more than border-width*3 */
+    right:42px; /* 2 more than above */
+    border-width:14px 14px 0;
+    border-color:#efe transparent;
+  }
+
+  /*
+  ========================
+  3. Arrow tooltip (final)
+  ========================
+  colours:
+  #fcc | rgba(255,205,205,0.7)
+  #fee | rgba(225,238,238,0.7)
+  #333 | rgba(51,51,51,0.7)
+  #c99 | rgba(204,153,153,0.7)
+  */
+
+  /* tooltip basic link styles */
+  .tooltip:link,
+  .tooltip:visited {
+    position:relative;
+    text-decoration:underline;
+  }
+  .tooltip:hover {
+    text-decoration:none; /* remove underline on tooltip text */
+  }
+
+  /* tooltip body text */
+  .tooltip:hover:before {
+    display:block;
+    background:#eee;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,205,205,0.9)), to(rgba(228,230,230,0.9)));
+    background:-moz-linear-gradient(rgba(255,205,205,0.9), rgba(228,230,230,0.9));
+    background:-o-linear-gradient(rgba(255,205,205,0.9), rgba(228,230,230,0.9));
+    background:linear-gradient(rgba(255,205,205,0.9), rgba(228,230,230,0.9));
+    content:attr(data-tooltip); /* this link attribute contains tooltip text */
+    position:absolute;
+    font-size:0.9em;
+    color:rgba(51,51,51,0.9);
+    bottom:20px;/* ensure link text is visible under tooltip */
+    right:0px;  /* align both tooltip and link right edges */
+    width:11em;  /* a reasonable width to wrap tooltip text */
+    text-align:center;
+    padding:4px;
+    border:2px solid rgba(204,153,153,0.9);
+    -webkit-border-radius:6px;
+       -moz-border-radius:6px;
+        -ms-border-radius:6px;
+         -o-border-radius:6px;
+            border-radius:6px;
+    -webkit-box-shadow:-2px -2px 2px rgba(20,20,20,0.4);
+       -moz-box-shadow:-2px -2px 2px rgba(20,20,20,0.4);
+        -ms-box-shadow:-2px -2px 2px rgba(20,20,20,0.4);
+         -o-box-shadow:-2px -2px 2px rgba(20,20,20,0.4);
+            box-shadow:-2px -2px 2px rgba(20,20,20,0.4);
+  }
+
+  /* styles shared by both triangles */
+  .tooltip:hover span:before,
+  .tooltip:hover span:after {
+    content:"";
+    position:absolute;
+    border-style:solid;
+  }
+  /* outer triangle: for border */
+  .tooltip:hover span:before {
+    bottom:5px; /* value = tooltip:hover:before (border-width*2)+1 */
+    right:40px; /* controls horizontal position */
+    border-width:16px 16px 0; /* top, right-left, bottom */
+    border-color:rgba(204,153,153,0.9) transparent; /* top/bottom, right-left (lazy becasue bottom is 0) */
+  }
+
+  /* inner triangle: for fill */
+  .tooltip:hover span:after {
+    bottom:8px; /* value = tooltip:before (border-width*2) */
+    right:42px; /* above 'right' value + 2 */
+    border-width:14px 14px 0; /* 2 less than above */
+    border-color:rgba(225,238,238,0.95) transparent; /* tweak opacity by eye/eyedropper to obscure outer triangle colour */
+  }
+
+  </style>
+</head>
+<body>
+  <a style="float:right" href="/training/"><img src="/images/eco-logo.gif" width="132" height="82"></a>
+
+  <div id="container">
+
+  <img class="mainimg" src="css-tooltip.jpg" alt="css-tooltip" width="185" height="93" /><h1>CSS-only tooltips using<br><code>:after</code> and <code>:before</code></h1>
+
+  <p>Stop waffling and gimme something I can use right now? Okay, <a href="#final">see section 3</a>!</p>
+  
+  <p style="clear: both;">These tooltip rollovers use a custom HTML5 <code>a</code> tag <a href="http://dev.w3.org/html5/spec/single-page.html#custom-data-attribute"><code>data-</code></a> attribute (<code>data-tooltip</code>) to populate a tooltip displaying text contained in the attribute. The arrow triangle is formed by two generated overlapping elements with only the top border visible (r-l are transparent, bottom is <code>0px</code>). All tooltip text is an extension of the link and therefore clickable.</p>
+  
+  <p><strong>View source to get code</strong> - it's as clean as possible, and each tooltip has a separate block of css styles—use the <code>Arrow tooltip (final)</code> CSS for the finished styles. Don't like the colour? You know what to do. Original inspiration: Nicolas Gallagher's <a href="http://nicolasgallagher.com/pure-css-speech-bubbles/">Pure CSS speech bubbles</a>, and a desire to emulate <a href="http://addyosmani.com/jquerypluginin5mins/">Addy Osmani's JQuery tooltip</a> in pure CSS. All thanks to <a href="https://talentopoly.com/posts/4581-pure_css_speech_bubbles">this post on Talentopoly</a> (join to view, free).</p>
+
+  <h2>1. CSS-only tooltip using <code>:before</code> (no arrow)</h2>
+  <p>This <a class="tooltipbasic" data-tooltip="This basic rollover expands to fit any number of lines" href="#">link with a CSS-styled rollover tooltip</a> uses a 'data-' attribute for the tooltip content. You can also use <code>:after</code> to generate the tooltip. A <code>box-shadow</code> makes it appear to float above the content.</p>
+
+  <h2>2. CSS-only tooltip arrow with <code>:before</code> and <code>:after</code> (<code>a</code> tag inside <code>span</code>)</h2>
+  <p>Since the link's <code>:before</code> property is already used for the tooltip text, we need an extra element to provide further generated content. This <span class="tooltipAlpha"><a data-tooltip="Hover just right or left of the arrow to see the problem" href="#">CSS-styled rollover tooltip link</a></span> adds an arrow made from overlapping <code>:before</code> and <code>:after</code> properties on a span that wraps the link. The triangle has no width or height and is constructed from borders only, which means we can't use a <code>box-shadow</code> with positive values, as it appears outside the transparent rectangle of the l-r borders and not around the 'arrow'.</p>
+  <ul>
+    <li><span class="fault">Fault:</span> lingering triangle when hovering over arrow's 'border'.</li>
+    <li><span class="fault">Fault:</span> Mozilla (Firefox): arrow border is beneath link, needs higher z-index.</li>
+  </ul>
+
+  <h2 id="final">3. Final CSS-only tooltip arrow with <code>:before</code> and <code>:after</code> (<code>span</code> inside <code>a</code> tag)</h2>
+  <p>This <a class="tooltip" data-tooltip="This alpha-transparent rollover is the final successful version. If there's ever such a thing as 'final', that is..." href="#"><span>translucent CSS-styled rollover tooltip</span></a> uses a span <em>inside</em> the <code>a</code> tag. The shadow is reinstated but with negative top/left values to avoid the arrow. For a final touch alpha transparency (<code>rgba</code>) is applied to the tooltip elements, with trial-and-error tweaks to blend the arrow's colour into the lower gradient and reduce the visibility of the (darker) border colour of the outer triangle beneath the inner.</p>
+  
+  <p><strong>You can add it to <a class="tooltip" data-tooltip="See? Just add the tooltip class. This one even inherits the <strong> text." href="#"><span>any link</span></a> by applying the <code>tooltip</code> class and wrapping the link text in a <code>span</code>.</strong><br>The tooltip inherits the span's font-weight by default.</p>
+  
+  <p>And before you ask: no, those CSS3 (in this case fade-in-nicely) <a class="tooltip" href="http://css-tricks.com/transitions-and-animations-on-css-generated-content/" data-tooltip="Come on, you browsers! Get with the plan!"><span>transitions on generated elements</span></a> aren't supported widely enough yet (FF only but even there, I couldn't get it to work).</p>
+  
+  <p class="author" style="margin-top: 100px">Dave Everitt, 8 June 2012</p>
+
+  </div>
+
+</body>
+</html>

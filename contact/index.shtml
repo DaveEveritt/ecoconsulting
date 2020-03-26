@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="none" --><!--#set var="page_name" value="contact thanks" --><!--#set var="directory_name" value="contact" -->
+<!--#include virtual="/includes/title_meta_global.shtml" -->
+	<meta name="robots" content="none" />
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("email").submit();
+       }
+     </script>
+</head>
+
+<body>
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+   
+   <div id="content">
+      <!--#include virtual="/includes/top_rule.shtml"-->
+
+      <h1>contact eco consulting (email and message required)</h1>
+<!--       <form id="email" action="/cgi-bin/formmail.cgi" method="get" title="contact eco consulting"> -->
+      <form id="email" action="?" method="POST" title="contact eco consulting">
+         <table>
+         <tr>
+            <td class="alignright">Name (optional):</td>
+            <td><input type="text" name="name" title="your name" /></td>
+         </tr>
+         <tr>
+            <td class="alignright">Email:</td>
+            <td><input type="text" name="email" title="your email address" /></td>
+         </tr>
+         <tr>
+            <td valign="top" class="alignright">Message:</td>
+            <td>
+               <textarea rows="5" cols="26" name="message" title="enter your message to eco consulting"></textarea>
+            </td>
+         </tr>
+         <tr>
+            <td class="alignright">What is 2 plus 3? :</td>
+            <td><input type="text" name="sum" title="sort the hyenas from the kittens?" /></td>
+         </tr>
+         <tr class="novalue">
+            <td colspan="2" class="alignright">
+                <p>
+                    If you can read this, don't change these fields: <input type="text" name="link" value="http://" /><br />
+                    <input type="text" name="about" value="" /><br />
+                    <textarea cols="40" rows="6" name="comment"></textarea>
+                </p>
+            </td>
+         </tr>
+         <tr>
+            <td>&nbsp;</td>
+            <td>
+              <p>
+              <button
+                class="g-recaptcha"
+                data-sitekey="6LeNr2sUAAAAAEBmkjCaVy_Dv-V7otFngMXp6J3A"
+                data-callback="YourOnSubmitFn">
+                Submit
+              </button>
+<!--               <input type="submit" name="button" value="send message" /> -->
+              <input type="reset"  name="button" value="clear all" title="clear all your input" />
+              </p>
+            </td>
+         </tr>
+         </table>
+      </form>
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="CSS variables or constants with Server-Side Includes (SSI)" --><!--#set var="directory_name" value="articles" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>CSS constants/variables with SSI: CSSI! <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit">Dave Everitt 1 September 2008, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro">After working on a WordPress-based site with crazy long CSS, I thought how good it would be to have (at least) all the CSS colours stored in variables (constants?) in a single file, so you could change every instance throughout a site, across multiple stylesheets. So I posted a message to the Transcending CSS Facebook group.<br />
+		<strong>Update:</strong> if you want more than to store a few CSS variables, you can take a look at <a href="http://sass-lang.com/tutorial.html">SASS</a>, <a href="http://lesscss.org/">LESS</a> or <a href="https://github.com/cloudhead/less.js/">Less.js</a>, which are designed to do this and more. SSI is still a nice simple solution, but they are implementations of the whole 'programmable CSS' thing.</p>
+	
+		<p>Andy Clarke replied with a link to <a href="http://24ways.org/2006/faster-development-with-css-constants">Rachel Andrew's article on using PHP</a> and there's also Davis Walsh's <a href="http://davidwalsh.name/css-variables-php-dynamic">CSS Variables using PHP</a>, but PHP seemed like overkill for such a simple task, so I had a chat with my friend and co-developer <a href="http://ben-daglish.net">Ben Daglish</a>, who suggested using <a href="http://httpd.apache.org/docs/current/howto/ssi.html">Apache's SSI</a> (Server Side Includes). SSI means that Apache itself does the server-side processing, so no scripts are necessary. He left it with me, and the result is&hellip; it works!</p>
+		
+
+		<h2>Enable SSI for .cssi files</h2>
+		
+		<p>If you have control over your Apache setup, make sure SSI is enabled in your Apache config (.shtml is the usual extension) - this is covered exhaustively on the web.</p>
+		
+		<p>Add a new Apache 'Directory' directive as below for your styles directory:</p>
+		<div class="extrainfo codeblock">
+		<code>
+			&lt;Directory "/users/you/webite/domain/html/styles"&gt;<br />
+			&nbsp;&nbsp;AddHandler server-parsed .cssi<br />
+			&nbsp;&nbsp;Options Includes<br />
+			&lt;/Directory&gt;
+		</code>
+		</div>
+		
+		<p>'AddHandler server-parsed .cssi' tells Apache to find files ending with .cssi and process any SSI instructions they contain. We could have given them any unused extension, but .cssi indicates that they're mixture of CSS and SSI. 'Options Includes' simply allows SSI within this directory.</p>
+		
+		<p>If you don't have control over your server setup, ask your provider to: "enable SSI in my 'styles' directory for files ending .cssi". Apache shouldn't process all .css files, so the .cssi extension enables the server to target just those using SSI in their CSS.</p>
+		
+		
+		<h2>Create SSI-enabled CSS files: an example</h2>
+		
+		<p>1. create a .cssi file with all your site's colours (say "colors.cssi") or any other CSS that's duplicated throughout your style sheet:</p>
+		<div class="extrainfo codeblock">
+		<code>
+			&lt;!--#set var="mybackground" value="#303" --&gt;<br />
+			&lt;!--#set var="mycolour" value="#303" --&gt;
+		</code>
+		</div>
+		
+		<p>2. Include "colours.cssi" into your main stylesheets (or just add the variables to the top of a single stylesheet), then echo the variables whenever you need the colours:</p>
+		<div class="extrainfo codeblock">
+		<code>
+			&lt;!--#include file="colors.cssi" --&gt;<br />
+			body { background: &lt;!--#echo var="mybackground" --&gt;; }<br />
+			p { color: &lt;!--#echo var="mycolour" --&gt;; }<br />
+			.someclass {<br />
+			&nbsp;&nbsp;padding: 0.5em;<br />
+			&nbsp;&nbsp;background-color: &lt;!--#echo var="mycolour" --&gt;;<br />
+			} 
+		</code>
+		</div>
+		
+		<p>3. now you can change the colour values in colours.cssi (or at the top of your single .cssi file) and have these changes appear in all the stylesheets that use these variables.</p>
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+		
+	</div>
+</div>
+</body>
+</html>

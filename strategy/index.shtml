@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Details stragegic consultation, project management and collaborative thinking undertaken by Eco Consulting" --><!--#set var="directory_name" value="strategy" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content" class="headerpic">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<img src="../images/strategy.png" alt="strategy" width="775" height="110" />
+
+		<h1>Strategy, thinking and project management</h1>
+
+		<p>Our real strength lies in an understanding of the way things are going, knowing what trends to test and which to avoid, and a practical knowledge of the pitfalls inherent in being too 'previous'.</p>
+
+		<p>Eco Consulting's partners have been members of several teams formed to explore new thinking about ethical, social and environmental policies.</p>
+		
+		<h2>Five benefits of good strategic input</h2>
+
+		<ol>
+			<li>better communication between departments</li>
+			<li>more effective IT strategy and choices</li>
+			<li>longevity of systems continuity in valuable knowledge</li>
+			<li>greater cost efficiency and planning</li>
+			<li>relaxation = productivity</li>
+		</ol>
+		
+		<h2>Details and long-term relationships</h2>
+
+		<p>On the basis of these strengths, combined with our long-term relations with associates and clients, we are able to undertake project management for large information-rich websites, as well as for local individuals, with the same attention to detail and patience for the way different people like to work.</p>
+		
+		<h2>Agile guidelines</h2>
+
+		<p>Here are the first of a series of concise features that attempt to condense what I've learned from being a successfully self-employed partner of Eco Consulting since 1992. I like the <cite>agile</cite> meme and try to apply it to all my activities.</p>
+
+		<dl title="features on agile approaches to work">
+
+			<dt><a href="./agile_project_management.shtml">Guidelines for agile project management</a></dt>
+			<dd>seven brief guidelines focussing on the essentials of successful project management, without the clutter.</dd>
+
+			<dt><a href="./agile_freelancing.shtml">Guidelines for the agile freelancer</a></dt>
+			<dd>some of these guidelines challenge traditional business thinking, but they might help you prosper as a freelance.</dd>
+
+		</dl>
+<!--
+		<dl title="">
+			<dt>Comedia</dt>
+			<dt>Goldsmiths</dt>
+			<dd>CBI and DTI</dd>
+			<dd>arts-info</dd>
+			<dd>ACE dis strategy local and national</dd>
+		</dl>
+-->		
+	</div>
+</div>
+</body>
+</html>

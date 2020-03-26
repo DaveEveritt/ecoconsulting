@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Who we are" --><!--#set var="directory_name" value="about" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body id="article">
+<!--#include virtual="/includes/menu.shtml"-->
+
+<div id="container">
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Who we are: associates and freelancers</h1>
+		
+		<p>Eco Consulting draws on a group of companies and individuals who have built up a complementrary network of skills and facilities.</p>
+		
+		<p>And although this is a bit blank now, there will be pictures. Oh yes, there will.</p>
+		
+<!-- 		Sean Cuttlefish, Alex Youniverse, Ben Daglish, Gareth Howell, Jo Stringfellow -->
+		
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+iPython
+
+Welcome to IPython. I will try to create a personal configuration directory
+where you can customize many aspects of IPython's functionality in:
+
+/Users/deveritt/.ipython
+Initializing from configuration: /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/IPython/UserConfig
+
+Successful installation!
+
+Please read the sections 'Initial Configuration' and 'Quick Tips' in the
+IPython manual (there are both HTML and PDF versions supplied with the
+distribution) to make sure that your system environment is properly configured
+to take advantage of IPython's features.
+
+Important note: the configuration system has changed! The old system is
+still in place, but its setting may be partly overridden by the settings in 
+"~/.ipython/ipy_user_conf.py" config file. Please take a look at the file 
+if some of the new settings bother you. 
+
+---
+Useful commands:
+from Terminal:
+  ipython -help - 
+
+from iPython shell
+  tab completion is on
+  ? - introduction
+  %quickref
+  help - Python general help
+  ?word or word? - info about the object 'word'
+  ??word or word?? - full info about the object 'word'
+  %pdoc object - see an object's docstring
+search history:
+  Ctrl-p (previous,up) and Ctrl-n (next,down) - search through history items that match what you've typed
+  Ctrl-r - open a search prompt
+System escape !:
+  e.g. typing !ls will run 'ls' in the current directory
+

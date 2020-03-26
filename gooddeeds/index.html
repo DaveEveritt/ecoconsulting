@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Good Deeds!</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1"><!--, maximum-scale=1.0, user-scalable=0" -->
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+<nav>
+<!-- <ul class="tabs"><li><a class="active" href="#summary">Summary</a></li><li><a href="#group">Group</a></li><li><a href="#individual">Individual</a></li><li><a href="#masses">Masses</a></li></ul> -->
+
+  <ul class="tabs"><li><a class="active" href="#smartspaces">Smart Spaces</a></li><li><a href="#greenview">Greenview</a></li></ul>
+</nav>
+
+<div id="twitterfeed" class="tab_container">
+  <div id="smartspaces">
+    <a class="twitter-timeline" height="500" data-dnt="true" href="https://twitter.com/search?q=%23smartspaces" data-widget-id="356785442898718721">Tweets about "#smartspaces"</a>
+  </div>
+  <div id="greenview">
+    <a class="twitter-timeline" height="500" data-dnt="true" href="https://twitter.com/greenviewdmu" data-widget-id="356799197288214528">Tweets by @greenviewdmu</a>
+  </div>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="js/tab_handler.js"></script>
+</body>
+</html>

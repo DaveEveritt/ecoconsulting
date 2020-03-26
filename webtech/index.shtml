@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Details about technical web services provided by Eco Consulting" --><!--#set var="directory_name" value="webtech" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content" class="headerpic">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<img src="/images/screenshot-strips.png" alt="screenshot-strips" width="775" height="110" />
+
+		<h1>Web services</h1>
+		
+		<p>The whole range of web-based services, plus software and hardware expertise covering Windows, Macintosh OS X and Linux platforms.</p>
+		
+		<h2>Web hosting</h2>
+
+		<p>Simple, low-cost effective web hosting: &pound;50 (or &pound;40 if you're a poor artist, a non-profit (or a friend!) + &pound;5 one-off setup fee. We can manage your domain name for &pound;17 per year, including email forwarding and automatic annual renewal.</p>
+		
+		<p>Over 99.9% uptime with <a href="http://rimuhosting.com/?r=144508441621768363463973495138451658958"><img style="position:relative;top:3px;" src="http://rimuhosting.com/images/promo/rimuhosting_80_15.png" alt="VPS and dedicated hosting by RimuHosting" /></a> - the friendly, helpful company who host the BBC's experimental projects. Also see their <a href="http://rimuhosting.com/vps-servers?r=144508441621768363463973495138451658958">VPS</a> and <a href="http://rimuhosting.com/dedicated-servers?r=144508441621768363463973495138451658958">Dedicated server</a> plans.</p>
+
+		<h2>Technical services</h2>
+
+		<p>Eco Consulting draws on a group of associates (companies and individuals) who are specialists in everything from Information Architecture and interaction design to database and web application programming. Our clients range from small local businesses (who we like to support) to national projects and organisations.</p>
+
+		<h2>Content management tailored to you</h2>
+		
+		<p>One of the often-repurposed elements of the websites we build is a customisable Content Management System, inlcuding mailing list management. Such systems work best when built around specific requirements, so we work with clients to make a system that works exactly for you - no unecessary complexity and no feature-bloat.</p>
+
+	</div>
+</div>
+</body>
+</html>

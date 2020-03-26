@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>CSS rollover demo</title>
+	<meta name="description" content="Non-flicker CSS rollover button - a demo example for all browsers.">
+	<meta name="keywords" content="flicker-free non-flicker CSS hover link rollover Explorer">
+	<style type="text/css">
+		body {font-family: Verdana, Arial, Helvetica, sans-serif;}
+		#container {width: 800px; margin: 0 auto;}
+		code {font-size: 1.2em; color: #800;}
+		.rollover {
+			height: 50px;
+			width: 200px;
+			background: url(rollover.gif) no-repeat white;
+		}
+		.rollover a {
+			text-decoration: none;
+			display: block;
+			height: 50px;
+			width: 200px;
+			background: url(non_roll.gif) no-repeat white;
+		}
+		.rollover a:hover {
+			background-image: none;
+			background-color: transparent;
+		}
+		/* reddit button: */
+		.reddit         { float:right; height: 17px; width: 75px; background: url(/images/spreddit6.gif) no-repeat white; }
+		.reddit a       { display: block; text-decoration: none; height: 17px; width: 75px; background: url(/images/spreddit7.gif) no-repeat white; }
+		.reddit a:hover { background-image: none; background-color: transparent; }
+	</style>
+</head>
+<body>
+    <a style="float:right" href="/training/"><img src="/images/eco-logo.gif"></a>
+
+	<div id="container">
+
+  	<h1>CSS flicker-free rollover demo</h1>
+  
+  	<p class="rollover"><a href="#"> </a></p>
+  	
+  	<p>The <em>rollover</em> image is already loaded as the background image of the <code>p</code> tag that contains the <code>a</code> tag with the <em>no-roll image</em> (view source). It does not need to be loaded (or, in the case of Internet Explorer, reloaded) on <code>hover</code>, so there is no flicker or flash of white before the rollover image appears.</p>
+  	
+  	<p>On rollover (CSS <code>hover</code>), the link background CSS is set to <code>none</code>, revealing the background image of the <code>p</code> tag beneath. Yep, it's a pig-ugly image, but good enough for a demo.</p>
+  	
+  	<hr noshade>
+  	
+  	<p>Here's another example using a typical 3rd party link (in this case, Reddit):
+  		<span class="reddit"><a title="submit to reddit" href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">&nbsp;</a></span>
+  	</p>
+	
+	</div>
+
+</body>
+</html>

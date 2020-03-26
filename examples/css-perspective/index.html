@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><![endif]--> 
+  <title>css perspective transform and rotate</title>
+  <style type="text/css">
+
+    /* general styles (these don't affect the perspective demo) */
+    body { background-color:#a99; }
+    a { outline:none; }
+    p { text-align:center; color:#666; padding:0 30%; line-height:1.65em; }
+    div + p { margin-top:4em; }
+    code { font-size:1.1em; color:#ddd; padding:0 2px; }
+    a:link, a:visited { color:#ddd; outline:none; }
+    a:hover {
+      text-decoration:none;
+      -webkit-text-shadow:1px 1px 1px #333;
+         -moz-text-shadow:1px 1px 1px #333;
+          -ms-text-shadow:1px 1px 1px #333;
+           -o-text-shadow:1px 1px 1px #333;
+              text-shadow:1px 1px 1px #333;
+     }
+     a:active { text-decoration:underline; }
+    
+    /* sets styles and perspective context on container ('window frame') */
+    .perspective {
+      width: 148px;
+      height:148px;
+      border:8px solid #ddd;
+      position:relative;
+      margin:30px auto 0;
+      background:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#ccc));
+      background:-moz-linear-gradient(#444, #ccc));
+      background:     linear-gradient(#444, #ccc));
+      -webkit-perspective:200px;
+         -moz-perspective:200px;
+              perspective:200px;
+    }
+    
+    /* sets styles and rotation transform on 'window' */
+    .perspective div {
+      position:absolute;
+      width: 146px;
+      height:146px;
+      line-height:146px;
+      color:#fff;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.6);
+      /* makes window slightly translucent */
+      background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(220,235,242,0.5)), to(rgba(80,160,220,0.6)));
+      background:-moz-linear-gradient(rgba(220,235,242,0.5), rgba(80,160,220,0.6));
+      background:     linear-gradient(rgba(220,235,242,0.5), rgba(80,160,220,0.6));
+      /* specify what to transform and how long it will take in seconds */
+      -webkit-transition:-webkit-transform 0.8s;
+            -moz-transition:-moz-transform 0.8s;
+                      transition:transform 0.8s;
+    }
+    
+    /* sets hover transform on 'window' */
+    .perspective div:hover {
+      -webkit-transform:rotateX(24deg);
+         -moz-transform:rotateX(24deg);
+              transform:rotateX(24deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a style="float:right;display:block;background:#fff;padding:1px;border-radius:4px;" href="/training/"><img src="/images/eco-logo.gif" width="132" height="82"></a>
+  
+  <div class="perspective"><div>HOVER TO OPEN</div></div>
+  
+  <p>This little demo uses <code>perspective</code> and <code>transform</code> to rotate the 'window', with <code>transition</code> to smooth the transformation.</p>
+  
+  <p>Source code is annotated to explain the CSS.</p>
+  
+  <p>Mozilla's <code>transition</code> animation (Firefox) is more jerky and the angles more jagged than Webkit's (Safari, Chrome). When writing this (June 2012) neither Opera nor Explorer support <a href="http://www.w3schools.com/cssref/css3_pr_perspective.asp"><code>perspective</code></a> or <a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_transform_rotatex"><code>rotateX</code></a>.</p>
+   
+</body>
+</html>

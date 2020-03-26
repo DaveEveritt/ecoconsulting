@@ -1,0 +1,314 @@
+NOTE: this file can be (kind of - it's not perfect) seen nicely formatted by previewing as Markdown (say in TextMate)
+
+Greg's guide to setting up Django on OS X
+(with interruptions from Dave)
+
+Installing Django on a vanilla 10.5 system (on its own and with MAMP/Pro).
+
+There are TWO ways I'm going to describe installing Django.
+
+OPTION 1: GETTING DJANGO RUNNING AS QUICKLY AS POSSIBLE
+Just install the minimum necessary and use the django development server for testing.
+
+OPTION 2: GET DJANGO RUNNING WITH MAMP/PRO - USING APACHE AND MYSQL
+A LOT more involved, so only do it if you know you love Django, and need it to run on Apache.
+
+Unfortunately Option 1 hardly helps at all with option 2, since Option 1 uses OS X's built in Python2.5, but you need Python2.4 if you are going to use MySQL and Django on OS X (unless you like figuring out compiler flags!). I'm also going to assume that if you choose Option 2, you already know how to make a Django site.
+
+I am not going to cover:
+
+(NOT) OPTION 3: Installing Apache on its own, and getting Django running with that.
+
+because I don't want a bazillion copies of Apache lurking on my system! Plus, installing Apache isn't much fun when there's MAMP around.
+
+
+#OPTION 1: GETTING DJANGO RUNNING AS QUICKLY AS POSSIBLE
+
+To get Django running, you need:
+
+* a database system (we'll start with SQLite, but then upgrade in part 2 to MySQL which is more production-oriented)
+
+* python2.3 or higher, with a library for our database system (mysqldb is the one django uses for mysql)
+
+* um, Django!
+
+1. Get Django:  
+OS X 10.5 comes with python2.5 - to confirm, open a terminal and type (note the capital 'V'):
+  `python -V`  
+There's an easy_install utility for Python (comes with 'setuptools') that works a treat for Django's 'stable releases' (although the in-progress version 'from trunk' is more than stable enough!) so - bearing in mind that Django's version number in the URL below will need updating from '1.0.2' to the most recent - type into terminal:  
+  `sudo easy_install http://www.djangoproject.com/download/1.0.2/tarball/`  
+(type in your admin password when asked)
+
+  OR To get the development version, you can use macports (from here http://www.macports.org/install.php), and type:
+`  sudo port install py25-django-devel`  
+  Test that it worked by running:  
+  `python -V`
+
+[DIVERSION-1: easy_install and Django 'from trunk']
+
+if `python -V` gives a higher version (e.g. Python 2.6)
+download the latest setup_tools .egg for your Python version file from:
+http://pypi.python.org/pypi/setuptools/
+scroll to the bottom and choose the .egg that that matches the version shown with `python -V` e.g. setuptools-0.6c9-py2.6.egg
+
+in Terminal, change to the directory containing the downloaded .egg file (type 'cd', a space, then drag the directory to the Terminal window) and - bearing in mind the version number might have changed, so copy your .egg filename here - type:
+  `sudo sh setuptools-0.6c9-py2.6.egg`
+
+NOTE: for the latest development version of Django ('from trunk') use "SVN":http://subversion.tigris.org/) and type (the last part creates a folder 'django-trunk' from which you can then do `svn update`) - you'll have to place 'django-trunk' somewhere on your Python path or make a link to it:  
+  `svn co http://code.djangoproject.com/svn/django/trunk/ django-trunk`
+
+you'll see something like:
+
+    Processing setuptools-0.6c9-py2.6.egg
+    Copying setuptools-0.6c9-py2.6.egg to /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages
+    Adding setuptools 0.6c9 to easy-install.pth file
+    Installing easy_install script to /Library/Frameworks/Python.framework/Versions/2.6/bin
+    Installing easy_install-2.6 script to /Library/Frameworks/Python.framework/Versions/2.6/bin
+
+    Installed /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/setuptools-0.6c9-py2.6.egg
+    Processing dependencies for setuptools==0.6c9
+    Finished processing dependencies for setuptools==0.6c9
+
+Now you can also use easy_install for other Python modules. As a newer alternative, pip ()recommended by some.
+
+[/DIVERSION-1]
+
+2. Start a new project:
+You can start your new django project (called mysite in the Django tutorial) in your Sites folder, by doing this:  
+  `cd ~/Sites`  
+  `django-admin.py startproject mysite`  
+Then do:
+  `cd mysite`
+  `./manage.py runserver 0.0.0.0:8080`
+
+[DIVERSION-2]
+If you get:  
+  `./manage.py: Permission denied`  
+type:  
+  `chmod +x *.py`  
+and try again. You should get:  
+  `Validating models...`
+  `0 errors found.`
+
+    Django version 0.96, using settings 'mysite.settings'
+    Development server is running at http://0.0.0.0:8080/
+    Quit the server with CONTROL-C.
+[/DIVERSION-2]
+
+Visit http://localhost:8080 in your browser to see the site (of course, you haven't actually done any work yet). Press Ctrl+C to quit the server.
+
+3. Hooking up the database
+Next, let's test the database functionality. We'll pick up the Django tutorial at "database setup":http://www.djangoproject.com/documentation/tutorial01/#database-setup. We're using SQLite, since it comes with Python2.5. Now, correct me if I'm wrong, but with sqlite you can put your database file wherever you wish, so long as it's safe enough there. I would put it right in my project folder:  
+  `mkdir db`  
+and in settings.py, change these settings:  
+  `DATABASE_ENGINE = 'sqlite3'`
+  `DATABASE_NAME = '/Users/[username]/Sites/mysite/db/db'`  
+where [username] is your username. If you put your site somewhere other than in ~/Sites, or would prefer to keep your database somewhere else, then use that path instead. A file called db/db will be created to store your data.  
+Now you can run
+  `./manage.py syncdb`  
+which will test the database connection by setting up a superuser.
+
+You'll see something like:
+
+    Creating table auth_message
+    Creating table auth_group
+    Creating table auth_user
+    Creating table auth_permission
+    Creating table django_content_type
+    Creating table django_session
+    Creating table django_site
+
+    You just installed Django's auth system, which means you don't have any superusers defined.
+    Would you like to create one now? (yes/no): yes
+    Username (Leave blank to use 'YOURNAME'): 
+    E-mail address: [YOUREMAILADDRESS]
+    Password: [password_here]
+    Password (again): 
+    Superuser created successfully.
+    Installing index for auth.Message model
+    Installing index for auth.Permission model
+    Loading 'initial_data' fixtures...
+    No fixtures found.
+
+All that remains is for you to carry on with the Django tutorial. Of course, if you're already a Django pro (it doesn't take long), you can get going making your new site straight away!
+
+[DIVERSION-3]
+If you get a TemplateDoesNotExist error when trying to see the admin site, it may be that the installer hasn't installed the admin templates! To get them, do a normal installation:
+
+* Download the tarball from http://www.djangoproject.com/download/
+
+* Extract it, and change to the Django folder:  
+  `tar xzvf Django-0.96.1.tar.gz`  
+  `cd Django-0.96.1`
+
+* Make a note of your django/contrib/admin/ folder (it'll be in the error message at http://localhost:8080/admin) e.g.  /Library/Python/2.5/site-packages/Django-0.96_None-py2.5.egg/django/contrib/admin/. You can check in there to see that you do indeed have no templates folder!
+
+* Copy the templates from the extracted tarball to the install folder e.g.:  
+  `sudo cp -R django/contrib/admin/templates /Library/Python/2.5/site-packages/Django-0.96_None-py2.5.egg/django/contrib/admin/`  
+  If you want to be really sure no other files are missing, you can do:  
+  `sudo cp -R django /Library/Python/2.5/site-packages/Django-0.96_None-py2.5.egg/`
+
+[/DIVERSION-3]
+
+4. It's now OK to remove the .tar.gz file and the Django source folder.
+
+
+#OPTION 2: GET DJANGO RUNNING WITH MAMP/PRO - USING APACHE AND MYSQL
+
+Requirements:
+
+* MAMP, which is Apache and MySQL (and PHP, which we no longer care about, having discovered Django)
+* mod_python for Apache, which lets Apache talk to Python.
+* Python
+* mysqldb, which lets Python talk to MySQL.
+* Django!!
+* Apple XCode Tools, cos we gots ta do some compilin'.
+* MySQL GUI tools, because they make life easy
+
+[DIVERSION-3]
+
+Gotcha 1:
+
+I haven't been able to get mysqldb to compile under 10.5/PPC. I expect it will compile under 10.4/PPC and 10.5/Intel, but I had to make do with a precompiled version for these instructions. At the time of writing, the precompiled version was only available for python2.4, so that's the version of Python we'll be using!
+
+see: http://www.djangobook.com/en/1.0/chapter05/ - comments #5
+
+There is current a bug with MySQLdb 1.2.2 that causes an error when installing on OS 10.5. The bug and a solution is described here:
+http://forums.mysql.com/read.php?50,175059,179979#msg-179979
+
+While perhaps not appropriate for newbies, there are some relatively simple workarounds for the OS X problem:
+http://log.vaem.net/2008/06/install-python-mysqldb-on-mac-os-x.html
+
+[/DIVERSION-3]
+
+Why MAMP?
+
+I am enjoying using MAMP (http://www.mamp.info) - a self-contained Macintosh Apache, Mysql and PHP installation - as a sandbox server system, as it makes installing and running a proper web server on your Mac a piece of cake. I use MAMP Pro, because I find myself setting up new hosts/ports for every project, and its UI makes that straightforward, but these instructions should apply to both MAMP and MAMP Pro. If you want a free alternative you might try XAMPP (http://www.apachefriends.org/en/xampp.html).
+
+Gotcha 2:
+
+MAMP normally only comes with what it needs to run. If you want to add stuff to Apache or MySQL (which we do), you need the MAMP FULL (at the bottom of the page), with all the Apache/MySQL build libraries. If you already have MAMP, then the information here will help: http://muffinresearch.co.uk/archives/2006/12/20/compiling-mod_python-for-mamp/ - though if you don't have many sites on the go I would just back up your htdocs folder and install the 'FULL' MAMP).
+
+
+1. Installing MAMP.
+
+  Make sure you get MAMP FULL (not the default - see Gotcha 2 above) from http://www.mamp.info/en/download.html. There are different versions for Intel and PPC architectures, and the links are at the bottom of the downloads page, under "additional downloads".
+
+  It's easy enough to install and test MAMP by dragging it to Applications, and MAMP and MAMP Pro both run the same server programs - MAMP Pro is just a fancier interface.
+
+  Note: If all you want to do is get Django running with MySQL (Apache and PHP be damned) you could install MySQL on its own, from http://dev.mysql.com/downloads/mysql/5.0.html#macosx-dmg
+
+2. Install Python2.4, then mysqldb
+
+  Since writing this, "mysqldb now works with up to python2.5":http://sourceforge.net/projects/mysql-python/ (it didn't), so you don't need the Python 2.4 steps below...
+
+  You can get these from http://pythonmac.org/packages/py24-fat/index.html - use the small .dmg and .zip links. You can still run python2.5 by typing python2.5 instead of python at the command line - you needn't downgrade python to 2.4.
+
+  Test that it worked by running:  
+  `python -V`
+
+  it should say python 2.4.4 or so.
+
+3. Get django:
+
+  To get the official version or Django, download it from http://www.djangoproject.com/download/, and type:  
+  `tar xzvf Django-0.96.1.tar.gz`  
+  `cd Django-0.96.1  `
+  `sudo python setup.py install`
+
+  It will install (on OS X) into something like: /Library/Frameworks/Python.framework/Versions/2.4/lib/python2.4/site-packages/django/). If you wanted to use svn to get the latest development version, see 'from trunk' above.
+
+4. Get Django running with a MySQL database
+
+  Note: if all you wanted was to get Django running a MySQL database, you can stop (in relief) after this step.
+
+  * Start a new project:  
+    `cd ~/Sites`  
+    `django-admin.py startproject helloworld`  
+    `cd helloworld`  
+    `python manage.py runserver 0.0.0.0:8080`
+
+      To check it works, visit: http://localhost:8080
+
+  * Create a mysql database (also called a 'schema') and a user who is able to access the schema:
+
+    i. make sure mysql server is running. MAMP will be able to tell you. The official MySQL OS X distribution has a System Preferences panel to turn it on and off.
+
+    ii. I use MySQL administrator (part of the "GUI tools":http://dev.mysql.com/downloads/gui-tools/5.0.html) to create the schema, the user, and assign permissions from the schema to the user.
+
+  * Tell django to connect to that new database, in settings.py, edit:  
+
+      `DATABASE_ENGINE = 'mysql'  
+      DATABASE_NAME = 'djangotest'  
+      DATABASE_USER = 'djangouser'  
+      DATABASE_PASSWORD = 'pass123'  
+      DATABASE_HOST = '' # Set to empty string for localhost.  
+      DATABASE_PORT = '8889'# Set to empty string for default (3306).`
+
+    Note: MAMP's MySQL runs on port 8889 by default, but there is a preference to change it to 3306. It doesn't matter which you use, so long as Django's DATABASE_PORT matches.
+
+  * Test the app's connection to the database  
+    `python manage.py syncdb`
+
+    this will ask you to create a superuser the first time it is run (see above).
+
+5. Install Apple's XCode tools
+
+  The developer tools are on the OS X install CD, or you can "download the latest version from Apple":http://developer.apple.com/tools/xcode/ (join if you need to). They install straightforwardly with the installer.
+
+6. Get Django running with Apache
+
+  Alas, we will need to compile mod_python, since it doesn't come with MAMP (request that it does here: http://forum.mamp.info/viewtopic.php?t=1325).
+
+  NOTE: since writing, current wisdom is to use mod_wsgi instead - see:
+http://docs.djangoproject.com/en/dev/howto/deployment/modwsgi/#howto-deployment-modwsgi
+
+  * Download and install mod_python 3.3.1  
+(adapted from http://cavedoni.com/2005/django-osx). First, find out the true location of python (not the 'which python' location, which is a symlink). I did it by typing:  
+  `python --help`
+
+  and copying the path, displayed after 'usage:'. Mine was /Library/Frameworks/Python.framework/Versions/2.4/Resources/Python.app/Contents/MacOS/Python.
+
+  Now run these:  
+
+    cd ~/Desktop
+    curl -O http://www.apache.org/dist/httpd/modpython/mod_python-3.3.1.tgz
+    gunzip mod_python-3.3.1.tgz
+    tar xvf mod_python-3.3.1.tar
+    cd mod_python-3.3.1
+    ./configure --with-apxs=/Applications/MAMP/Library/bin/apxs --with-python=/Library/Frameworks/Python.framework/Versions/2.4/Resources/Python.app/Contents/MacOS/Python
+
+  (Note that the apxs path is the location of apxs within MAMP, which should be the same for everyone, and the python path is the location of your python, as found above).
+
+  Finish off with:  
+    `make  
+    sudo make install`
+
+  * Activate mod_python by editing /Applications/MAMP/conf/apache/httpd.conf and adding:
+
+  `LoadModule python_module modules/mod_python.so`
+
+  (right below all the other LoadModule lines is best). Note: in MAMP Pro, you have to go File/Edit Template/httpd.conf
+
+  * Set up your new site by editing the /etc/hosts file by adding a line like this:  
+  `127.0.0.1 django.local`
+
+  edit the /Applications/MAMP/conf/apache/httpd.conf file and add the following at the end of it (remember to edit [YOUR USER NAME]):
+
+    <VirtualHost django.local>
+    	DocumentRoot /Users/[YOUR USER NAME]/Sites
+    	SetHandler mod_python
+    	PythonHandler django.core.handlers.modpython
+    	PythonPath sys.path+['/Users/[YOUR USER NAME]/Sites']
+    	SetEnv DJANGO_SETTINGS_MODULE helloworld.settings
+    </VirtualHost>
+
+  Note: MAMP Pro users can do this in the 'Hosts' tab of the control panel. Paste everything from SetHandler mod_python to the SetEnv line into "Customized virtual host directory settings" of the panel.
+
+  * (re)Start Apache and MySQL, using the MAMP control panel, and visit: http://django.local:8888
+
+  (8888 being MAMP's standard port for apache. If you set MAMP to use the Apache default (port 80), you don't need to give a port number).
+
+  It worked!
+
+  Again, of course, you haven't actually done any work yet.

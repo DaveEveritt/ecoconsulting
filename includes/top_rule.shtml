@@ -1,0 +1,23 @@
+<div id="rules">
+    <form style="float:right;">
+      <input style="margin-top:14px;padding:1px 2px 4px 23px;background-position:5px 5px" type="text" id="st-search-input" class="st-search-input" />
+    </form>
+    <div id="st-results-container"></div>
+    <script type="text/javascript">
+      var Swiftype = window.Swiftype || {};
+      (function() {
+        Swiftype.key = 'JNVdyjpeeFPMzvpz43rs';
+        Swiftype.inputElement = '#st-search-input';
+        Swiftype.resultContainingElement = '#st-results-container';
+        Swiftype.attachElement = '#st-search-input';
+        Swiftype.renderStyle = "overlay";
+    
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = "//swiftype.com/embed.js";
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+      }());
+    </script>
+</div>

@@ -1,0 +1,27 @@
+body {
+  color: #666; font-family: 'Lucida Grande', Verdana, Helvetica, sans-serif;
+}
+a:link, a:visited {
+  color: #666;
+}
+nav ul, nav ul li {
+  padding: 0; margin: 0;
+}
+nav ul {
+  list-style-type: none; text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a:link, nav ul li a:visited {
+  display: block; padding: 4px 1em; background: #ddd; color: #555; text-decoration: none; margin: 0 2px;
+}
+nav ul li a.active {
+  background: #309148; color: #eee;
+}
+#twitterfeed {
+  width: 100%; margin: 0 auto; max-width: 520px; min-width: 200px;
+}
+#twitterfeed > div {
+  width: 100%; min-width: 180px;
+}

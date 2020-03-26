@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css circle links</title>
+  <!-- IE8: create single missing element with HTML 5 shiv (Resig) -->
+  <!--[if lte IE 8]>
+  <script>document.createElement("nav");</script>
+  <![endif]-->
+  <style>
+  body {
+    background:#444;
+    text-align:center;
+  }
+  a { outline:none; }
+  .circles a:link,
+  .circles a:visited {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    margin-left:8px;
+    text-decoration:none;
+    color:#fff;
+    line-height:50px;
+    font-size:40px;
+    text-align:center;
+    -webkit-text-shadow:0px 0px 3px #000;
+       -moz-text-shadow:0px 0px 3px #000;
+        -ms-text-shadow:0px 0px 3px #000;
+         -o-text-shadow:0px 0px 3px #000;
+            text-shadow:0px 0px 3px #000;
+    border:2px solid white;
+    -webkit-border-radius:50%;
+       -moz-border-radius:50%;
+        -ms-border-radius:50%;
+         -o-border-radius:50%;
+            border-radius:50%;
+    -webkit-transition:all 1.25s;
+       -moz-transition:all 1.25s;
+        -ms-transition:all 1.25s;
+         -o-transition:all 1.25s;
+            transition:all 1.25s;
+  }
+  .circles a:hover {
+    -webkit-box-shadow:0px 0px 10px #fff;
+       -moz-box-shadow:0px 0px 10px #fff;
+        -ms-box-shadow:0px 0px 10px #fff;
+         -o-box-shadow:0px 0px 10px #fff;
+            box-shadow:0px 0px 10px #fff;
+  }
+  .circles a:active {
+    border-color:rgba(255,255,255,0.7);
+  }
+  .circles a:first-child { margin-left:0; }
+  .circles a.num1 {background:#c00;}
+  .circles a.num2 {background:#e80;}
+  .circles a.num3 {background:#eb0;}
+  .circles a.num4 {background:#090;}
+  .circles a.num5 {background:#229;}
+  .circles a.num6 {background:#327;}
+  .circles a.num7 {background:#517;}
+  </style>
+</head>
+
+<body>
+
+  <nav class="circles">
+    <a class="num1" href="#">1</a>
+    <a class="num2" href="#">2</a>
+    <a class="num3" href="#">3</a>
+    <a class="num4" href="#">4</a>
+    <a class="num5" href="#">5</a>
+    <a class="num6" href="#">6</a>
+    <a class="num7" href="#">7</a>
+  </nav>
+  
+  <a style="display:block;width:132px;margin:100px auto 0;background:#fff;padding:2px;border-radius:4px;" href="/training/"><img src="/images/eco-logo.gif" width="132" height="82"></a>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+Getting Django 0.96 and Python 2.5.1 up and running on Mac OS X 10.4
+
+
+on this page:
+	http://www2.jeffcroft.com/blog/2006/may/02/django-non-programmers/
+Mihira Jayasekera, on May 16th, 2006, said:
+	'I am blown away by what you're doing (and are able to do) with Django. I'd love to start playing with it but I have you beat in the non-programming department. Do you know of any absurdly simple instructions for getting Django installed on Mac OS X (10.4.6)?'
+
+Which inspired my to do these 'absurdly simple' instructions. Well, as simple as possible.
+
+It is condensed from 'How to install Django':
+	http://www.djangoproject.com/documentation/0.96/install/
+DON'T use these instructions by mistake:
+	http://www.djangoproject.com/documentation/install/
+
+If you want more information use the [why] links.
+
+I also include references used at the end.
+
+This is a draft, the final version will be a proper web page. Mail deveritt[at]innotts.co.uk if you have anything to say about it.
+
+
+0. Will this guide be useful for you?
+
+This guide covers only what's needed to try out Django (using SQLite as a database) to do some tutorials. It isn't for real development.
+
+So the answer is yes only if you:
+	run a version of Mac OS X 10.4
+	haven't already installed Django
+	don't yet need to build a real site with Django
+	want to get a feel for the Django by doing the tutorials
+	find other instructions confusing or conflicting
+	know how to open Apple's Terminal application
+	are logged into OS X as a user with admin privileges
+
+To keep things simple, it avoids Subversion or Macports [why].
+
+If you want to start developing a real site, I don't yet have a guide for that :-)
+
+There are points at which I say 'I can help no more', for the simple reason that I cannot control your computer to find out what's wrong.
+
+Whenever there's an instruction to type something into Terminal, type in the exact command (copy and paste it if you like) shown on the line below and press return.
+
+
+1. Install Apple's Xcode Tools (unless you already have them)
+
+You can get the latest version [why] from:
+	http://developer.apple.com/tools/xcode/
+
+
+2. Check your version of Python
+
+In Terminal, type:
+	python -V
+
+(that's a minus sign and a capital V)
+
+If the version is 2.4 or less and you haven't done anything you really want to keep with the older version, install Python 2.5.1 [why] from:
+	http://www.python.org/ftp/python/2.5.1/python-2.5.1-macosx.dmg
+
+The installer puts:
+	some extra Python applications in "Applications/MacPython 2.5",
+	command-line tools in /usr/local/bin
+	and underlying machinery in
+	/Library/Frameworks/Python.framework.
+
+In Terminal, type:
+	python -V
+
+to check the new version number. If it's still 2.3.something or 2.4.something, I can help no more.
+
+
+3. Install Django 0.96
+
+Get the latest stable version from:
+	http://www.djangoproject.com/download/0.96/tarball/
+	(parent: http://www.djangoproject.com/download/)
+
+Open Terminal and go to where your downloads are (Desktop?)
+
+Enter each of these in Terminal:
+	tar xzvf Django-0.96.tar.gz
+	cd Django-0.96
+	sudo python setup.py install
+
+In Terminal, type:
+	django-admin.py
+
+if this works
+	you get a screen of instructions (ignore them at this stage).
+If it gives an error:
+	Open .bash_login and add the path to django-admin.py:
+	export PATH="/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/bin:$PATH"
+	Make django-admin.py executable by typing in Terminal:
+	chmod +x /Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/bin/django-admin.py
+
+Now try importing Django - in Terminal, type:
+	python
+You'll get the Python prompt, which looks like this
+>>> 
+then type:
+>>> import django
+
+if you get a blank line and cursor (possibly blinking accodring to your Terminal settings),
+	all is well.
+if you see something that ends with: ImportError: No module named django,
+	I can help no more.
+
+Hit control-D to get out of the python shell.
+
+
+
+5. Install PySQLite
+
+The sqlite3 database itself is part of Mac OS X 10.4 so you don't need to install it.
+Its path is
+	Õ/usr/bin/sqlite3Õ.
+
+You just need PySQLite to allow Python to communicate with it.
+
+Download PySQLite from:
+	http://initd.org/pub/software/pysqlite/releases/2.3/2.3.5/pysqlite-2.3.5.tar.gz
+(parent: http://initd.org/tracker/pysqlite/wiki/pysqlite)
+
+In Terminal, go to where this has downloaded (Desktop?) [why]
+Enter each of these in Terminal:
+	tar xzvf pysqlite-2.3.5.tar.gz
+	cd pysqlite-2.3.5
+
+Enter what the following page suggests:
+	http://initd.org/pub/software/pysqlite/doc/install-source.html
+in Terminal:
+	python setup.py build
+
+then:
+	sudo python setup.py install
+
+Test it in the Python shell by typing in Terminal:
+	python
+when you see:
+>>> 
+type:
+>>> from pysqlite2 import test
+>>> test.test()
+
+You'll get a line of dots - let it complete the test (when you'll see the cursor on a blank line).
+
+Ignore any error [why] that starts:
+	FAIL: CheckOnConflictRollback (pysqlite2.test.regression.RegressionTests)
+
+Hit control-D to get out of the python shell.
+
+
+YOU'RE FINALLY READY TO START DJANGO TUTORIAL 01!
+(see: django-tutorial-01.txt)
+
+
+----------
+References
+
+Python on the Mac:
+	http://www.python.org/download/mac/
+MacPython:
+	http://www.cwi.nl/~jack/macpython and
+	http://pythonmac.org/

@@ -1,0 +1,26 @@
+/* SITE-WIDE STYLES */
+
+html * {
+   margin:0;
+   padding:0;
+}
+
+body {
+   font-family:Arial,sans-serif;
+   font-size:90%;
+   background:#999;
+}
+
+#container {
+   position:relative;
+   width:600px;
+   margin:0 auto;
+   padding:1em 24px;
+   background:white;
+}
+
+h1 {
+   border: 1px #eee solid;
+   padding-left: 10px;
+   background: URL("images/greenfadetop.gif") repeat-x;
+}

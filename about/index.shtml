@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="About Eco Consulting" --><!--#set var="directory_name" value="about" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>About Eco Consulting</h1>
+		
+		<p>Founded in 1992, and initially working in collaboration with the CBI and DTI to introduce national environmental initiatives to small businesses, Eco Consulting streamlined the publishing of the early CBI Environment Newsletters and held a number of exhibitions designed to raise awareness of environmental issues in SMEs.</p>
+		
+		<p>Related current work along environmental lines is being carried out with <a href="http://greenview.dmu.ac.uk/">Greenview research group</a> at the IESD (<a href="http://www.iesd.dmu.ac.uk/">Institute of Energy and Sustainable Development</a>) at De Montfort University, Leicester.</p>
+		
+		<p>With the CBI Environment Management Group, Eco Consulting piloted a basic information system called <cite>Simple Solutions</cite> to help small businesses initiate environmental policies. We also worked with printers on piloting alternative materials for print publishing, and began to strengthen our ethical stance.</p>
+		
+		<h2>We don't do 'business websites' unless we like the business</h2>
+		
+		<p>In the mid-90's the shift to digital technology meant refocussing on the web and information management. Eco Consulting chose to work in the educational, voluntary and cultural sectors, which is where the focus still lies. Our strengths are an ability to address the very individual needs of - say - a local artist, while at the same time to assist larger organisations to better serve their stakeholders (like, for instance, the local artist).</p>
+		
+		<h2>Design and print</h2>
+		
+		<p>It's easy to forget that books, magazines and other publications still require design and production skills - not everything is on the web! We undertake design and print publishing work, in collaboration with the extremely competitively-priced and ethical <a href="http://www.russellpress.com/">Russell Press</a> of Nottingham (established in 1968 by the Bertrand Russell Peace Foundation).</p>
+		
+	</div>
+</div>
+</body>
+</html>

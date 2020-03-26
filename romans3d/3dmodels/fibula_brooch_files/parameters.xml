@@ -1,0 +1,13 @@
+<body>
+<param name="rotateX" value="0"/>
+<param name="rotateY" value="2"/>
+<param name="model" value="fibula_brooch.123"/>
+<param name="width" value="800"/>
+<param name="height" value="560"/>
+<param name="resizeToStage" value="true"/>
+<!-- <param name="noModelHighRes" value="fibula_brooch_ext.123"/> -->
+<param name="controls" value="../3d_shared/3dsom_controls.swf"/>
+<!-- <param name="background" value="3dsom_backdrop.swf"/> -->
+<param name="measureUnits" value="mm"/>
+<param name="modelScale" value="100.0000"/>
+</body>

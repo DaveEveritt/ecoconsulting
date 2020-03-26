@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Javascript File API test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    function testFileapi(){
+        var filetest = {'window.File': window.File, 'window.FileReader': window.FileReader, 'window.FileList': window.FileList, 'window.Blob': window.Blob};
+        for (var i in filetest) {
+            if (filetest[i]) {
+                document.getElementById('output').innerHTML += i + ' - supported<br>';
+            } else {
+                document.getElementById('output').innerHTML += i + ' - <span style="color:red">unsupported</span><br>';
+            }
+        }
+    }
+    </script>
+</head>
+<body onload="testFileapi()">
+    <h1>Javascript File API test</h1>
+    <p>HTML5 allows interaction with local files via its <a href="http://www.w3.org/TR/file-upload/">File API</a> specification. This browser supports the following:</p>
+    <p id="output"></p>
+    <p style="font-size: 50%">
+        Test adapted from <a href="http://www.html5rocks.com/tutorials/file/dndfiles/">Reading local files in JavaScript</a> (HTML5 Rocks).<br>
+        Plus posts on Javascript hashes/associative arrays/dictionaries from <a href="http://www.mojavelinux.com/articles/javascript_hashes.html">Java Linux</a>, <a href="http://www.quirksmode.org/js/associative.html">Quirksmode</a> and <a href="http://blog.xkoder.com/2008/07/10/javascript-associative-arrays-demystified/">XCoder</a>.
+    </p>
+</body>
+</html>

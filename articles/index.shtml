@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Articles and tutorial resources" --><!--#set var="directory_name" value="articles" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container">
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<h1>Articles &amp; resources</h1>
+		
+		<p>Eco Consulting likes to spread good practice in web design and code, and can deliver training in web technologies, complemented by general overviews and guides. We combine patience for the beginner's learning curve (or anyone upgrading their skills) with specialist expertise.</p>
+		
+		<p>These public articles and examples aim to help anyone wanting to code (client-side) more intelligently, as well as experienced web designers making the transition to code or looking for a simple example. Please respect authorship by providing a reference if you quote or link to anything here.</p>
+
+		<h2>CSS demos and examples</h2>
+		
+		<dl>
+<!--
+			<dt><a href="./.shtml">TITLE</a></dt>
+			<dd>DESCRIPTION.</dd>
+-->
+			
+			<dt><a href="/examples/css-circles/">Make a menu with pure CSS circles</a></dt>
+			<dd>The CSS3 <code>border-radius</code> property can be given a 50% value to make perfect resizable circles. Add a subtle CSS3 glow transition to complete the effect.</dd>
+			
+			<dt><a href="/examples/css-tooltip/">Pure CSS tooltips</a></dt>
+			<dd>The CSS <code>:before</code> and <code>:after</code> pseudo-elements, with some sneaky border hacking, can be used to generate nice-looking tooltips.</dd>
+
+			<dt><a href="/examples/css-perspective/">Animated perspective in pure CSS</a></dt>
+			<dd>With the CSS3 properties <code>perspective</code>, <code>transition</code> and <code>transform</code>, smooth perspective transitions are possible.</dd>
+			
+			<dt><a href="/examples/css-rollover/">Flicker-free CSS rollovers</a></dt>
+			<dd>For non-flicker CSS rollover, don't swap images on <code>:hover</code> - it can cause problems with Internet Explorer and forces an image load. Use this 'conceal and reveal' technique instead.</dd>
+		</dl>
+
+
+		<h2>Articles/examples on web coding</h2>
+
+		<dl>
+			<dt><a href="http://ecoconsulting.co.uk/examples/mobile/tetris.html">Tetris for mobile</a></dt>
+			<dd>Made from a tutorial, using web technologies for mobile development. If you have an iOS device, save to home screen and use like an app.</dd>
+
+			<dt><a href="/examples/javascript/javascript-wrinkles/">Javascript wrinkles</a></dt>
+			<dd>Notes made on the Javascript journey—at least, things I think will be useful to others on the same journey.</dd>
+
+			<dt><a href="/examples/jquery/show-hide-toggle.html">JQuery+javascript show/hide toggle with changing link text</a></dt>
+			<dd>You often see 'show article' links using JQuery <code>.toggle</code>, but without changing the link to 'hide', so this (imperfect) version does that.</dd>
+			
+			<dt><a href="./nanoc-speed-start.shtml">Build a website using nanoc on OS X</a></dt>
+			<dd>Several mini-frameworks exist that enable you to create websites from templates and text files, and <a href="http://nanoc.stoneship.org/">nanoc</a> is one of the best.</dd>
+			
+			<dt><a href="./mongo-osx-install.shtml">Install MongoDB on OS X</a></dt>
+			<dd>A clearer, minimal version of the MongoDB 'quickstart' for OS X.</dd>
+			
+			<dt><a href="/examples/html5/index.html">An HTML5 example page</a></dt>
+			<dd>Here's a page using HTML5 elements styled with CSS. Not rocket science (or brain surgery), but useful as a starting point.</dd>
+			
+			<dt><a href="./css_includes.shtml">Use SSI to create CSS variables</a></dt>
+			<dd>Apache's Server-Side Includes mean you can (e.g.) store all your CSS colours in one file and change every instance throughout all your stylesheets.</dd>
+			
+			<dt><a href="./semantic_markup.shtml">Introducing semantic HTML markup</a> (needs updating for HTML5)</dt>
+			<dd>learn how to make well-structured and semantically marked-up body text, and improve the structure of your pages for accessibility, search engines and data harvesting.</dd>
+		</dl>
+
+		<h2>A book, some websites and software</h2>
+		
+		<p>Currently, these are a few resources I would recommend for learning to actually build websites with HTML, CSS and Javascript:</p>
+
+		<dl title="books and websites on web design and coding">
+			<dt><a href="http://www.amazon.co.uk/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.co.uk%2FTranscending-CSS-Design-Voices-Matter%2Fdp%2F0321410971%2F&&amp;tag=daveeveritt&&amp;linkCode=ur2&&amp;camp=1634&&amp;creative=6738">Transcending CSS: The Fine Art of Web Design</a><img src="http://www.assoc-amazon.co.uk/e/ir?t=daveeveritt&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></dt>
+			<dd>This book stops you worrying about how sites appear in various browsers and eases you into using <a href="./semantic_markup.shtml" title="Eco Consulting article on writing well-formed code">well-structured, semantic HTML</a> and the full range of CSS possibilities. It outlines the kind of web code we should all be implementing now.</dd>
+			
+			<dt><a href="http://teamtreehouse.com/">Team TreeHouse</a></dt>
+			<dd>An excellent UK-based site with just about everything you need to know about building websites, and an intro to mobile coding for iOS. I used to recommend <a href="http://www.webdesignfromscratch.com/">Web Design From Scratch</a> but it seems a little cluttered now, although there are still some good tutorials there.</dd>
+			
+			<dt><a href="http://www.codecademy.com/">Code Academy</a></dt>
+			<dd>2012 is <a href="http://codeyear.com/">Code Year</a>, and Code Academy offers step-by-step tutorials based on Javascript, a great introduction to learning such things as variables, functions, conditional statements and the like.</dd>
+			
+			<dt><a href="http://www.interiorwebdesign.com/basic-guide-to-web-design">Basic guide to web design</a></dt>
+			<dd>This page of useful links was kindly suggested by a visitor. <a href="http://library.albany.edu/imc/webdesign/page5.html#tables">One</a> or <a href="http://www.sas.upenn.edu/computing/lrc/documentation/dreamweaver/makingpages">two</a> links have outdated information on tables and some of the tutorials use capital HTML tags (which developers now avoid), and the font links don't mention <a href="http://www.font-face.com/">@font-face</a> or <a href="http://www.google.com/webfonts">Google web fonts</a>, but it's not too bad as a starting point.</dd>
+			
+			<dt><a href="http://www.panic.com/coda/" title="Go to the Coda website">Coda</a></dt>
+			<dd>Hand-coding is the best way to learn (fewer frustrations and more control than visual editors), and Coda fits the job. Everything is in one place: advanced text editor, visual style sheet editor, page previews, ftp, command-line shell, plus online reference works. You can store all your sites' settings and code/upload from one application; you don't need much else (see <a href="http://borkweb.com/story/coda-finally-a-mac-development-tool-i-like" title="the BorkWeb blog goes compares Coda with other editors">this review</a>). Sadly Mac OS X-only, but for Windows there's the excellent <a href="http://editplus.com/" title="all-in-one web editor for Windows">EditPlus</a>.</dd>
+		</dl>
+
+		<h2>Other resources</h2>
+		
+		<dl title="articles free and Open Source software and resources">
+			<dt><a href="./opensource.shtml">Free and open source tools</a></dt>
+			<dd>Some of the best software and online resources remain free (or free at a usable entry level), and there are excellent and compatible alternatives to the big software names. These selected links were used in a workshop <a href="http://cii.dmu.ac.uk/work/backpack.html"><cite>Tools for online collaboration and management</cite></a> at the <a href="http://cii.dmu.ac.uk/">Cii conference</a>, Leicester, 6 Dec 2007.</dd>
+
+			<dt><a href="./python/python-django-OSX.shtml">Getting started with Django</a> (old version)</dt>
+			<dd>Django is a Python web framework (like Ruby on Rails or Perl's Catalyst). If <abbr title="Model-View-Controller">MVC</abbr> or <dfn title="a collection of tools and best practice modules for building dynamic websites">framework</dfn> mean nothing to you, read this <a href="http://www.wilsonminer.com/posts/2006/may/08/framework-fanatics/">article on web frameworks</a>.</dd>
+
+			<dt><a href="http://perlbuzz.com/2008/08/why-do-designers-fail-to-adopt-perl.html">Web designers and web developers</a></dt>
+			<dd>An article written for PerlBuzz that asks '<a href="http://perlbuzz.com/2008/08/why-do-designers-fail-to-adopt-perl.html">Why do designers fail to adopt Perl?</a>' but goes into the 'designers v developers' issue, frameworks, templates, and why things should - and sometimes aren't - separated.</dd>
+		</dl>
+
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+
+	</div>
+</div>
+</body>
+</html>

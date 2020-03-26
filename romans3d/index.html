@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if IE]><![endif]--> 
+	<title>Archaeological artefacts from Roman Leicester</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/libs/jquery-1.7.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#showhide').toggle(
+			function() {
+				$('#sidebar').animate({right:0}),
+				$('.info').css("color","rgba(240,100,100,1.0)")
+			},
+			function() {
+				$('#sidebar').animate({right:-270}),
+				$('.info').css("color","#006")
+			}
+		),
+		$('#sidebar').hover(
+			function() { $(this).animate({opacity:0.9},{queue:false,duration:900}) },
+			function() { $(this).animate({opacity:0.35},{queue:false,duration:900}) }
+		)
+	});
+	</script>
+</head>
+
+<body>
+<h1>Archaeological artefacts from Roman Leicester</h1>
+
+	<div id="content">
+		<div id="mainmap">
+			<img src="images/roman-leicester.png" alt="Roman Leicester">
+			<a href="upchurch-ware-bowl.html"><img id="upchurch_001" class="itemicon" src="images/upchurch-ware-icon.jpg" alt="Upchurch Ware Icon" width="40" height="31"></a>
+			<a href="fibula.html"><img id="fibula_001" class="itemicon" src="images/fibula-brooch-icon.jpg" alt="Fibula brooch Icon" width="40" height="42"></a>
+			<a href="pin-brooch.html"><img id="pinbrooch_001" class="itemicon" src="images/pin-brooch-icon.jpg" alt="Pin Brooch Icon" width="40" height="30"></a>
+			<a href="anubis.html"><img id="anubis_001" class="itemicon" src="images/anubis-icon.jpg" alt="Anubis Icon" width="40" height="43"></a>
+		</div>
+	</div>
+
+	<div id="sidebar">
+		<a class="info" id="showhide" href="#">i</a>
+		<div class="infocontent home">
+			<h2>View 3D models</h2>
+			<p>These models of Roman achaeological finds from the city of Leicester are viewed using controls that allow you to turn, enlarge and (for some objects) measure them.</p>
+			<ul class="itemlist">
+				<li><a href="anubis.html">Anubis carving</a></li>
+				<li><a href="upchurch-ware-bowl.html">Upchurch Ware bowl</a></li>
+				<li><a href="pin-brooch.html">Pin Brooch</a></li>
+				<li><a href="fibula.html">Fibula Brooch</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

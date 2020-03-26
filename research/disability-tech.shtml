@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="none" --><!--#set var="page_name" value="public research: Arts and disability interfaces" --><!--#set var="directory_name" value="research" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+</head>
+
+<body>
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+
+		<div style="width:142px; padding:4px; margin-left:8px; margin-right:12px; margin-bottom:12px; float:right; text-align:center; border:1px #636 solid;">
+			<img src="images/mark-pauline.jpg" alt="Mark Pauline of the Survival Research Labs" width="142" height="180" /><br />
+			<span style="margin-top:6px;font-size:smaller;color:#390;">American techno-artist Mark Pauline (<span class="green"><a href="http://www.srl.org/">Survival Research Labs</a></span>) with one of his robot hands</span>
+		</div>
+
+		<h1 style="margin-left:30px; margin-top:0;">Arts and disability interfaces<br /><span style="font-size:smaller;">new technology, disabled artists and audiences</span></h1>
+		<p>
+			This report (in 4 parts) was undertaken as a <a href="http://www.newaudiences.org.uk/feature.php?essential_audiences_20030630_1">New Audiences scoping study for Arts Council England</a> to recommend a suggested programme of further activities and research, designed to enable disabled artists to choose, utilise and adopt new technologies. It includes:<br />
+		</p>
+			<ul>
+				<li>a comprehensive survey of existing and new technologies, both assistive and of general use, with examples of current use;</li>
+				<li>the relevance of specific developments in new technologies for disabled artists, arts practitioners and audiences;</li>
+				<li>specific recommendations for further activity and research.</li>
+			</ul>
+		<p>
+			The study aims to describe key relevant technologies in clear language. The focus is on new or emerging technology and the methods being developed to interact with it, rather than on standard technology that has replaced older methods (as in animation and film, for instance). Issues of aesthetics, access, disability and other social or cultural factors are introduced only where they are pertinent to the aims of the study.<br />
+			<br />
+			Warning: links to online sources were live only when checked from August to October 2002.<br />
+			<br />
+			All 4 documents are available in either Microsoft Word or PDF format (Some Word documents are larger file sizes but text-readable, PDFs are smaller and don't require Word, but are not always compatible with text-reading software).<br />
+			<br />
+		</p>
+		<table style="margin-left:30px; width:592px; font-size:smaller;" border="1" cellpadding="2" cellspacing="1" summary="a list of 4 documents on disability, art and technology in either Word doc or PDF format, with document sizes so you can choose which format to download" style="margin-top: 6px">
+			<tr><th style="background-color: #cccccc">document name</th><th style="background-color: #cccccc">kind</th><th style="background-color: #cccccc">size</th><th style="background-color: #cccccc">description</th></tr>
+			<tr><td><a href="./papers/distech-study.doc">distech-study.doc</a></td><td>Word</td><td>93k</td><td>main report and recommendations</td></tr>
+			<tr><td><a href="./papers/distech-study.pdf">distech-study.pdf</a></td><td>PDF</td><td>145k</td><td>PDF of above</td></tr>
+			<tr><td><a href="./papers/distech-report.doc">distech-report.doc</a></td><td>Word</td><td>7500k (7.5mb)</td><td>details of available technology and examples</td></tr>
+			<tr><td><a href="./papers/distech-report.pdf">distech-report.pdf</a></td><td>PDF</td><td>244k</td><td>PDF of above</td></tr>
+			<tr><td><a href="./papers/distech-images.doc">distech-images.doc</a></td><td>Word</td><td>840k</td><td>images to accompany the above document</td></tr>
+			<tr><td><a href="./papers/distech-images.pdf">distech-images.pdf</a></td><td>PDF</td><td>415k</td><td>PDF of above</td></tr>
+			<tr><td><a href="./papers/pervasive-technology.doc">pervasive-technology.doc</a></td><td>Word</td><td>1004k (1mb)</td><td>a special report on ambient computing, with images</td></tr>
+			<tr><td><a href="./papers/pervasive-technology.pdf">pervasive-technology.pdf</a></td><td>PDF</td><td>695k</td><td>PDF of above</td></tr>
+		</table><br />
+		<br />
+	</div>
+</div>
+</body>
+</html>
+<!--
+	<br><img src="images/mark-pauline.jpg" alt="Mark Pauline of the Survival Research Labs" width="142" height="180"><br><br>
+	<small>American techno-artist Mark Pauline with one of his robot hands<br></small>
+-->

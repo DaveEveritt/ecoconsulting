@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Javascript tips and wrinkles</title>
+
+<style type="text/css">
+    body {font-size: 110%;margin: 0;}
+    h1, h2, h3 {font-family: sans-serif;color: #333;background-color:#eee}
+    h1 {margin: 0;padding: 5px 10px; background-color:#eee;}
+    h2 {margin-top: 0; padding: 0 10px 5px; font-weight: normal; border-bottom: 2px solid #999;}
+    h3 {background-color:transparent; border-bottom: 2px solid #ccc}
+    #content {padding: 0 10px;}
+    dt {font-weight: bold; margin-top: 1em;}
+    code, code a:link, code a:visited {color: #633;}
+    code a:hover {color: #933;}
+</style>
+
+<script type="text/javascript">
+function PlusOperator() {
+    alert(+"1.1" + +"1.1");
+}
+function IsDefined() {
+    var myArray = new Array();
+    if (!myArray[0]) {
+        alert("myArray[0] not defined!");
+    }
+}
+function Scope() {
+    if (true) { var x = 5 }
+    alert("x: " + x + ", y: " + y);
+}
+var y = 6;
+
+const prefix = 212;
+z = prefix + 424;
+
+function Nums(num) {
+    var mynums = ["one", "two", "three"];
+    alert(mynums[num]);
+}
+
+function Multiline() {
+    var mystring = "One line and\
+ another";
+    alert(mystring);
+}
+
+var flight = {
+    airline: "Oceanic",
+    number: 815,
+    departure: {
+        IATA: "SYD",
+        time: "2004-09-22 14:55",
+        city: "Sydney"
+    }, 
+    arrival: {
+        IATA: "LAX",
+        time: "2004-09-23 10:42",
+        city: "Los Angeles"
+    } 
+};
+
+var employees = { "accounting" : [
+    { "firstName" : "John",
+      "lastName"  : "Doe",
+      "age"       : 23 },
+
+    { "firstName" : "Mary",
+      "lastName"  : "Smith",
+      "age"       : 32 }
+]};
+
+</script>
+</head>
+<body>
+    <h1>Javascript wrinkles</h1><a style="float:right" href="/training/"><img src="/images/eco-logo.gif"></a>
+    <h2>Notes for people who think <code>console.log()</code> is inherently interesting.</h2>
+    <div id="content">
+      <h3>Javascript notes and quirks</h3>
+      <dl>
+          <dt>The plus operator: <code>+</code></dt>
+          <dd>strings containing numbers work in calculations if prefixed with a <code>+</code> sign e.g. <a href="#" onclick="PlusOperator()">add these</a>: <code>+"1.1" + +"1.1"</code>.</dd>
+        
+          <dt>Check existence</dt>
+          <dd><code>var myArray = new Array(); if (!myArray[0]) {console.log("Not defined")}</code> uses <code>false</code> to <a href="#" onclick="IsDefined()">print the statement</a>.</dd>
+        
+          <dt>Variable scope</dt>
+          <dd>
+              local to the code a block resides within (not block statement scope). They are also 'hoisted' as if at the top of a function/statement.<br>
+              <a href="#" onclick="Scope()">Try this</a> <code>function Scope() { if (true) { var x = 5 }; alert("x: " + x + ", y: " + y); }; var y = 6;</code>
+          </dd>
+        
+          <dt>Constants</dt>
+          <dd>
+              Declared with the <code>const</code> keyword, e.g. <a href="#" onclick="alert(z)"><code>const prefix = '212';z = prefix + 424;alert(prefix);</code></a>.<br>
+              Constants cannot share a name with a function or variable in the same scope, or be called directly e.g. <a href="#" onclick="alert(prefix)"><code>alert(prefix);</code></a>.
+          </dd>
+        
+          <dt>Literals</dt>
+          <dd>Array literals (literals have fixed values) use square brackets: <code>var mynums = ["one", "two", "three"]; <a href="#" onclick="Nums(0)">alert(mynums[0])</a></code>.</dd>
+        
+          <dt>Avoid spaces after <code>\</code> in multiline string literals</dt>
+          <dd>Always add a return immediately after <code>\</code> as '<code>\ </code>' will produce an error. This <a href="#" onclick="Multiline()">multiline string is broken before 'another'</a>.</dd>
+        
+          <dt>Return the entire code for a function</dt>
+          <dd>Simply omit the brackets <a href="#" onclick="alert(IsDefined)"><code>alert(IsDefined)</code></a></dd>
+        
+          <dt id="objvals">Retrieving values from an object</dt>
+          <dd>
+            value by dot notation: <a href="#objvals" onclick="alert(flight.departure.IATA)"><code>flight.departure.IATA</code></a><br>
+            value by name: <a href="#objvals" onclick="alert(flight['number'])"><code>flight['number']</code></a> (Douglas Crockford: <a href="http://www.amazon.co.uk/gp/product/0596517742/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=daveeveritt&linkCode=as2&camp=1634&creative=6738&creativeASIN=0596517742">Javascript: the Good Parts</a>, or <a href="http://www.youtube.com/watch?v=hQVTIJBZook">the video</a> or <a href="http://yuiblog.com/crockford/">a series</a>)<br>
+            value of array element in object: <a href="#objvals" onclick="alert(employees.accounting[1].firstName)"><code>employees.accounting[1].firstName</code></a> (from <a href="http://www.hunlock.com/blogs/Mastering_JSON_(_JavaScript_Object_Notation_)">Mastering JSON</a>)
+          </dd>
+        
+          <dt>Using the file api</dt>
+          <dd>HTML5 allows interaction with local files via its <a href="http://www.w3.org/TR/file-upload/">File API</a> specification - <a href="../file-api-test.html">test your browser's file api here</a>.</dd>
+        
+          <dt></dt>
+          <dd></dd>
+      </dl>
+        
+      <h3>Javascript good practice</h3>
+      <dl>
+          <dt>Don't use <code>++</code> or <code>--</code></dt>
+          <dd>Use <code>+=</code> and <code>-=</code> instead, as <code>++</code> and <code>--</code> are <cite>too tight, too tricky, too cryptic</cite> (Crockford)</dd>
+          
+          <dt>Use <code>===</code> and <code>!==</code> for comparison</dt>
+          <dd>This will ensure that: <code>0, '', undefined, null, false, true</code> all return the expected result. Both <code>==</code> and <code>!=</code> <em>do type coercion</em> before comparing. This causes <code>\f\r\n\t == 0</code> to be true. If you want this, use the shorthand <code>(foo)</code> and <code>(!foo)</code> instead of <code>(foo != 0)</code> and <code>(foo == 0)</code> (Crockford)</dd>
+          
+          <dt>Avoid using <code>new</code></dt>
+          <dd>Don't use <code>new</code> to create a <code>Boolean</code>, <code>Number</code> or <code>String</code>; and use <code>{}</code> and <code>[]</code> to create a new <code>Object</code> or <code>Array</code></dd>
+          
+          <dt>Use <code>object.create</code>, but not for arrays</dt>
+          <dd>because object produced will inherit the array’s values and methods, but lack the length property.</dd>
+          
+          <dt>Declare functions before you call them</dt>
+          <dd>and declare variables at the top of functions, avoiding <code>for(var i</code>...</dd>
+          
+          <dt>Name constructor functions with an initial capital</dt>
+          <dd>to help spot instances where they're called without <code>new</code>. Better: use <code>object.create</code> (instead of <code>new</code>) for a new instance of a specific object.</dd>
+          
+          <dt></dt>
+          <dd></dd>
+          
+          <dt></dt>
+          <dd></dd>
+      </dl>
+    </div>
+</body>
+</html>

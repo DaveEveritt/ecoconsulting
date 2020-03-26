@@ -1,0 +1,64 @@
+DirectoryIndex index.shtml index.html
+
+Redirect /index.html http://www.ecoconsulting.co.uk/
+Redirect /index.php http://www.ecoconsulting.co.uk/
+Redirect permanent /training/ http://www.ecoconsulting.co.uk/articles/
+
+Redirect /disability-tech.shtml http://www.ecoconsulting.co.uk/research/disability-tech.shtml
+Redirect /research/disability-tech.html http://www.ecoconsulting.co.uk/research/disability-tech.shtml
+Redirect /research/disability-tech.htm http://www.ecoconsulting.co.uk/research/disability-tech.shtml
+Redirect /research/distech-report.pdf http://www.ecoconsulting.co.uk/research/papers/distech-report.pdf
+Redirect /research/distech-images.pdf http://www.ecoconsulting.co.uk/research/papers/distech-images.pdf
+Redirect /research/distech-study.pdf http://www.ecoconsulting.co.uk/research/papers/distech-study.pdf
+Redirect /research/distech-report.doc http://www.ecoconsulting.co.uk/research/papers/distech-report.doc
+Redirect /research/distech-images.doc http://www.ecoconsulting.co.uk/research/papers/distech-images.doc
+Redirect /research/distech-study.doc http://www.ecoconsulting.co.uk/research/papers/distech-study.doc
+Redirect /research/pervasive-technology.pdf http://www.ecoconsulting.co.uk/research/papers/pervasive-technology.pdf
+Redirect /research/pervasive-technology.doc http://www.ecoconsulting.co.uk/research/papers/pervasive-technology.doc
+
+Redirect /python/django-tutorial-01.txt http://www.ecoconsulting.co.uk/training/python/python-django-OSX.shtml
+Redirect /training/python/osx-django-install-new.txt http://www.ecoconsulting.co.uk/training/python/django/installing-django-greg.txt
+Redirect /training/css-rollover http://www.ecoconsulting.co.uk/examples/css-rollover
+
+# old rural culture links
+Redirect /site http://www.ecoconsulting.co.uk/
+Redirect /opinion http://www.ecoconsulting.co.uk/
+Redirect /resources http://www.ecoconsulting.co.uk/
+Redirect /casestudies http://www.ecoconsulting.co.uk/
+Redirect /showcase http://www.ecoconsulting.co.uk/
+Redirect /culture http://www.ecoconsulting.co.uk/
+Redirect /news http://www.ecoconsulting.co.uk/
+Redirect /newsitem http://www.ecoconsulting.co.uk/
+Redirect /publications http://www.ecoconsulting.co.uk/
+Redirect /emarancontacts http://www.ecoconsulting.co.uk/
+Redirect /funderlist http://www.ecoconsulting.co.uk/
+Redirect /contactlist http://www.ecoconsulting.co.uk/
+
+
+# redirect phishing
+Redirect /admin http://www.ecoconsulting.co.uk/
+Redirect /administration http://www.ecoconsulting.co.uk/
+Redirect /sitecore http://www.ecoconsulting.co.uk/
+Redirect /dbadmin http://www.ecoconsulting.co.uk/
+Redirect /myadmin http://www.ecoconsulting.co.uk/
+Redirect /MyAdmin http://www.ecoconsulting.co.uk/
+
+ErrorDocument 400 /errors/badrequest.shtml
+ErrorDocument 401 /errors/authreqd.shtml
+ErrorDocument 403 /errors/forbid.shtml
+ErrorDocument 404 /errors/notfound.shtml
+ErrorDocument 500 /errors/servererror.shtml
+
+
+# SEE http://stackoverflow.com/a/38005331/123033
+# but all fail!
+
+# generates a delibarate error to check htaccess is allowing overrides/being seen:
+#<directory / ></directory>
+
+#RewriteEngine on
+#RewriteRule ^![/includes]/(\w+)/([\w_-]+)\.shtml$ http://ecoconsulting.co.uk/$1/$2 [NS]
+#RewriteRule ^/(\w+)/([\w_-]+)\.shtml$ /$1/$2 [NS]
+
+#RewriteCond %{REQUEST_FILENAME}.html -f
+#RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [NS]

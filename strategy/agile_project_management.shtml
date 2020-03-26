@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="agile project management tips" --><!--#set var="directory_name" value="strategy" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Agile project management tips <!--#include virtual="/includes/addthis.shtml"--></h1>
+				
+		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+
+		<dl>
+			<dt>1. speed meetings</dt>
+				<dd>if you need to communicate with someone busy and it's too complex or too long for email, decide exactly what information you want to give/receive, then phone or visit them and ask 'do you have 3-4 minutes right now?' They'll probably say something like 'yes, but that's all'. Apologise for the brevity, then get straight to the point. Most times, you'll get the result you want.</dd>
+		
+			<dt>2. nurture relationships</dt>
+				<dd>identify people you like with complementary or similar skills and make mutual arrangements to pass on project elements you find too demanding or routine. If the relationship is new, monitor results to ensure they understand deadlines. If you already trust them to deliver, check in a few days before crucial deadlines to discuss progress. Remember that you're a colleague and not their boss - the relationship might be another way round next time.</dd>
+		
+			<dt>3. do what you like</dt>
+				<dd>only take on work you really enjoy, find challenging and/or agree with. Then you'll find it easier to: know what work to pass on and what to retain, keep motivated, attend to the details that make a difference, and feel good about your achievements. If you think this is impractical, read <a href="http://www.paulgraham.com/love.html"><cite>How to Do What You Love</cite></a> by Paul Graham, then think again.</dd>
+		
+			<dt>4. set up boundaries</dt>
+				<dd>agree on concise lists of 'outcomes' number them for easy communication and share them online (see 6). Set an absolute delivery deadline and plan your time to meet it. If you foresee a delay from your end, discuss it immediately and negotiate agreement. If a milestone is late from the client, explain how this affects the deadline - don't accept responsibility yourself. Be kind and understanding, but keep your agreed boundaries firm unless you can change them without causing other things (personal or professional) to suffer.</dd>
+		
+			<dt>5. expect the unforeseen</dt>
+				<dd>always include 5-10% contingency when costing up a project. In the unlikely case you don't use it, build trust by refunding the surplus.</dd>
+		
+			<dt>6. keep information concise</dt>
+				<dd>give all colleagues, clients and partners the absolute minimum information they need at any time, and <em>only</em> when they need it. Don't email general messages to everyone - they'll soon stop responding. Use free online tools colleagues can access and update as they go along (like <a href="http://basecamphq.com/?referrer=daveeveritt" title="online project management tools from 37 Signals">BaseCamp</a>) or <a href="https://trello.com/" title="online collaborative list management">Trello</a>, and update them regularly. If you use Dropbox (or other cloud storage) don't presume everyone has enough space without asking. For offline documents add 'last modified' dates and your contact details at the top of every document. Use descriptive filenames with unambiguous dates or versions (e.g. project-plan-08aug2008 or project-outputs-1.5).</dd>
+		
+			<dt>7. plan simple</dt>
+				<dd>don't waste time on complex project planning charts - you'll invariably depart from them and feel stressed as a consequence. Instead, agree on interim deadlines and set up a simple list of tasks that must be done to achieve each deadline. Choose the most minimal (and free) <em>to do list</em> you can find and ensure everyone can access it (<a href="http://todolistme.net/">ToDoListMe</a> isn't an app and sync is minimal but it has the right approach). Update your lists regularly (at least weekly) and focus only on immediate priorities - don't be tempted to burden lists with non-essentials or too many items. If you need somewhere to store other material, keep it separate from the important stuff.</dd>
+		</dl>
+
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Free and Open Source tools" --><!--#set var="directory_name" value="articles" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Free and open source tools <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<h2>Links from workshop, <a href="http://cii.dmu.ac.uk/">Cii conference</a> <small>Leicester 6 Dec 2007</small></h2>
+		
+		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro">Online tools can offer agile solutions to project management and task allocation, especially if your team and clients are reaching the limits of email. The following list starts with <a href="http://basecamphq.com/?referrer=daveeveritt">Basecamp</a>, the foremost online project management, collaboration and task listing software, and includes online collaborative 'Office' suites such as Zoho and Google Apps, plus a selection of other useful resources and Open Source alternatives to proprietary software for such tasks as image editing or website construction. Everything here is free, or has a free version at the entry level. Updated periodically with new stuff; some of the original links may no longer be live.</p>
+
+		<h2>Project management</h2>
+		
+		<dl>
+			<dt><a href="http://basecamphq.com/?referrer=daveeveritt">Basecamp</a></dt>
+				<dd>
+					Free/low cost project management.<br />
+					<cite>'Basecamp takes a fresh, novel approach to project collaboration. Projects don't fail from a lack of charts, graphs, stats, or reports, they fail from a lack of clear communication. Basecamp solves this problem by providing tools tailored to improve the communication between people working together on a project.'</cite><br />
+					Referral: 50% of the person's first month's payment as credit towards your paid Basecamp account. Hint: sign up for the entry level account for each project and use <a href="https://www.myopenid.com/">myopenid</a> to move between them.
+				</dd>
+		
+			<dt><a href="http://www.facebook.com/apps/application.php?id=20196811016&amp;ref=nf">MyOffice on Facebook</a></dt>
+				<dd>Untested (although see comments on the above page), but this is from the site: <cite>'Having a tough time getting your team on the same page? MyOffice lets you quickly and easily collaborate with your colleagues, partners, or clients.'</cite></dd>
+		</dl>
+		
+		
+		<h2>Creativity tools</h2>
+		
+		<dl>
+			<dt><a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page">FreeMind</a></dt>
+				<dd>Review at <a href="http://sourceforge.net/potm/potm-2006-02.php">SourceForge Project of the month</a><br />
+				<cite>'FreeMind is mind-mapping software, or a tree editor. With it, you can create foldable trees of plain text notes, enriched with colors, icons, cloud-shapes, and other graphics. Folding and breadth-width search make it valuable as a knowledge base tool. For note taking, knowledge base creation, brainstorming, collecting information on a given topic, and project management.'</cite></dd>
+		
+			<dt><a href="https://cacoo.com/">Cacoo - online diagram tool</a> (like <a href="http://www.omnigroup.com/applications/omnigraffle/">Omnigraffle</a>)</dt>
+				<dd>for collaborating on diagrams, mapping, wireframes, flowcharts etc, online - free signup.</dd>
+		</dl>
+		
+		
+		<h2>Social software and media sharing</h2>
+		
+		<dl>
+			<dt><a href="http://www.linkedin.com">LinkedIn</a></dt>
+				<dd>Social software for professional networking. Also excellent for getting questions answered by specialists.</dd>
+		
+			<dt><a href="http://www.icq.com/sms/">ICQ</a></dt>
+				<dd>free SMS and IM (need to join and download ICQ first)</dd>
+		
+			<dt><a href="http://www.readwriteweb.com/archives/web_office_suite_comparison.php">Online office suites comparison</a></dt>
+				<dd>
+					Main competitors:<br />
+					<a href="http://www.thinkfree.com">Thinkfree</a><br />
+					<a href="http://www.zoho.com">zoho</a><br />
+					<a href="http://www.google.com/a/">Google apps</a>
+				</dd>
+		
+			<dt><a href="http://www.vimeo.com">Vimeo</a></dt>
+				<dd>Upload, share, store and put video on your website without YouTube clutter. Only share with who you choose. With <a href="http://www.vimeo.com/275807">Vimeo tutorials</a>.</dd>
+		
+		
+			<dt><a href="http://www.bigfoto.com">BigFoto</a></dt>
+				<dd>Free stock photography (or use <a href="http://flickr.com">Flickr.com</a> - but ask for permission!)</dd>
+		</dl>
+		
+		
+		<h2>Free and Open-Source software</h2>
+		
+		<dl>
+			<dt><a href="http://www.openoffice.org/">OpenOffice</a></dt>
+				<dd>Miscrosoft-compatible office suite</dd>
+		
+			<dt><a href="http://www.gimp.org">The GIMP</a></dt>
+				<dd>'Photoshop/PaintShop Pro' alternative</dd>
+		
+			<dt><a href="http://seashore.sourceforge.net/The_Seashore_Project/About.html">Seashore</a></dt>
+				<dd>Lightweight but powerful open-source image editor for Mac OS X.</dd>
+		
+			<dt><a href="http://nvudev.com/index.php">NVU</a></dt>
+				<dd>'Dreamweaver/Front Page' visual web editor alternative</dd>
+		
+			<dt><a href="http://www.w3.org/Amaya/">Amaya</a></dt>
+				<dd>a free web browser (there are hardly any paid-for browsers any more) that's also a web page editor, implementing Tim berners Lees' orginal idea of the 'user-editable web'.</dd>
+				
+			<dt><a href="http://sketchup.google.com/">Google SketchUp 6</a></dt>
+				<dd>Free and easy-to-learn 3D modelling software, and quite a joy to use. Unsurprisingly, the paid-for <cite>Pro</cite> version has features you might need for err... professional use.</dd>
+
+			<dt><a href="http://www.artofillusion.org/downloads">Art of Illusion (AOI)</a></dt>
+				<dd>Comprehensive free, open source 3D modelling and rendering studio. Written in Java.</dd>
+				
+			<dt><a href="http://www.blender.org">Blender: 3D software</a></dt>
+				<dd>High-powered, professional and (like most 3D software) not easy, but there are <a href="http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro">free online multi-tutorials</a>.</dd>
+		
+			<dt>Good directories of free/shareware:</dt>
+				<dd>
+					<a href="http://sourceforge.net/softwaremap/">sourceforge</a> - almost everything from full applications to code snippets. Go here first!<br />
+					<a href="http://www.softpedia.com">Softpedia</a><br />
+					<a href="http://www.osliving.com">Open Source Living</a><br />
+					<a href="http://www.topshareware.com">TopShareware</a>
+				</dd>
+		</dl>
+		
+		
+		<h2>Administration</h2>
+		
+		<dl>
+			<dt><a href="http://wufoo.com">Wufoo</a></dt>
+				<dd>
+					Free online forms and databases (surveys, information gathering, etc):<br />
+					<cite>'an Internet application that helps anybody build amazing online forms. When you design a form with Wufoo, it automatically builds the database, backend and scripts needed to make collecting and understanding your data easy, fast and fun. Because we host everything, all you need is a browser, an Internet connection and a few minutes to build a form and start using it right away.'</cite>
+				</dd>
+		
+			<dt><a href="http://www.blinksale.com">Blinksale free online invoices</a></dt>
+				<dd>With Basecamp integration. Free version can only send 3 invoices a month, unlimited clients, payment reminders, messages, customizable layouts, recurring invoices, secure SSL data encryption.</dd>
+		
+			<dt><a href="http://skype.com">Skype</a></dt>
+				<dd>Free online phone calls with video worldwide. You <em>are</em> already using this, no?</em></dd>
+		
+			<dt><a href="http://www.jajah.com/info/rates/">JaJah.com</a></dt>
+				<dd>Global phone calls at local rates. Without a new contract, a new number or a new phone you can call anywhere in just one click. Calls between members are FREE.</dd>
+		</dl>
+		
+		
+		<h2>Web hosting and DNS (Domain Name Servers)</h2>
+		
+		<dl>
+			<dt><a href="http://www.freevirtualservers.com/free-hosting.htm">Free virtual servers</a></dt>
+				<dd>Free web hosting for life: 100mb Web Space, 100mb bandwidth per month, 10 Email Accounts, FTP, MySQL Database, free tools and software. Only need to provide a small text link on your main web page.</dd>
+		
+			<dt><a href="http://lifehacker.com/software/feature/host-your-domain-with-free-apps-331865.php">Host Your Domain with Free Apps</a></dt>
+				<dd>Detailed article by Gina Trapani (editor of <a href="http://lifehacker.com">Lifehacker</a>'s weekly feature <a href="http://lifehacker.com/geek-to-live">Geek to Live</a>) on how to have your own domain name and host a basic website without messing with servers.</dd>
+		
+			<dt><a href="http://freedns.afraid.org">Free DNS</a></dt>
+				<dd>For complete control over your domain name servers (i.e. getting your domain name to point to your website, etc.)</dd>
+		
+			<dt><a href="http://dyndns.com">Dyndns</a></dt>
+				<dd>Dynamic DNS: host your website on your home machine even with the dynamic IP from your ISP, plus more.</dd>
+		</dl>
+
+		<h2>Online file storage backup, sharing and up/download</h2>
+			
+		<dl>
+			<dt><a href="http://www.dropbox.com/referrals/NTQ5NzQ1Mzk5">DropBox</a></dt>
+				<dd>
+					Pretty well flawless and seamless. Free file storage and sharing across any computer. 2GB + 4-8GB from following step-by-step startup process and referrals, integrated software for all your machines. Windows/Mac.
+				</dd>
+			<dt><a href="https://mozy.com/?code=3QG565">Mozy: free 2GB online backup</a></dt>
+				<dd>
+					Windows/Mac. Choose what you want to back up automatically (options for email, photos&hellip; or whatever you choose within the size limit - remember broadband upload is slower than download!). Get an extra space with referrals.
+				</dd>
+			<dt>Others</dt>
+				<dd>
+					<a href="http://www.freedrive.com">Freedrive</a> (free: 1GB upload, 6GB storage).<br />
+					<a href="http://www.sendspace.com">Sendspace</a> (free: 300MB upload/1GB downloads a day - file becomes inactive if not downloaded at least once during a 7 day period. Public directory also available to upload files without needing to register).
+				</dd>
+		</dl>
+		
+		
+		<h2>Miscellaneous</h2>
+		
+		<dl>
+			<dt><a href="http://www.reprap.org">RepRap 3D fabricator/printer</a></dt>
+				<dd>The Replicating Rapid-prototyper is able to 'print' 3D models (anything from a child's sandals to the parts required to replicate itself) from layers of plastic. An amazing project, free and under a GPL licence. The cheapest commercial machine is beyond the reach of most, so the RepRap team are developing this freely for small communities in any country.</dd>
+				
+			<dt>OpenSource for business</dt>
+				<dd>
+					Two articles that put the case well:<br />
+					<a href="http://www.opensource.org/advocacy/case_for_business.php">Open Source Case for Business</a><br />
+					<a href="http://www.paulgraham.com/opensource.html">What Business Can Learn from Open Source</a>
+				</dd>
+		
+			<dt><a href="http://www.go2web20.net">Web 2.0 tools portal</a></dt>
+				<dd>A starting point for anyone interested in browsing the current '<a href="http://www.wired.com/wired/archive/12.10/tail.html" title="Chris Anderson's original article in Wired magazine">long tail</a>' of <cite>2.0</cite> sites</dd>
+		
+			<dt>NESTA articles and downloadable research</dt>
+				<dd>
+					<a href="http://www.nesta.org.uk/about/index.aspx">NESTA</a> is <cite>committed to stimulating and fostering innovation in the UK for both economic and social benefit</cite> and the research it undertakes is a valuable source of reliable information. Here are some examples:<br />
+					<a href="http://www.nesta.org.uk/informing/provocations/index.aspx">provocations</a><br />
+					<a href="http://www.nesta.org.uk/informing/policy_and_research/research_reports.aspx">research reports</a><br />
+					<a href="http://www.nesta.org.uk/informing/articles/">articles</a>
+				</dd>
+
+			<dt><a href="http://www.catb.org/~esr/writings/cathedral-bazaar/">The Cathedral and the Bazaar</a></dt>
+				<dd>Eric Raymond's seminal argument behind the effectiveness of the Open Source approach to software. A big read (well, it's a book), but worth it.</dd>
+		
+			<dt><a href="http://www.brucemaudesign.com/manifesto.html">Incomplete Manifesto for Growth</a></dt>
+				<dd>Bruce Mau's quirky but inspiring list.</dd>
+		
+			<dt><a href="http://www.wishfulthinking.co.uk/blog/">Wishful Thinking blog</a></dt>
+				<dd>A rather wonderful blog from Mark McGuinness containing some excellent free e-books. The site subtitle reads 'inspiring creative professionals' (which is what we all want to be).</dd>
+		</dl>
+		
+	</div>
+</div>
+</body>
+</html>

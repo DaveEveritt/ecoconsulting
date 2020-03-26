@@ -1,0 +1,10 @@
+<!--#include file="colors.cssi" -->
+
+#container { background: <!--#echo var="mybackground" -->; }
+
+p { color: <!--#echo var="mycolour" -->; }
+
+.someclass {
+	padding: 0 1em;
+	background-color: <!--#echo var="mycolour" -->;
+}

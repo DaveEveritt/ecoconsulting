@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="An introdution to semantic HTML markup" --><!--#set var="directory_name" value="articles" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+</head>
+
+<body id="article">
+<div id="container">
+<!--#include virtual="/includes/menu.shtml"-->
+
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>Semantic markup: adding meaning to the everyday web <!--#include virtual="/includes/addthis.shtml"--></h1>
+		
+		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
+		
+		<p class="intro">As contributors to a web currently embarking on a journey of semantic transformation, the least we can do is learn the language&hellip;</p>
+		
+		<p>We all need the machines we use to understand the data we enter into them, in order for others to retrieve it in meaningful ways. Without the work of countless programmers teasing human meaning from the sea of collective data, Google's search results would be drowned under waves of irrelevant results (remember those early search engines? And the web scammers' abuse of the 'keywords' HTML meta tag?).</p>
+		
+		<p>The story of  <a name="ref1"></a>machine-readable<sup><a href="#note1">1</a></sup> data is the story of computing, perhaps most elegantly summed up (for geeks) in an axiom coined by the <a name="ref2"></a><a title="Extreme Programming: A gentle introduction" href="http://www.extremeprogramming.org/index.html">Extreme Programming</a> movement<sup><a href="#note2">2</a></sup> as <cite title="the idea is that good code is understandable without adding comments">the code is the comment</cite> which, to the rest of us, means "don't attempt to explain what each part of your code does by cluttering it up with comments, when you can suggest its function by structuring the code intelligently". Other users - and their machines - are then able to understand the function simply by looking at the form.</p>
+		
+		<p>Every heading in this article is marked up as a sequenced heading without a single 'bold' or 'italic' tag, and it's peppered (okay, a little over-seasoned to illustrate the point) with semantic markup&hellip;</p>
+		
+		
+		<h2>Good, old, HTML</h2>
+		
+		<p>In the <abbr title="American Standard Code for Information Interchange">ASCII</abbr> plain text of the internet before HTML and the web, asterisks, underscores and other signifiers from the ASCII character set (i.e. most, but not all, of the stuff on your keyboard) were used to indicate bold, italic, and other kinds of primitive formatting (this - oddly - survives in Microsoft's Word, where adding a pair of asterisks or underscores either side of a word converts it to bold or italic text).</p>
+		
+		<p>Then Hyper Text Markup Language (<abbr>HTML</abbr>) arrived with an array of <dfn title="'opening' and 'closing' markup code added either side of content">tags</dfn> designed to enable us all to <em>mark up</em> our otherwise unstructured text into meaningful <dfn title="a meaningful chunk of content with its own identity">blocks</dfn> consisting of headings, paragraphs, tables and lists; with quotations, links, emphasis and other discrete and similarly meaningful <dfn title="elements that appear in the flow of text without a break top and bottom">inline</dfn> elements scattered throughout that text. It distinguished between two kinds of tags for text markup: <cite>physical</cite> and <cite>logical</cite>. Physical tags just make something bold, underlined or italic, while <cite>logical tags</cite> are used to define the relationships between the various elements of your content. However, logical tags tended to get ignored because people weren't sure what they meant or how they would appear in a browser, and <code>b</code> and <code>i</code> were easier to remember.</p>
+		
+		<p>These logical tags are essential to semantic HTML markup because - unlike bold or italic - they <em>describe what they enclose</em>. Emphasised or cited text isn't merely <i>italic</i> and - even though the <code>em</code> and <code>cite</code> tags are rendered in italics by default in web browsers - the machine knows you mean something emphasised or cited, and can process, sort, store, filter, re-present etc. accordingly.</p>
+		
+		
+		<h2>Well-formed, with hidden depth</h2>
+		
+		<p>The aim of HTML was (and still is) to encourage authors of web content (us) to learn this finite set of simple tags to lend usability, <a name="ref3"></a>readability and portability<sup><a href="#note3">3</a></sup> to web-based information. Yet, despite the fact that an increasing number of people are authoring web content, many web content providers (like bloggers) remain ignorant of the subtleties of HTML. Its potential semantic power is thereby trampled under a stampede of ill-structured content, with little regard for the poor machines that have to read that content and re-present it to our (consequently even poorer) readers.</p>
+		
+		<p>Even more crucial, the assistive technology used by disabled readers can make far more sense from HTML code that is <a name="ref4"></a><dfn title="content properly structured, for example by using the appropriate HTML tags in a logical sequence">well-structured</dfn><sup><a href="#note4">4</a></sup>, than (to take a common example) headings unintelligently marked 'big and bold' instead of being identified by a proper HTML <dfn title="these are the tags that appear in angle brackets as h1, h2 etc.">heading tag</dfn>. Listen to a screen reader zip through a badly-structured page of HTML; you'll hear a breathless rush where the (non-)headings and paragraphs blur seamlessly into a single and confusing stream. A <cite>rich client experience</cite> isn't all about mashups and AJAX widgets, its also about well-formed information with hidden depth (isn't that how we'd like to appear to others?).</p>
+		
+		<p>When typing up a blog entry, who (go on, put up your virtual hands) uses <code>dfn</code> for a defined term, <code>cite</code> for a brief quote and <code>abbr</code> for abbreviations? Or the invaluable <code title="those little tooltip rollovers">title</code> attribute (hover over the word for instant recognition) to add extra snippets of meaning? Who even uses the <dfn>logical</dfn>  HTML tags for <code>strong</code> and <code>em</code> or - depending on context - <code>cite</code>, instead of the <dfn>physical</dfn> tags <code>b</code> and <code>i</code> for bold and italic? As contributors to a web currently embarking on a journey of semantic transformation, the least we can do is learn the language.</p>
+		
+		
+		<h2>What does 'semantic' mean to a machine?</h2>
+		
+		<p>The collective information pool that will be <a name="ref5"></a>'Web 3.0' (yes, I know we're still accommodating version 2.0, but 3.0 is already on the horizon<sup><a href="#note5">5</a></sup>) will be built on the ability to get meaningful information from any networked source, move it around, manipulate and re-present it in multiple ways. For this to work, at least some of that information must have a structure of some kind, and there are various initiatives designed to enable this to happen, some of which are already in use: the <a href="http://dublincore.org/documents/dces/">Dublin Core Metadata Initiative</a>, <a href="http://microformats.org/about/">microformats</a> (like the <a href="http://microformats.org/wiki/hcard">hCard format</a>), <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1548572">domain-specific ontologies</a>, and the rest; including, of course, tags (but tags don't offer structure, just some extra information about that whole chunk of data). The machine <em>can</em> be programmed to understand our messy input, but it helps if we meet it at least halfway.</p>
+		
+		<p>Refining the computer science formula<br />
+		<code>input &gt; process &gt; output</code><br />
+		by examining the intentions behind it, we get something like this:<br />
+		<code><dfn title="intelligently-entered and logically-structured">well-formed</dfn> data &gt; machine-readability &gt; maximum human usefulness</code></p>
+		
+		<p>Adapting the above formula for (say) the model web author:</p>
+		<ol>
+			<li>programmers (humans, mostly) design a language for structuring information so that machines can distinguish its semantic elements (a list here, a quotation there, a paragraph, a heading&hellip;);</li>
+			<li>the web author (still human, but also an <em>HTML programmer</em>) follows these procedures when inputting their information;</li>
+			<li>the machine re-presents that information so that blogs, news feeds, search engines, databases, etc. receive it in a structure that preserves the author's original meaning.</li>
+		</ol>
+		
+		<p>But this remains in the realm of theory for the many web authors who have fallen into bad habits by applying visual - rather than semantic - styles from the formatting palettes of Word or Dreamweaver, rather than using the available <dfn title="styles sheets are applied to multiple elements of the same kind, to give a consistent appearance throughout a document">style sheets</dfn> or semantic HTML to provide meaningful structure. The second stage above fails and the data appears to the poor machine as a mush&ndash;a long, unformatted string of text with the occasional instruction to make something appear 'bold' or 'large'. The author thinks it's a heading, but the machine is a dummy, and needs the heading to be marked up as such; otherwise it simply <em>won't see</em> a heading at all.</p>
+		
+		
+		<h2>Semantic markup for dummies</h2>
+		
+		<p>How did our information get into such a mushy state? Like this: we're in the flow. We've typed a few paragraphs and need a heading. We hit return twice (after all, we need a space before the heading, right?) and type. It doesn't <em>look</em> like a heading so we make the text size larger. It <em>still</em> doesn't stand out enough, so we hit the [B] button. We pause for a micro-second and admire our 'heading'. But all the machine sees is a paragraph in large bold text with a blank line before it, because that's all it is.</p>
+		
+		<p>Let's run through the above sequence again, semantically. We've just typed a few paragraphs and need a heading. we hit return once (leaving out the blank line), type in the heading and choose 'Heading 2' from Word's styles palette (Word documents can be semantic, too) or an HTML <code>h2</code> tag ('heading 1' would be the title of the article, which we've already marked up with 'Heading 1', 'Title' or - in HTML - <code>&lt;h1&gt;</code>. Google loves a nice, explanatory <code>&lt;h1&gt;</code> tag at the start of a page&hellip;).</p>
+		
+		<p>However, since appearance often dictates our choices and software makes 'big and bold' easy, people avoid the semantic option because the default styles for these headings don't look right (too big, too much space, wrong font, etc.). But default styles (in both Word and HTML) are exactly that - <dfn title="the styles that came with the software, or browser">default styles</dfn>, so they can be changed (bold, font size, spacing before and after, etc. But this isn't a tutorial, so you can go off and find out how to define styles elsewhere. It's not that hard :-).</p>
+		
+		<p>To sum up:</p>
+		<ul>
+			<li>all articles have a single title, which (if it's the only article on the page) will be a <cite>level one heading</cite> ('Heading 1' in Word or <code>&lt;h1&gt;</code> in HTML);</li>
+			<li>most articles benefit from a few subheadings ('Heading 2' or <code>&lt;h2&gt;</code>);</li>
+			<li>headings can be styled however you want, in both Word and HTML;</li>
+			<li>when you use that heading again, it assumes the same style.</li>
+		</ul>
+		
+		<p>What about the rest of the text?</p>
+		
+		
+		<h2>Semantic seasoning for HTML text</h2>
+		
+		<p>It's all plain old semantic HTML from here on (or <a href="http://microformats.org/wiki/posh" title="more information on writing semantic HTML">POSH</a>), because HTML has all those neat tags that describe exactly what they enclose which, with Cascading Style Sheets (CSS), can be made to appear exactly as we wish. See the cursor change to a question mark over that word with a <dfn class="help" title="like this example">dotted underline</dfn>? That's a <code>dfn</code> tag with two styles: <code>cursor:help; border-bottom:1px dotted #333;</code> (the semicolons here signify the end of each style). I should add that CSS styles like these are best stored in separate style sheets, not inline with the HTML.</p>
+		
+		<p>Those nice programmers made it all read just like English (okay, with US-spelling, but you can't have everything; US-English HTML and CSS markup languages are now the <dfn title="A common language used between speakers of various languages; from 17th century Italian: 'Frankish tongue'">Lingua Franca</dfn> of the web, and there's no going back).</p>
+		
+		<p>So (apart from paragraphs and headings) what are these logical HTML tags with semantic meaning? Here's a list of the most useful (tags are linked to in-depth descriptions from <abbr title="Web Hypertext Application Technology Working Group">WATWG</abbr> site):</p>
+		<ul>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-dfn-element">dfn</a></code> (actually classed as a 'physical' tag) - a defined or specialist term, usually expanded with the 'title' attribute</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-em-element">em</a></code> - emphasis (italic by default)</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-strong-element">strong</a></code> - extra emphasis, or 'loud' (bold by default)</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-cite-element">cite</a></code> - quoted text or the title of something</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-code-element">code</a></code> - to display lines of example computer code</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-kbd-element">kbd</a></code> - text a user must type in</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-sub-and-sup-elements">sup</a></code> - superscript (usually for footnotes)</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-abbr-element">abbr</a></code> - abbreviations and acronyms, usually expanded with the 'title' attribute</li>
+			<li><code><a href="http://developers.whatwg.org/text-level-semantics.html#the-q-element">q</a></code> - a short inline quotation (adds quotes, not supported in Internet Explorer, but can be styled with CSS)</li>
+			<li><code><a href="http://developers.whatwg.org/sections.html#the-address-element">address</a></code> - what it says - use br tags for line breaks</li>
+		</ul>
+		
+		<p>All of which can be used on HTML pages, blog entries, and anywhere where HTML tags are allowed. There are, of course, also the HTML <cite>list</cite> tags and various others - see the References and further information below.</p>
+		
+		
+		<h2>The tip of the semantic iceberg</h2>
+		
+		<p>Semantic markup goes far deeper than text emphasis, lists and addresses. It applies to the entire content of a web page, and to chunks of data within that web page like contact details, for which an array of <cite>best practice</cite> rules is emerging. That's another article, though.</p>
+		
+		<p>If you want to know how this is being carried forward in HTML5, the good news is that most of it still applies. See <cite><a href="http://developers.whatwg.org/text-level-semantics.html">Text-level semantics</a></cite></p>
+		
+		<h2 class="notes">Notes</h2>
+		
+		<p><a name="note1"></a>[<a href="#ref1">1</a>] <cite>Human readable</cite> information means documents in the traditional sense which are intended for human consumption. While these may be transformed, rendered, analyzed and indexed by machine, the idea of them being understood is an artificial-intelligence problem not addressed by the client's Web software. <cite>Machine-understandable</cite> documents, therefore, contain data explicitly prepared for machine reasoning, which can become part of a future semantic web.</p>
+		
+		<p><a name="note2"></a>[<a href="#ref2">2</a>] For an excellent critique of Extreme Programming, read: Martin Fowler (Chief Scientist, ThoughtWorks), <a href="http://www.martinfowler.com/articles/designDead.html">Is Design Dead?</a></p>
+		
+		<p><a name="note3"></a>[<a href="#ref3">3</a>] An architectural rule which the SGML community embraced is the <cite>separation of form and content</cite>. It is an essential part of Web architecture, making possible for information to be displayed effectively independent of the display device, and greatly aiding the processing and analysis.</p>
+		
+		<p><a name="note4"></a>[<a href="#ref4">4</a>] If you already write a bit of HTML and CSS, and want to know how to do it better, here's an excellent introduction to well-structured markup, <cite>semantic organization of information into content blocks</cite> and <cite>making your HTML structurally ready for CSS</cite>: Virginia DeBolt, <a href="http://www.wise-women.org/tutorials/cssplanning/">The Early Bird Catches the CSS: Planning Structural HTML</a> (on <a title="Wise-Women is a world-wide, online community of web designers, developers and programmers." href="http://www.wise-women.org">Wise-Women.org</a>). A word of warning, never use CSS hacks, so don't follow the link to <cite>Long-Term CSS Hack Management</cite>; instead, <a href="http://www.quirksmode.org/css/condcom.html">Conditional Comments</a> are the way to tame the various versions of Internet Explorer.</p>
+
+		<p><a name="note5"></a>[<a href="#ref5">5</a>] For more about Web 3.0 see <a href="http://www.androidtech.com/knowledge-blog/2006/11/web-30-manifesto-knowledge-doubling.html">The Web 3.0 Manifesto - The Knowledge Doubling Curve</a>, posted by <cite>roschler</cite>, November 24, 2006.<br />
+		For an amusing and informative sideways view of the 2.0 hype, see Jeffrey Zeldman, <a href="http://alistapart.com/articles/web3point0">Web 3.0</a>, January 16, 2006.</p>
+
+		<h2 class="notes">References and further information</h2>
+		
+		<p><a href="http://www.w3.org/DesignIssues/Architecture.html">Web Architecture from 50,000 feet (1998)</a><br />
+		from: Tim Berners-Lee, <a href="http://www.w3.org/DesignIssues/Overview.html"><cite>Design Issues</cite>, Architectural and philosophical points</a>.</p>
+		
+		<p><a href="http://microformats.org/wiki/semantic-xhtml">Semantic (X)HTML</a> on the MicroFormats Wiki.</p>
+		
+		<p><a href="http://www.bbc.co.uk/guidelines/futuremedia/technical/semantic_markup.shtml">The BBC's own semantic markup standard</a>.</p>
+		
+		<p><a href="http://developers.whatwg.org/">HTML5: A technical specification for Web developers</a>.</p>
+		
+		<!--#exec cgi="/cgi-bin/comments.cgi" -->
+	</div>
+</div>
+</body>
+</html>

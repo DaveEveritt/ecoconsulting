@@ -1,0 +1,57 @@
+MySQL 64-bit from package install mysql-5.1.41-osx10.5-x86_64.dmg from:
+http://dev.mysql.com/downloads/mysql/5.1.html#macosx-dmg
+
+doesn't work with MySQL-python-1.2.3c1 from:
+http://sourceforge.net/projects/mysql-python/
+
+Remove MySQL 64-bit:
+
+cd /usr/local
+sudo rm -rf mysql-5.1.41-osx10.5-x86_64
+rm -r mysql
+cd /Library/Receipts/
+rm -r mysql-5.1.41-osx10.5-x86_64.pkg
+
+See:
+http://akrabat.com/computing/uninstalling-mysql-on-mac-os-x-leopard/
+and the shorter
+http://obscuredclarity.blogspot.com/2009/08/uninstall-mysql-on-mac-os-x.html
+
+for the 1.2.2 version
+(says to edit _mysql.c)
+http://www.mangoorange.com/2008/08/01/installing-python-mysqldb-122-on-mac-os-x/
+http://davidmichaelthompson.com/2008/02/18/notes-installing-django-python-mysql-on-os-x/
+
+Python-MySQL for Snow Leopard
+http://birdhouse.org/blog/2009/02/21/python-mysql-connections-on-mac-os/
+
+---
+when re-installed, try
+>>> import MySQLdb
+
+and see the MySQL settings:
+mysql_config
+
+---
+general info on the 32- 64-bit issue and MySQL-python:
+
+Django on Leopard:
+http://yousefourabi.com/blog/2008/06/django-on-leopard/
+
+Jim B's Blog: installing fresh version of python 2.6.4:
+http://blog.jbglenn.net/2009/12/installing-fresh-version-of-python-264.html
+
+Search results for setuptools ARCHFLAGS 32 bit - MarkMail:
+http://markmail.org/message/5znj3cytg4x6hiul
+
+MySQL-Python and Apple OSX 10.5 (Leopard):
+http://www.keningle.com/?p=11
+
+mysql-python and Snow Leopard:
+http://cd34.com/blog/programming/python/mysql-python-and-snow-leopard/
+
+Notes: installing Django / Python / Mysql on OS X | DavidMichaelThompson:
+http://davidmichaelthompson.com/2008/02/18/notes-installing-django-python-mysql-on-os-x/
+
+MySQLdb, Python, MySQL and OS X: A match made in Satan’s bum
+http://learninglamp.wordpress.com/2010/02/21/mysqldb-python-mysql-and-os-x-a-match-made-in-satans-bum/

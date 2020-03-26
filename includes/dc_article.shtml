@@ -1,0 +1,18 @@
+<!--Dublin Core metadata. Modify only: DC.description, DC.coverage, DC.rights -->
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+<meta name="DC.title"       content="<!--#echo var='site_title' -->: <!--#echo var='page_name' -->" />
+<meta name="DC.creator"     content="<!--#echo var='updater_name' -->, <!--#echo var='site_title' -->" />
+<meta name="DC.subject"     lang="en" content="<!--#echo var='dc_subject' -->" />
+<meta name="DC.description" lang="en" content="<!--#echo var='description'-->" />
+<meta name="DC.publisher"   lang="en" content="<!--#echo var='site_title' -->" />
+<meta name="DC.contributor" content="<!--#echo var='contributor_name' -->" />
+<meta name="DC.date"        scheme="W3CDTF" content="<!--#config timefmt="%Y-%m-%d" --><!--#echo var='LAST_MODIFIED' -->" />
+<meta name="DC.type"        scheme="DCMIType" content="Text" />
+<meta name="DC.format"      content="text/html" />
+<meta name="DC.identifier"  content="http://<!--#echo var='domain_name' --><!--#echo var="DOCUMENT_URI" -->" />
+<meta name="DC.source"      content="http://<!--#echo var='domain_name' -->/" />
+<meta name="DC.language"    scheme="ISO6392" content="eng" />
+<meta name="DC.relation"    content="http://<!--#echo var='domain_name' -->/<!--#if expr="${directory_name}" --><!--#echo var='directory_name' -->/<!--#endif --><!--#if expr="${subdirectory_name}" --><!--#echo var='subdirectory_name' -->/<!--#endif -->" />
+<meta name="DC.coverage"    content="UK" />
+<meta name="DC.rights"      content="Copyright 2002 Dave Everitt, <!--#echo var='site_title' -->, 2002, all Rights Reserved." />
+<!--#config timefmt="%D" -->

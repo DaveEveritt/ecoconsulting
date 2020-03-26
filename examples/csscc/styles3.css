@@ -1,0 +1,108 @@
+/* -------- SITE-WIDE STYLES -------- */
+
+html * {
+   margin:0;
+   padding:0;
+}
+
+body {
+   font-family:Arial,sans-serif;
+   font-size:90%;
+   background:#999;
+}
+
+h1 {
+   margin-bottom:0.5em;
+   font-size:2em;
+   border: 1px #eee solid;
+   padding-left: 10px;
+   background: url("images/greenfadetop.gif") repeat-x;
+}
+
+p {
+   margin-bottom: 1em;
+}
+
+p em {
+   color:purple;
+}
+
+.greentext { /* this is a BAD name! 'colourtext' might be better */
+   color:#030;
+}
+
+#container {
+   position:relative;
+   width:500px;
+   margin:0 auto;
+   border-left:#eee 100px solid;
+   border-right:#eee 20px solid;
+   padding:1em 24px;
+   background:white;
+}
+
+p.box {
+   background: #eee url("images/quotes.gif") no-repeat;
+   border:2px #ccc solid;
+   padding:25px;
+   margin:1.25em 20px;
+   line-height:1.25em;
+   float:right;
+   width:100px;
+   font-size:0.9em;
+   font-style:italic;
+   font-family:times,palatino,serif;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+}
+
+img.lego {
+   float:left; margin-right:0.75em;
+   position:relative;
+   top:0.35em;
+}
+
+/* -------- TOP MENU STYLES -------- */
+
+ul#topmenu {
+   position:fixed;
+   top:0px;
+   left:0px;
+   width:100%;
+   opacity: 0.5; /* all modern browsers */
+   filter: alpha(opacity=5) /* IE */
+}
+
+ul#topmenu:hover {
+   opacity: 0.90; /* all modern browsers */
+   filter: alpha(opacity=90) /* IE */
+}
+
+#topmenu li {
+   list-style-type:none;
+   background:url(images/greenfadedark.gif);
+   float:left;
+}
+#topmenu li a, #topmenu li p {
+   display:block;
+   height:1.75em;
+   line-height:1.75em;
+   width:8em;
+   text-align:center;
+   text-decoration:none;
+   color:#555;
+   padding:0.2em;
+   font-weight:bold;
+}
+
+#topmenu li p {
+   margin:0;
+   color:#030;
+   background:#ffc;
+   background:url(images/greenfadetop.gif);
+}
+
+#topmenu li a:link,
+#topmenu li a:visited {background:url(images/greenfadetop.gif)}
+#topmenu li a:hover   {background:transparent; color:white;}
+#topmenu li a:active  {color:#f99;}

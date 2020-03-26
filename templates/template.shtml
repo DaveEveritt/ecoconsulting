@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="PAGE_NAME" --><!--#set var="directory_name" value="DIR_NAME" -->
+<!--#include virtual="/includes/title_meta_global.shtml"-->
+<!--#include virtual="/includes/dc.shtml"-->
+<!-- CSS FOR ARTICLES:
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+-->
+</head>
+
+<body id="article">
+<!--remove index var if not an index page: -->
+<!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
+
+<div id="container">
+	
+	<div id="content">
+		<!--#include virtual="/includes/top_rule.shtml"-->
+		
+		<h1>HEADING</h1>
+		
+		<p>a_paragraph</p>
+		
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+from: http://www.djangoproject.com/download/
+
+(Check for minimal version of Python. If < 2.2 get Python 2.4, .5 or .6)
+
+Download the latest official release of Django directly from:
+http://www.djangoproject.com/download/1.0/tarball/
+
+double-click the tarball: Django-1.0.tar.gz
+
+open terminal and type: cd
+add a space after it and drag the folder Django-1.0 to the Terminal window - this will add the path to that folder.
+Press return. You are now in the Django-1.0 folder.
+
+type: sudo python setup.py install
+enter your password.
+
+screenfuls of text will fly by.
+
+When they stop, type: python
+this starts the Python shell - you'll see 3 right-pointing arrows like this:
+>>>
+
+type: import django
+if you see 3 more arrows as above, all is well!
+
+if you don't trust this and want visible proof, type: django.VERSION
+You should see (the Django shell will 'reply'):
+(1, 0, 'final')
+
+which shows you've definitely installed Django version 1.0.
+
+Type ctrl d (hold down the control key and press 'd') to leave the python shell.
+
+Get on with the tutorial!
+
+--
+Where is Django?
+If you want to know where Django lives on your system, type this into Terminal:
+python -c "from distutils.sysconfig import get_python_lib; print get_python_lib()"
+
+You'll see something like (for Python versions 2.5 or 2.6):
+/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/django/
+or
+/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages
+
+--
+Problem 1: 'command not found'
+Your system can't find the Django admin file:
+django-admin.py: command not found
+type into Terminal:
+cd ~
+open .bash_login
+if it doesn't exist, type ls -al and look for a file called .profile
+if that doesn't exist either, type: touch .bash_login
+then
+open .bash_login
+it will open in a plain text editor
+
+Search in the Finder for: django-admin.py
+Open the folder that contains it (depending on your version of Python, it will be something like): /Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/site-packages/django/bin/
+drag the 'bin' folder to Terminal and copy the exact path it shows.
+in the .bash_login file, type in the following:
+export PATH="PASTE_YOUR_PATH_HERE:$PATH"
+NOTE: leave off the trailing slash after /bin
+
+--
+Problem 2: 'Permission denied'
+The Django admin file is not executable (can't be run):
+(YOUR_PATH_HERE)/django-admin.py: Permission denied
+copy the long path including django-admin.py and type (note the spaces!):
+sudo chmod +x (paste your path to Django here)
+enter your password.
+if no error messages appear - you've done it.
+

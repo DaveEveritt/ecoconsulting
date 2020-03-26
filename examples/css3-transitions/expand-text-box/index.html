@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>box-expand</title>
+    <style>
+    body {
+        background-color:#eee;
+        font-family:Tahoma, Arial, sans-serif;
+    }
+    .boxcontainer {
+        position:relative;
+        margin-left:50px;
+    }
+    .expandme {
+        position:absolute;
+        padding:2px;
+        overflow:hidden;
+        white-space:nowrap;
+        width:100px;
+        height:50px;
+        color:#888;
+        background-color:#fff;
+        border:1px solid #999;
+
+        /*-webkit-transition-property:height,width,color,border-color;*/
+        /*-webkit-transition-timing-function:ease-in-out;*/
+
+        -webkit-transition-property:all;
+        -webkit-transition-duration:1s;
+        -moz-transition-property:height,width;
+        -moz-transition-duration:1s;
+        transition-property:height,width;
+        transition-property:1s;
+    }
+    .expandme:hover {
+        width:200px;
+        height:200px;
+        color:#222;
+        border-color:#f69;
+        margin-left:-50px;
+        z-index:100;
+    }
+    #expand2 {
+        left:104px;
+    }
+    #expand3 {
+        left:208px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS3 transitions: expand a text box</h1>
+    <p>Full <a href="https://developer.mozilla.org/en/CSS/CSS_transitions">CSS3 transition details</a> here</p>
+    <div class="boxcontainer">
+        <p class="expandme" id="expand1">
+            Expand me to<br>see the text<br>
+            <br>
+            Because my margin is also<br>
+            transformed, I stay centred.<br>
+            Isn't that nice? I think so.<br>
+            <br>
+            Everyone tells me you are<br>
+            a fake, but I believe in<br>
+            you
+        </p>
+        <p class="expandme" id="expand2">
+            Expand me too<br>see the text<br>
+            <br>
+            Because my margin is also<br>
+            transformed, I stay centred.<br>
+            Isn't that nice? I think so.<br>
+            <br>
+            if you really are a fake,<br>
+            don't tell me. I don't<br>
+            want to know.
+        </p>
+        <p class="expandme" id="expand3">
+            Expand me too<br>to see my text<br>
+            <br>
+            Because my margin is also<br>
+            transformed, I stay centred.<br>
+            Isn't that nice? I think so.<br>
+            <br>
+            What shape would the world<br>
+            be in today if everyone<br>
+            settled for being average?
+        </p>
+    </div>
+</body>
+</html>
