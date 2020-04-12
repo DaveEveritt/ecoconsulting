@@ -102,7 +102,7 @@ to <br />
 
 <p>Apache2, SSI, includes, server side includes, xbithack</p>
 
-<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can&#8217;t find flatpages/default.html, even though it&#8217;s in a TEMPLATE_DIRS path</h2>
+<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can"t find flatpages/default.html, even though it"s in a TEMPLATE_DIRS path</h2>
 
 <p>Wherever the templates directories are, there needs to be a directory inside it named the same as the project e.g.</p>
 
@@ -115,7 +115,7 @@ to <br />
 
 <p>django, templates</p>
 
-<h2 id="django_can8217t_display_admindocs_from_the_link_in_the_admin_screens">Django can&#8217;t display admindocs from the link in the admin screens</h2>
+<h2 id="django_can8217t_display_admindocs_from_the_link_in_the_admin_screens">Django can"t display admindocs from the link in the admin screens</h2>
 
 <p>ensure <code>docutils</code> is installed (use <code>pip</code> or <code>easy_install</code>) then add <code>django.contrib.admindocs</code> to <code>INSTALLED_APPS</code>.</p>
 
@@ -129,7 +129,7 @@ to <br />
 
 <p>Use <code>git add -u</code>.</p>
 
-<p><code>git add .</code>: looks at the working tree and adds all paths to staged changes if they are either changed or new (and not ignored). It does not stage any &#8216;rm&#8217; actions.</p>
+<p><code>git add .</code>: looks at the working tree and adds all paths to staged changes if they are either changed or new (and not ignored). It does not stage any "rm" actions.</p>
 
 <p><code>git add -u</code>: looks at all currently tracked files and stages changes to them if different (or removed). It does not add new files, only changes to files already tracked.</p>
 
@@ -145,7 +145,7 @@ to <br />
 
 <p>git, deleted files</p>
 
-<h2 id="use_django_from_trunk_in_your_user_directory_instead_of_from_python8217s_site_packages_directory">Use Django from trunk in your user directory instead of from Python&#8217;s site-packages directory</h2>
+<h2 id="use_django_from_trunk_in_your_user_directory_instead_of_from_python8217s_site_packages_directory">Use Django from trunk in your user directory instead of from Python"s site-packages directory</h2>
 
 <p>E.g. <code>~yourusername/src/django-trunk</code>, then you can update Django from trunk with <code>svn update</code>.</p>
 
@@ -170,9 +170,9 @@ to <br />
 
 <p>django, svn, trunk</p>
 
-<h2 id="install_south_from_trunk_when_it8217s_already_there_from_easy_install">Install South from trunk when it&#8217;s already there from easy_install</h2>
+<h2 id="install_south_from_trunk_when_it8217s_already_there_from_easy_install">Install South from trunk when it"s already there from easy_install</h2>
 
-<p>Delete the egg from Python&#8217;s <code>site-packages</code>, and the relevant line in the <code>easy-install.pth</code> file.</p>
+<p>Delete the egg from Python"s <code>site-packages</code>, and the relevant line in the <code>easy-install.pth</code> file.</p>
 
 <pre><code>$ svn co https://svn.aeracode.org/svn/south/trunk south
 $ setup.py develop (to run in it's svn dir)
@@ -233,7 +233,7 @@ Switches used above:
 <code>-p</code> prompt for pw
 <code>-u (name)</code> MySQL username</p></li>
 <li><p>Set up new database (e.g. <code>wedb</code>) and assign to a MySQL user (e.g. <code>webdev</code>); <br />
-<strong>if</strong> the user doesn&#8217;t yet exist (or to change their password): <br />
+<strong>if</strong> the user doesn"t yet exist (or to change their password): <br />
 <code>mysql&gt; grant all on wedb.* to webdev@localhost identified by "webdevpass";</code> <br />
 <strong>if</strong> the user does exist: <br />
 <code>mysql&gt; grant all on wedb.* to webdev@localhost;</code> <br />
@@ -255,13 +255,13 @@ then log out&#8230; <br />
 
 <h3>Links and resources:</h3>
 
-<p>Paul DuBois, &#8216;MySQL and Perl for the Web&#8217;, p13</p>
+<p>Paul DuBois, "MySQL and Perl for the Web", p13</p>
 
 <h3>Tags:</h3>
 
 <p>mysql, database</p>
 
-<h2 id="find_what8217s_on_python8217s_system_path">Find what&#8217;s on Python&#8217;s system path</h2>
+<h2 id="find_what8217s_on_python8217s_system_path">Find what"s on Python"s system path</h2>
 
 <p>In the Python shell:</p>
 
@@ -279,7 +279,7 @@ then log out&#8230; <br />
 
 <p>For HTML:
   escape backslashes in closing tags
-for XHTML (although it&#8217;s now dead):</p>
+for XHTML (although it"s now dead):</p>
 
 <pre><code>&lt;script type="text/javascript"&gt;
     &lt;![CDATA[
@@ -308,7 +308,7 @@ git pull
 sudo ant dist-mac
 </code></pre>
 
-<p>(see link 2 for &#8216;sudo&#8217; or not)</p>
+<p>(see link 2 for "sudo" or not)</p>
 
 <p>Open the <code>dist</code> folder under the NodeBox project folder, right-click the <code>mac</code> folder and select <code>Compress</code>. Rename the archive to also contain the version number, e.g. <code>NodeBox-2.0.963.zip</code>. Note that using the <code>zip</code> command from terminal <em>creates an invalid executable</em>.</p>
 
@@ -323,16 +323,16 @@ https://github.com/nodebox/nodebox/issues/closed#issue/2</p>
 
 <h2 id="compile_java_classes_into_a_separate_directory_from_their_source_files">Compile Java classes into a separate directory from their source files</h2>
 
-<p>cd to a dir where the &#8216;src&#8217; and &#8216;bin&#8217; files reside.</p>
+<p>cd to a dir where the ";src" and "bin" files reside.</p>
 
 <pre><code>$ javac -d bin src/dir1/dir2/source.java
 </code></pre>
 
-<p>The -d switch recreates the dir tree to &#8216;source.class&#8217; in the &#8216;bin&#8217; dir.</p>
+<p>The -d switch recreates the dir tree to "source.class" in the "bin" dir.</p>
 
-<p>For classes that call others, &#8216;bin&#8217; should be in the <code>CLASSPATH</code> because classes are used during the actual compile as they&#8217;re created. Then you can jar up the classes, or recompile a new version. You can use <code>-sourcepath</code> and <code>-classpath</code>.</p>
+<p>For classes that call others, "bin" should be in the <code>CLASSPATH</code> because classes are used during the actual compile as they"re created. Then you can jar up the classes, or recompile a new version. You can use <code>-sourcepath</code> and <code>-classpath</code>.</p>
 
-<p>If there&#8217;s a file that uses source.java in: <code>src/dir1/dir3/another.java</code> then this path is required too: <code>src/dir1/dir3/</code> (separate multiple paths with a colon <code>:</code>).</p>
+<p>If there"s a file that uses source.java in: <code>src/dir1/dir3/another.java</code> then this path is required too: <code>src/dir1/dir3/</code> (separate multiple paths with a colon <code>:</code>).</p>
 
 <p>If working with multiple projects or versions, keep paths away from <code>CLASSPATH</code> or the default Java class directory to avoid old/new class collisions, and consider using Ant or Maven which use XML to manage projects.</p>
 
@@ -484,7 +484,7 @@ https://rimuhosting.com/dns/zone.jsp?zone=your_domain_here <br />
 <code>Dallas 72.249.38.189</code> <br />
 <code>London 94.76.200.197</code> <br />
 Rimuhosting (ecoconsulting.co.uk): https://rimuhosting.com/dns/records.jsp <br />
-Fasthosts (subdomain): add new subdomain &#8216;A&#8217; record in &#8216;Advanced DNS&#8217; and point to the server IP address.</p></li>
+Fasthosts (subdomain): add new subdomain "A" record in "Advanced DNS" and point to the server IP address.</p></li>
 <li><p><code>adduser [newusername]</code> (follow prompts to add password etc.) <br />
 Add sub-directories: html, logs and cgi-bin as specified in the <code>VirtualHost</code> block (or Apache will choke). <br />
 <code>password_here - domain_url_here</code></p></li>
@@ -522,7 +522,7 @@ or (Debian) <br />
 or: <br />
 <code>ps aux</code> (list jobs) <br />
 <code>ps</code> (list jobs with id) <br />
-<code>w</code> (see what&#8217;s going on) <br />
+<code>w</code> (see what"s going on) <br />
 <code>%1</code> (1 = job number)</p>
 
 <p>Or interrupt the foreground job before it completes: <br />
@@ -540,7 +540,7 @@ or: <br />
 
 <p>unix, linux, ps, jobs, kill</p>
 
-<h2 id="perl_8216premature_end_of_script_headers8217">Perl &#8216;Premature end of script headers&#8217;</h2>
+<h2 id="perl_8216premature_end_of_script_headers8217">Perl "Premature end of script headers"</h2>
 
 <p>One often-overlooked cause is the wrong Unix/Linux owner and group for the script file throwing the error.</p>
 
@@ -558,19 +558,19 @@ or: <br />
 
 <p>General Apache &amp; mod_wsgi instructions:</p>
 
-<p>Do this NOT in the DocumentRoot directory, but in a place (in the user&#8217;s directory) where Apache can be made to have read access to the wsgi file and the containing directory.</p>
+<p>Do this NOT in the DocumentRoot directory, but in a place (in the user"s directory) where Apache can be made to have read access to the wsgi file and the containing directory.</p>
 
 <ol>
-<li><p>create a (test) WSGI application script file e.g. &#8216;test.wsgi&#8217; and put this in it:  </p>
+<li><p>create a (test) WSGI application script file e.g. "test.wsgi" and put this in it:  </p>
 
-<p>def application(environ, start<em>response): #function name: &#8216;application&#8217;
-    status = &#8216;200 OK&#8217;
-    output = &#8216;Hello WSGI!&#8217;
-    response</em>headers = [(&#8216;Content-type&#8217;, &#8216;text/plain&#8217;),
-                        (&#8216;Content-Length&#8217;, str(len(output)))]
+<p>def application(environ, start<em>response): #function name: "application"
+    status = "200 OK"
+    output = "Hello WSGI!"
+    response</em>headers = [("Content-type", "text/plain"),
+                        ("Content-Length", str(len(output)))]
     start<em>response(status, response</em>headers)
     return [output]`</p></li>
-<li><p>(a) put your wsgi script in a directory other than your site&#8217;s root directory, add the <code>WSGIScriptAlias</code> line to either your apache config file (httpd.conf) or your site&#8217;s <code>VirtualHost</code> container (e.g. Debian/Ubuntu: <code>/etc/apache2/sites-enabled/</code>) and allow Apache to access it e.g. for mysite.com/test:</p>
+<li><p>(a) put your wsgi script in a directory other than your site"s root directory, add the <code>WSGIScriptAlias</code> line to either your apache config file (httpd.conf) or your site"s <code>VirtualHost</code> container (e.g. Debian/Ubuntu: <code>/etc/apache2/sites-enabled/</code>) and allow Apache to access it e.g. for mysite.com/test:</p>
 
 <p><VirtualHost 94.76.200.197:80>
   ServerName blog.mysite.org
@@ -614,13 +614,13 @@ mysite.com/test:</p>
     Allow from all
   </Directory>
 </VirtualHost></p></li>
-<li><p>Or (preferred) start as a daemon process (so you can reload your script with e.g. &#8216;touch myscript.wsgi&#8217;)  </p>
+<li><p>Or (preferred) start as a daemon process (so you can reload your script with e.g. "touch myscript.wsgi")  </p>
 
 <p>TO FOLLOW</p></li>
 <li><p>restart Apache and visit: mysite.com/test or (for the DocumentRoot setup) mysite.com</p></li>
 </ol>
 
-<p>For django see Graham Dumpleton&#8217;s guide (on ecoconsulting.co.uk?) &#8216;grahamd-django-modwsgi.txt&#8217;</p>
+<p>For django see Graham Dumpleton"s guide (on ecoconsulting.co.uk?) "grahamd-django-modwsgi.txt"</p>
 
 <h3>Links and resources:</h3>
 
@@ -736,7 +736,7 @@ Common one-line sed scripts:
 <pre><code>find . -mtime -60 -ls
 </code></pre>
 
-<p>where &#8216;60&#8217; is the number of days.</p>
+<p>where "60" is the number of days.</p>
 
 <h3>Links and resources:</h3>
 
@@ -790,7 +790,7 @@ a:hover { color: #666; }
 
 <p>If JQuery is used to fade in the hover state colour at this stage, the first hover over a link will show the sudden css hover - the fade will only appear on the second hover.</p>
 
-<p>So, to preserve this css hover rule without javascript, one solution is to create a css class that matches the css <code>:hover</code> colour attribute to the <code>:link</code> state, allowing the JQuery color fade to show first time. This is only appended to the &#8216;wrapper&#8217; div by JQuery if javascript is available:</p>
+<p>So, to preserve this css hover rule without javascript, one solution is to create a css class that matches the css <code>:hover</code> colour attribute to the <code>:link</code> state, allowing the JQuery color fade to show first time. This is only appended to the "wrapper" div by JQuery if javascript is available:</p>
 
 <pre><code>/* if javascript is available the .js class is only added with JQuery, so
    css hover and link colours match and the JQuery fade shows instead */
@@ -815,13 +815,13 @@ a:hover { color: #666; }
 });
 </code></pre>
 
-<p>Now, hovering over the links won&#8217;t show an initial sudden css colour change (to <code>#666</code>) instead of a fade. Adding the <code>.js</code> class to the wrapper div means that this effect can also be applied to other links inside it - just add their selectors to the <code>$("#menu li a")</code> part like this: <code>$("#menu li a, #submenu li a")</code>.</p>
+<p>Now, hovering over the links won"t show an initial sudden css colour change (to <code>#666</code>) instead of a fade. Adding the <code>.js</code> class to the wrapper div means that this effect can also be applied to other links inside it - just add their selectors to the <code>$("#menu li a")</code> part like this: <code>$("#menu li a, #submenu li a")</code>.</p>
 
-<p>&#8216;View source&#8217; will not show the JQuery-generated <code>class="js"</code> addition to the &#8216;wrapper&#8217; id - you will need to inspect the generated source code (right-click > &#8216;inspect element&#8217; in Safari [other browsers?]).</p>
+<p>"View source" will not show the JQuery-generated <code>class="js"</code> addition to the "wrapper" id - you will need to inspect the generated source code (right-click > "inspect element" in Safari [other browsers?]).</p>
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://api.jquery.com/addClass/">JQuery API .addClass() page (my post didn&#8217;t appear)</a>, <br />
+<p><a href="http://api.jquery.com/addClass/">JQuery API .addClass() page (my post didn"t appear)</a>, <br />
 <a href="http://api.jquery.com/mouseenter/">JQuery mouseenter function</a></p>
 
 <h3>Tags:</h3>
@@ -878,7 +878,7 @@ quit: q
 
 <p>Perl, CPAN</p>
 
-<h2 id="wget_isn8217t_installed_by_default_on_os_x">wget isn&#8217;t installed by default on OS X</h2>
+<h2 id="wget_isn8217t_installed_by_default_on_os_x">wget isn"t installed by default on OS X</h2>
 
 <p>solution:
 use <code>curl</code> instead, or install <code>wget</code>. <code>curl -O</code> recreates remote dirs locally.</p>
@@ -950,7 +950,7 @@ vmstat 30 -a
 Check: <br />
 Utilities > Java > Java Preferences <br />
 drag 1.6 to the top and check the box, but also leave 1.5 checked. <br />
-If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;</p>
+If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <p>Remove (e.g.) Java 1.6</p>
 
@@ -959,7 +959,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 % sudo rm /System/Library/Frameworks/JavaVM.framework/Versions/1.6
 </code></pre>
 
-<p>That&#8217;s it - you&#8217;ll have 1.5 as the default again. If you have a folder named &#8216;Java SE 6&#8217; in <code>/Applications/Utilities/Java</code>, delete that too.</p>
+<p>That"s it - you"ll have 1.5 as the default again. If you have a folder named "Java SE 6" in <code>/Applications/Utilities/Java</code>, delete that too.</p>
 
 <p>Scott Kovatch, Apple Inc., Java Runtime Classes</p>
 
@@ -1013,7 +1013,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 
 <p>python, list comprehension, example</p>
 
-<h2 id="why_documentwrite_isn8217t_the_best_method">Why document.write isn&#8217;t the best method</h2>
+<h2 id="why_documentwrite_isn8217t_the_best_method">Why document.write isn"t the best method</h2>
 
 <p>There are better ways to incorporate strings into HTML content, such as <code>.innerHTML</code> and <code>.createElement</code> or HTML cloning patterns - <code>document.write</code> should be avoided because:</p>
 
@@ -1033,11 +1033,11 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 <h2 id="javacript_html_script_tag_blocks_uses_abuses_and_hints">Javacript HTML script tag blocks: uses, abuses and hints</h2>
 
 <ol>
-<li><p>Don&#8217;t add HTML comments <code>&lt;!-- //--&gt;</code> - these haven&#8217;t been necessary for years. Also, technically the comment contains a javascript decrement: <code>--</code> .</p></li>
+<li><p>Don"t add HTML comments <code>&lt;!-- //--&gt;</code> - these haven"t been necessary for years. Also, technically the comment contains a javascript decrement: <code>--</code> .</p></li>
 <li><p>Within Javascript, this: <code>&lt;/</code> should always be escaped thus: <code>&lt;\/</code></p></li>
 <li><p>Put the <code>src</code> attribute first: <code>script src="url"</code></p></li>
 <li><p><code>type="text/javascript"</code> is optional - the browser knows what to do</p></li>
-<li><p>Add scripts as late as possible, just before the closing <code>&lt;/body&gt;</code> tag is best, but ensure that they load <em>before they&#8217;re called</em> on the page.</p></li>
+<li><p>Add scripts as late as possible, just before the closing <code>&lt;/body&gt;</code> tag is best, but ensure that they load <em>before they"re called</em> on the page.</p></li>
 </ol>
 
 <h3>Links and resources:</h3>
@@ -1063,7 +1063,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 
 <p><code>chmod</code> <em>only</em> files to be parsed (i.e. containing SSI directives) to <code>744</code>.</p>
 
-<p>Make sure included files themselves are saved with utf-8 encoding from the text editor. Otherwise (even if the parent html page is utf-8) they&#8217;ll be imported with their file encoding, and won&#8217;t even respond to Apache directives like <code>AddDefaultCharset</code>.</p>
+<p>Make sure included files themselves are saved with utf-8 encoding from the text editor. Otherwise (even if the parent html page is utf-8) they"ll be imported with their file encoding, and won"t even respond to Apache directives like <code>AddDefaultCharset</code>.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1103,7 +1103,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 
 <p>file, filename, incompatible characters, file system, Windows, OS X, Linux, compatibility</p>
 
-<h2 id="renumber_ordered_lists_using_css_before_instead_of_deprecated_8216start8217_attribute">Renumber ordered lists using CSS :before instead of deprecated &#8216;start&#8217; attribute</h2>
+<h2 id="renumber_ordered_lists_using_css_before_instead_of_deprecated_8216start8217_attribute">Renumber ordered lists using CSS :before instead of deprecated "start" attribute</h2>
 
 <p>Various possibilities, including some styles for aligning <code>:before</code>-generated numbers:</p>
 
@@ -1193,7 +1193,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 
 <h2 id="png_file_with_alpha_transparency_and_opacity_fades_to_black_in_internet_explorer">PNG file with alpha transparency and opacity fades to black in Internet Explorer</h2>
 
-<p>Don&#8217;t use an ie-specific <code>opacity</code> filter in css for elements having a background png image with alpha channel transparency. There is a fix (see link) using an IE filter and rgba, which can be activated using Javascript/JQuery or placed in a CSS file.</p>
+<p>Don"t use an ie-specific <code>opacity</code> filter in css for elements having a background png image with alpha channel transparency. There is a fix (see link) using an IE filter and rgba, which can be activated using Javascript/JQuery or placed in a CSS file.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1205,7 +1205,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 
 <h2 id="border_radius_fails_for_images_in_firefox">Border-radius fails for images in Firefox</h2>
 
-<p>wrap the image in a <code>span</code> with the same height and width as the image, apply <code>border-radius</code> to the <code>span</code> and use the image as a background to the <code>span</code>. The xhtml-only SVG clipping path method works, but fails with <code>box-shadow</code> (adding the path the the outer border of the shadow), and isn&#8217;t future-proof (i.e. FF 4 supports <code>border-radius</code> for images).</p>
+<p>wrap the image in a <code>span</code> with the same height and width as the image, apply <code>border-radius</code> to the <code>span</code> and use the image as a background to the <code>span</code>. The xhtml-only SVG clipping path method works, but fails with <code>box-shadow</code> (adding the path the the outer border of the shadow), and isn"t future-proof (i.e. FF 4 supports <code>border-radius</code> for images).</p>
 
 <h3>Links and resources:</h3>
 
@@ -1222,7 +1222,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 <p>For Joomla 1.6, find the template: <br />
 <code>/component/com_content/views/article/tmpl/default.php</code></p>
 
-<p>Use <code>$this-&gt;item-&gt;parent</code> to wrap the <code>h2</code> tag in a link to the item&#8217;s parent page:</p>
+<p>Use <code>$this-&gt;item-&gt;parent</code> to wrap the <code>h2</code> tag in a link to the item"s parent page:</p>
 
 <pre><code>&lt;h2&gt;
   &lt;?php
@@ -1232,7 +1232,7 @@ If 1.6 isn&#8217;t there, install &#8216;Java for Mac OS X 10.5 Update 7&#8217;<
 &lt;/h2&gt;
 </code></pre>
 
-<p>Update: in a later version of Joomla 1.6 this gives an empty &#8216;?id=&#8217; suffix to the URL, so here&#8217;s the solution for the actual URL part above:</p>
+<p>Update: in a later version of Joomla 1.6 this gives an empty "?id=" suffix to the URL, so here"s the solution for the actual URL part above:</p>
 
 <pre><code>str_replace("?id=", "", JRoute::_(ContentHelperRoute::getArticleRoute($this-&gt;parent)))
 </code></pre>
@@ -1348,7 +1348,7 @@ xrange: 0.3509
 
 <h3>Links and resources:</h3>
 
-<p>&#8216;Python in a Nutshell&#8217; , <br />
+<p>"Python in a Nutshell" , <br />
 <a href="http://stackoverflow.com/questions/94935/what-is-the-difference-between-range-and-xrange">Difference between range and xrange</a>, <br />
 <a href="http://docs.python.org/library/timeit.html">docs.python.org/library/timeit</a>, <br />
 <a href="http://wiki.python.org/moin/PythonSpeed/PerformanceTips">Python Performance Tips</a></p>
@@ -1360,14 +1360,14 @@ xrange: 0.3509
 <h2 id="a_snippet_to_wrap_an_editable_string_around_a_selection_in_textmate">A snippet to wrap an editable string around a selection in TextMate</h2>
 
 <p>Bundles > Show Bundle Editor <br />
-then choose &#8216;New Snippet&#8217; from the add + button (bottom left) and use:</p>
+then choose "New Snippet" from the add + button (bottom left) and use:</p>
 
 <pre><code>${1:editme}$TM_SELECTED_TEXT${1/\s.*//}
 </code></pre>
 
-<p>where <code>editme</code> is the default editable value. If you add a new snippet shortcut in the &#8216;Key Equivalent&#8217; field (e.g. <code>ctrl-shift-alt-W</code>) you can then wrap any selection in an editable pair of words.</p>
+<p>where <code>editme</code> is the default editable value. If you add a new snippet shortcut in the "Key Equivalent" field (e.g. <code>ctrl-shift-alt-W</code>) you can then wrap any selection in an editable pair of words.</p>
 
-<p>Note: once the shortcut is allocated, you can&#8217;t edit a snippet in place - you need to start again (I think - couldn&#8217;t find a way around that).</p>
+<p>Note: once the shortcut is allocated, you can"t edit a snippet in place - you need to start again (I think - couldn"t find a way around that).</p>
 
 <h3>Links and resources:</h3>
 
@@ -1377,7 +1377,7 @@ then choose &#8216;New Snippet&#8217; from the add + button (bottom left) and us
 
 <p>TextMate, snippet, wrap</p>
 
-<h2 id="itunes_won8217t_accept_album_artwork_or_wma_files">iTunes won&#8217;t accept album artwork or wma files</h2>
+<h2 id="itunes_won8217t_accept_album_artwork_or_wma_files">iTunes won"t accept album artwork or wma files</h2>
 
 <p>Convert files to m4a (the free version of Switch works)</p>
 
@@ -1391,16 +1391,16 @@ then choose &#8216;New Snippet&#8217; from the add + button (bottom left) and us
 
 <h2 id="install_mongodb_on_os_x">Install MongoDB on OS X</h2>
 
-<p>The &#8216;quickstart&#8217; on the MongoDB site could be clearer. Here&#8217;s a condensed version with more info.</p>
+<p>The "quickstart" on the MongoDB site could be clearer. Here"s a condensed version with more info.</p>
 
 <ol>
-<li><p>Get the URL (copy the URL, don&#8217;t click) for the latest download for your system from: http://www.mongodb.org/downloads  </p></li>
-<li><p>Open Terminal and go to where you keep source files (good to create a directory if you don&#8217;t have it already) e.g.: <code>cd ~/src</code> then type <code>curl</code>, the URL you&#8217;ve copied, <code>&gt;</code> (between spaces) and the filename you&#8217;ll save it as e.g. (for the 64-bit version of Mongo 1.8.1): <br />
+<li><p>Get the URL (copy the URL, don"t click) for the latest download for your system from: http://www.mongodb.org/downloads  </p></li>
+<li><p>Open Terminal and go to where you keep source files (good to create a directory if you don"t have it already) e.g.: <code>cd ~/src</code> then type <code>curl</code>, the URL you"ve copied, <code>&gt;</code> (between spaces) and the filename you"ll save it as e.g. (for the 64-bit version of Mongo 1.8.1): <br />
 <code>curl http://fastdl.mongodb.org/osx/mongodb-osx-x86_64-1.8.1.tgz &gt; mongo.tgz</code></p></li>
-<li><p>Make the default directory for MongoDB to store it&#8217;s data - type: <br />
+<li><p>Make the default directory for MongoDB to store it"s data - type: <br />
 <code>mkdir -p /data/db</code> <br />
-(<code>-p</code> also creates the intermediate &#8216;data&#8217; directory) <br />
-If you want see what&#8217;s there after you&#8217;ve used MongoDB, type: <br />
+(<code>-p</code> also creates the intermediate "data" directory) <br />
+If you want see what"s there after you"ve used MongoDB, type: <br />
 <code>cd /data/db;ls -al</code></p></li>
 <li><p>Add a couple of aliases to your <code>.bash_profile</code>, <code>.bashrc</code>, <code>.bash_login</code> (or wherever you keep your custom bash stuff) e.g. for the above version of MongoDB downloaded to ~/src: <br />
 <code>alias mongod="/Users/yourusername/src/mongodb-osx-x86_64-1.8.1/bin/mongod"</code> <br />
@@ -1409,7 +1409,7 @@ If you want see what&#8217;s there after you&#8217;ve used MongoDB, type: <br />
 <code>mongod</code> <br />
 then open another Terminal window and type: <br />
 <code>mongo</code> <br />
-In the MongoDB shell that&#8217;s now started up, create and retrieve a test document &#8216;foo&#8217;: <br />
+In the MongoDB shell that"s now started up, create and retrieve a test document "foo": <br />
 <code>&gt; db.foo.save( { a : 1 } )</code> <br />
 <code>&gt; db.foo.find()</code></p></li>
 </ol>
@@ -1432,7 +1432,7 @@ In the MongoDB shell that&#8217;s now started up, create and retrieve a test doc
 <code>tar xvfz DBD-ODBC-1.29.tar.gz</code></p></li>
 <li><p>use makefile with your directory: <br />
 <code>perl Makefile.PL PREFIX=/home/my_user_dir/my_perl_libs</code></p></li>
-<li><p>then <code>make</code> as normal. Then <code>use lib "/home/my_user_dir/my_perl_libs"</code> in your code before &#8216;use&#8217;ing ODBC</p></li>
+<li><p>then <code>make</code> as normal. Then <code>use lib "/home/my_user_dir/my_perl_libs"</code> in your code before "use"ing ODBC</p></li>
 </ol>
 
 <h3>Links and resources:</h3>
@@ -1446,10 +1446,10 @@ In the MongoDB shell that&#8217;s now started up, create and retrieve a test doc
 <p>Downgrade to Rack 1.2.0: <br />
 <code>sudo gem uninstall -v 1.2.2 rack</code></p>
 
-<p>or, if you don&#8217;t already have Rack 1.2.0: <br />
+<p>or, if you don"t already have Rack 1.2.0: <br />
 <code>sudo gem install -v 1.2.0 rack</code></p>
 
-<p>The Github fix for Rack (see links) needs: <code>bacon</code>, <code>memcache-client</code>, <code>thin</code> and <code>fcgi</code>, but the latter won&#8217;t install with <code>gem</code>, as it needs the fcgi lib, although apparently you can install <code>fcgi-devel</code> instead (e.g. Gentoo): <br />
+<p>The Github fix for Rack (see links) needs: <code>bacon</code>, <code>memcache-client</code>, <code>thin</code> and <code>fcgi</code>, but the latter won"t install with <code>gem</code>, as it needs the fcgi lib, although apparently you can install <code>fcgi-devel</code> instead (e.g. Gentoo): <br />
 <code>yum install fcgi-devel</code></p>
 
 <p>Could install Ruby 1.8.7 but <code>readline</code> issues on Tiger (OS X 10.4) are a pain.</p>
@@ -1459,7 +1459,7 @@ In the MongoDB shell that&#8217;s now started up, create and retrieve a test doc
 <p><a href="https://github.com/sferik/rack/commit/fc4e2ae1a9b87a25d7bd3b88b0a25f9951ceee66">Rack fix for Ruby 1.8.6</a>, <br />
 <a href="http://www.imminentweb.com/technologies/setup-ruby-rails-behind-apache">How to set up Apache with FastCGI and Ruby bindings</a>, <br />
 <a href="https://rubyforge.org/tracker/index.php?func=detail&amp;aid=18274&amp;group_id=926&amp;atid=3638">FastCGI gem installation not possible under Windows?</a>, <br />
-<a href="http://fedoraforum.org/forum/showthread.php?t=195233">Rails: can&#8217;t install fcgi?</a>, <br />
+<a href="http://fedoraforum.org/forum/showthread.php?t=195233">Rails: can"t install fcgi?</a>, <br />
 <a href="http://blog.angelbob.com/posts/39-Compiling-Ruby-1-8-7-on-a-PowerBook-G4-with-Mac-OS-X-1-4---published-ruby">Compiling Ruby 1.8.7 on a PowerBook G4 with Mac OS X 10.4</a></p>
 
 <h3>Tags:</h3>
@@ -1469,7 +1469,7 @@ In the MongoDB shell that&#8217;s now started up, create and retrieve a test doc
 <h2 id="microsoft_word_keeps_reverting_to_us_english_a_default_font_whatever">Microsoft Word keeps reverting to US English/a default font/whatever</h2>
 
 <p>solution:
-Find and edit the basic template <code>Normal.dotm</code>, then save it. All new documents will reflect the changes. In OS X you&#8217;ll find it here: <br />
+Find and edit the basic template <code>Normal.dotm</code>, then save it. All new documents will reflect the changes. In OS X you"ll find it here: <br />
 <code>[home]/Library/Application Support/Microsoft/Office/User Templates/Normal.dotm</code></p>
 
 <h3>Links and resources:</h3>
@@ -1537,10 +1537,10 @@ if you don’t know how to use document database specific features such as map/r
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://rhnh.net/2010/07/13/relational-or-nosql-with-rails">Relational Or NoSQL With Rails? (Xavier Shay: &#8216;Robot Has No Heart&#8217;)</a>, <br />
+<p><a href="http://rhnh.net/2010/07/13/relational-or-nosql-with-rails">Relational Or NoSQL With Rails? (Xavier Shay: "Robot Has No Heart")</a>, <br />
 <a href="http://en.wikipedia.org/wiki/NoSQL">Wikipedia: NoSQL</a>, <br />
 <a href="http://www.xaprb.com/blog/2010/03/08/nosql-doesnt-mean-non-relational/">NoSQL doesn’t mean non-relational</a>, <br />
-<a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">Carlo Strozzi&#8217;s original NoSQL (1998)</a></p>
+<a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">Carlo Strozzi"s original NoSQL (1998)</a></p>
 
 <h3>Tags:</h3>
 
@@ -1555,7 +1555,7 @@ GNU bash, version 2.05b.0(1)-release (powerpc-apple-darwin8.0)
 Copyright (C) 2002 Free Software Foundation, Inc.
 </code></pre>
 
-<p>(yeah, I know that&#8217;s a really old version of bash I was running!)</p>
+<p>(yeah, I know that"s a really old version of bash I was running!)</p>
 
 <h3>Links and resources:</h3>
 
@@ -1567,7 +1567,7 @@ Copyright (C) 2002 Free Software Foundation, Inc.
 
 <h2 id="make_changes_to_currently_running_bash_shell_take_effect">Make changes to currently running bash shell take effect</h2>
 
-<p>You&#8217;ve changed a variable in a bash configuration file (e.g. with: <code>export VARNAME=the-new-value</code>), and you want it to take effect without leaving the shell - enter: <br />
+<p>You"ve changed a variable in a bash configuration file (e.g. with: <code>export VARNAME=the-new-value</code>), and you want it to take effect without leaving the shell - enter: <br />
 <code>source .bash_login</code>
 (or <code>.bash_profile</code>, or whatever the name of the changed bash config file is)</p>
 
@@ -1600,32 +1600,32 @@ Go to the dir where you want the link and type:</p>
 
 <p>linux, unix,symlink, symbolic link</p>
 
-<h2 id="mongo_8216unable_to_create_open_lock_file8217">Mongo &#8216;Unable to create / open lock file&#8217;</h2>
+<h2 id="mongo_8216unable_to_create_open_lock_file8217">Mongo "Unable to create / open lock file"</h2>
 
-<p>If you&#8217;re running mongo under a user, and there&#8217;s an error on running <code>mongod</code> like this:</p>
+<p>If you"re running mongo under a user, and there"s an error on running <code>mongod</code> like this:</p>
 
 <pre><code>"Unable to create / open lock file for lockfilepath:<br>/data/db/mongod.lock errno:13 Permission denied, terminating"
 </code></pre>
 
-<p>change the owner of mongo&#8217;s data directory:</p>
+<p>change the owner of mongo"s data directory:</p>
 
 <pre><code>sudo chown `id -u` /data/db
 </code></pre>
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://stackoverflow.com/questions/5798549/why-cant-i-start-the-mongodb">Stack Overflow: Why can&#8217;t I start the mongodb</a></p>
+<p><a href="http://stackoverflow.com/questions/5798549/why-cant-i-start-the-mongodb">Stack Overflow: Why can"t I start the mongodb</a></p>
 
 <h3>Tags:</h3>
 
 <p>mongo, mongodb, permissions</p>
 
-<h2 id="mongo_32_bit_won8217t_run_on_os_x_10411_tiger">Mongo 32-bit won&#8217;t run on OS X 10.4.11 (Tiger)</h2>
+<h2 id="mongo_32_bit_won8217t_run_on_os_x_10411_tiger">Mongo 32-bit won"t run on OS X 10.4.11 (Tiger)</h2>
 
 <p>Download and use this: <br />
 <a href="http://downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz">downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz</a></p>
 
-<p>&#8220;We&#8217;ll end up having a separate build for tiger - so the 32-bit regular os x build isn&#8217;t expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though.&#8221; - Michael Dirolf</p>
+<p>&#8220;We"ll end up having a separate build for tiger - so the 32-bit regular os x build isn"t expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though.&#8221; - Michael Dirolf</p>
 
 <h3>Links and resources:</h3>
 
@@ -1635,9 +1635,9 @@ Go to the dir where you want the link and type:</p>
 
 <p>mongo, mongodb, tiger, OS X 10.4</p>
 
-<h2 id="ruby_on_rails_fails_with_8220could_not_open_library_8216libmagic1dylib82178221">Ruby on Rails fails with &#8220;Could not open library &#8216;libmagic.1.dylib&#8217;&#8221;</h2>
+<h2 id="ruby_on_rails_fails_with_8220could_not_open_library_8216libmagic1dylib82178221">Ruby on Rails fails with &#8220;Could not open library "libmagic.1.dylib"&#8221;</h2>
 
-<p>No need to install the whole of <code>ImageMagick</code> (with it&#8217;s dependencies), you can install the missing library from: <br />
+<p>No need to install the whole of <code>ImageMagick</code> (with it"s dependencies), you can install the missing library from: <br />
 <a href="ftp://ftp.astron.com/pub/file/file-5.04.tar.gz">ftp.astron.com/pub/file/file-5.04.tar.gz</a></p>
 
 <p>The script from the link below (by Max Howell, author of Homebrew) can be adapted for use without Homebrew.</p>
@@ -1652,7 +1652,7 @@ Go to the dir where you want the link and type:</p>
 
 <h2 id="ruby_version_manager_rvm_install_problems_on_os_x_104_tiger">Ruby Version Manager (RVM) install problems on OS X 10.4 (Tiger)</h2>
 
-<p>There&#8217;s a version of the install script for this OS on the Google Groups RVM list.</p>
+<p>There"s a version of the install script for this OS on the Google Groups RVM list.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1662,7 +1662,7 @@ Go to the dir where you want the link and type:</p>
 
 <p>Ruby Version Manager, rvm, tiger, OS X 10.4</p>
 
-<h2 id="recipe_watercress_and_goats8217_cheese_muffins_cow_dairy_free">Recipe: watercress and goats&#8217; cheese muffins (cow-dairy-free)</h2>
+<h2 id="recipe_watercress_and_goats8217_cheese_muffins_cow_dairy_free">Recipe: watercress and goats" cheese muffins (cow-dairy-free)</h2>
 
 <p>Ingredients (serves 10)</p>
 
@@ -1674,15 +1674,15 @@ Go to the dir where you want the link and type:</p>
 <li>¼ tsp cayenne pepper</li>
 <li>1tsp caster sugar</li>
 <li>¼ tsp salt</li>
-<li>150g mature goats&#8217; cheese (grated)</li>
+<li>150g mature goats" cheese (grated)</li>
 <li>3 medium eggs</li>
-<li>175ml whole goats&#8217; milk</li>
-<li><p>100g goats&#8217; butter</p></li>
+<li>175ml whole goats" milk</li>
+<li><p>100g goats" butter</p></li>
 <li><p>Preheat the oven to 180°C. Put 10 paper muffin cases in a muffin tray.</p></li>
 <li>Remove any tough stems from the watercress and chop the rest finely.</li>
 <li>Sift together the flour, baking powder, mustard, cayenne, sugar and salt in a large bowl. Stir in the cheese.</li>
 <li>Lightly beat the eggs and milk together and add the flour mixture with the melted butter and watercress.</li>
-<li>Stir until just mixed, it&#8217;s important that you don&#8217;t over-mix though, or the muffins will be tough.</li>
+<li>Stir until just mixed, it"s important that you don"t over-mix though, or the muffins will be tough.</li>
 <li>Divide the dough between the muffin cases and bake in the oven for 25 minutes.</li>
 <li>Allow to cool on a wire rack - then enjoy!</li>
 </ul>
@@ -1693,7 +1693,7 @@ Go to the dir where you want the link and type:</p>
 
 <h3>Tags:</h3>
 
-<p>recipes, muffins, scones, goat&#8217;s cheese, goat&#8217;s milk</p>
+<p>recipes, muffins, scones, goat"s cheese, goat"s milk</p>
 
 <h2 id="find_the_obscure_privacy_settings_in_linkedin">Find the obscure privacy settings in LinkedIn</h2>
 
@@ -1791,7 +1791,7 @@ require 'oci8'     # NOTE: file required (oci8.rb) not same
 
 <h2 id="get_safari_to_show_a_new_favicon">Get Safari to show a new favicon</h2>
 
-<p>Safari tends to hang on to the version of a favicon loaded when a website is first visited. Go to <code>~/Library/Safari</code> and move the file &#8216;WebpageIcons.db&#8217;. Reload the page, then replace the file. If this doesn&#8217;t work, you may need to go to <em>History > Show All History</em> and delete all pages showing the icon you want to replace, and try again.</p>
+<p>Safari tends to hang on to the version of a favicon loaded when a website is first visited. Go to <code>~/Library/Safari</code> and move the file "WebpageIcons.db". Reload the page, then replace the file. If this doesn"t work, you may need to go to <em>History > Show All History</em> and delete all pages showing the icon you want to replace, and try again.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1845,7 +1845,7 @@ e.g. for 7.84 as a % of 29.75 = 26.35 <code>=((7.84/29.75)%)*10000</code></p>
 
 <h2 id="convert_markdown_to_html_using_kramdown">Convert Markdown to HTML using Kramdown:</h2>
 
-<p>E.g. enerate an HTML file &#8216;my<em>web</em>file.html&#8217; from a markdown file &#8216;my<em>md</em>file.md&#8217;:</p>
+<p>E.g. enerate an HTML file "my<em>web</em>file.html" from a markdown file "my<em>md</em>file.md":</p>
 
 <pre><code>kramdown my_md_file.md | cat &gt; my_web_file.html
 </code></pre>
@@ -1895,11 +1895,11 @@ RewriteRule ^(.*)$ http://mynewdomain.com/$1 [R=301,L]
 
 <p><strong>Snow Leopard 10.6:</strong> go to <em>Home/Library/Services</em>.</p>
 
-<p>Create any of these folders if they don&#8217;t exist.</p>
+<p>Create any of these folders if they don"t exist.</p>
 
 <p>Download <a href="http://dl.dropbox.com/u/1173209/RAR.selected.files.workflow.rar">this Automator script</a> and put it in the <em>Finder</em> folder above (the megaupload.com download is not available).</p>
 
-<p>You can now right- or ctrl-click on a folder or file in the finder and (from the bottom of the resulting menu) choose <em>More > Automator > RAR selected files</em>. It&#8217;s slower than creating a zip archive (so if it&#8217;s a large file or folder, give it time), but it works.</p>
+<p>You can now right- or ctrl-click on a folder or file in the finder and (from the bottom of the resulting menu) choose <em>More > Automator > RAR selected files</em>. It"s slower than creating a zip archive (so if it"s a large file or folder, give it time), but it works.</p>
 
 <p>To just <em>unrar</em> on OS X, use <a href="http://gp.home.xs4all.nl/Site/MacPAR_deLuxe.html">MacPAR</a>, <a href="http://www.unrarx.com/">UnrarX</a> or <a href="http://wakaba.c3.cx/s/apps/unarchiver.html">The Unarchiver</a>.</p>
 
@@ -1959,7 +1959,7 @@ Uninstalling /usr/local/homebrew/Cellar/pkg-config/0.25...
 
 <h3>Links and resources:</h3>
 
-<p><a href="https://github.com/mxcl/homebrew/issues/7465">GitHub: Add an option to <code>brew rm</code> to uninstall / remove a package, including all it&#8217;s dependencies.</a>
+<p><a href="https://github.com/mxcl/homebrew/issues/7465">GitHub: Add an option to <code>brew rm</code> to uninstall / remove a package, including all it"s dependencies.</a>
 <a href="http://stackoverflow.com/questions/7323261/uninstall-remove-a-homebrew-package-including-all-its-dependencies">StackOverflow: Uninstall / remove a Homebrew package including all its dependencies</a></p>
 
 <h3>Tags:</h3>
@@ -2101,7 +2101,7 @@ var my_thing = new Thing(eg_number, "eg_string");
 <p><code>rvm alias create default ruby-1.9.2-p290</code>
 or in latest RVM docs(?): <br />
 <code>rvm --default use 1.9.2-p290</code>
-which sets the default Ruby for all new terminal windows (the alias method didn&#8217;t do this on OS X 10.5.8 for new windows?).</p>
+which sets the default Ruby for all new terminal windows (the alias method didn"t do this on OS X 10.5.8 for new windows?).</p>
 
 <ul>
 <li>Go back to system Ruby: <code>rvm use system</code></li>
@@ -2175,7 +2175,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 <p>Compiling Java code is tricky because you need to keep track of several related but different things:</p>
 
 <ul>
-<li>The target file you&#8217;re compiling.</li>
+<li>The target file you"re compiling.</li>
 <li>The directory where the compiler looks for .java files that the target file imports.</li>
 <li>The directory where the compiler looks for .class files the target file imports.</li>
 <li>The directory where the compiler puts the compiled output.</li>
@@ -2183,7 +2183,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 
 <p>By default, the javac compiler thinks these are all the current working directory, which is almost never what you want. Consequently, you need to explicitly specify each of these elements when you compile.</p>
 
-<p>If you use the Java CLASSPATH (because you&#8217;re only compiling to the same directories every time, say if you only have one Java project), it needs both the source and target directory because the compiler needs to find the <code>.class</code> and <code>.java</code> files each target file imports (check this).</p>
+<p>If you use the Java CLASSPATH (because you"re only compiling to the same directories every time, say if you only have one Java project), it needs both the source and target directory because the compiler needs to find the <code>.class</code> and <code>.java</code> files each target file imports (check this).</p>
 
 <h3>Links and resources:</h3>
 
@@ -2195,7 +2195,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 
 <h2 id="github_error_ssl_certificate_problem_verify_that_the_ca_cert_is_ok">github error: SSL certificate problem, verify that the CA cert is OK</h2>
 
-<p>Quick fix (don&#8217;t use <code>--global</code> if it&#8217;s just for one repo) disable the SSL CERT verfication:
+<p>Quick fix (don"t use <code>--global</code> if it"s just for one repo) disable the SSL CERT verfication:
 <code>git config --global http.sslVerify false</code></p>
 
 <h3>Links and resources:</h3>
@@ -2221,9 +2221,9 @@ script by hand.  Please inform the package's author and the EasyInstall
 maintainers to find out if a fix or workaround is available.
 </code></pre>
 
-<p>the issue for me was that <code>scipy</code> requires Fortran, which doesn&#8217;t come with OS X and wasn&#8217;t installed on my (Leopard) system with Xcode 3.1.4.</p>
+<p>the issue for me was that <code>scipy</code> requires Fortran, which doesn"t come with OS X and wasn"t installed on my (Leopard) system with Xcode 3.1.4.</p>
 
-<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng&#8217;s instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there&#8217;s an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for &#8216;OS X 10.4 or higher&#8217; on this &#8216;tools for R&#8217; page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn&#8217;t install inside a virtual env</em> with no site packages. Sigh.</p>
+<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng"s instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there"s an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for "OS X 10.4 or higher" on this "tools for R" page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn"t install inside a virtual env</em> with no site packages. Sigh.</p>
 
 <p>Fortran is also required for the R language.</p>
 
@@ -2242,7 +2242,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 <h3>Links and resources:</h3>
 
 <p><a href="http://stackoverflow.com/questions/9381784/autoscaling-an-svg-embedded-in-html-on-window-resize">Autoscaling an SVG embedded in HTML on window resize</a>,
-<a href="http://www.justinmccandless.com/blog/Making+Sense+of+SVG+viewBox's+Madness">Making Sense of SVG viewBox&#8217;s Madness</a></p>
+<a href="http://www.justinmccandless.com/blog/Making+Sense+of+SVG+viewBox's+Madness">Making Sense of SVG viewBox"s Madness</a></p>
 
 <h3>Tags:</h3>
 
@@ -2262,7 +2262,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <h2 id="clear_screen_while_in_the_python_shell">Clear screen while in the python shell</h2>
 
-<p>Use the system&#8217;s command in *nix:</p>
+<p>Use the system"s command in *nix:</p>
 
 <pre><code>&gt;&gt;&gt; import os
 &gt;&gt;&gt; os.system("clear")
@@ -2278,7 +2278,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://stackoverflow.com/a/8846657/123033">Any way to clear python&#8217;s IDLE window?</a></p>
+<p><a href="http://stackoverflow.com/a/8846657/123033">Any way to clear python"s IDLE window?</a></p>
 
 <h3>Tags:</h3>
 
@@ -2309,7 +2309,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <p>Python, __init__, self</p>
 
-<h2 id="twoexamplesusingrubysinject">Two examples using Ruby&#8217;s inject</h2>
+<h2 id="twoexamplesusingrubysinject">Two examples using Ruby"s inject</h2>
 
 <p>A function to add any list of numbers:</p>
 
@@ -2392,9 +2392,9 @@ end
 
 <p>yaml, ruby, erb</p>
 
-<h2 id="illustratorcollectinnewlayerdefaultstooutlineview">Illustrator &#8216;collect in new layer&#8217; defaults to outline view</h2>
+<h2 id="illustratorcollectinnewlayerdefaultstooutlineview">Illustrator "collect in new layer" defaults to outline view</h2>
 
-<p>If the &#8216;eye&#8217; icon for the item in the Layers palette shows an &#8216;outline&#8217; eye, cmd-click it to change to &#8216;preview&#8217;.</p>
+<p>If the "eye" icon for the item in the Layers palette shows an "outline" eye, cmd-click it to change to "preview".</p>
 
 <h3>Links and resources:</h3>
 
@@ -2448,13 +2448,13 @@ end
 
 <h2 id="usingrsaforsshsftprsyncetc">Using RSA for ssh, sftp, rsync, etc. without a password</h2>
 
-<p>If you&#8217;re developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc&#8217;s <code>nanoc deploy</code> command) you can set things up so you don&#8217;t have to enter (or remember) the user&#8217;s password every time.</p>
+<p>If you"re developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc"s <code>nanoc deploy</code> command) you can set things up so you don"t have to enter (or remember) the user"s password every time.</p>
 
 <p>Open a command-line terminal while logged as the user who will run scp, ssh or rsync (i.e. when making/uploading websites).</p>
 
 <p>To find out if you already have an rsa keypair enter <code>cd ~;ls -al</code> - if you see an .ssh folder, enter <code>cd .ssh;ls</code> and check for the keys: id_rsa and id_rsa.pub</p>
 
-<p>If there is no .ssh folder, make sure you&#8217;re at the root level, create it and enter it:</p>
+<p>If there is no .ssh folder, make sure you"re at the root level, create it and enter it:</p>
 
 <pre><code>cd ~
 mkdir .ssh
@@ -2463,14 +2463,14 @@ cd .ssh
 
 <h3>Create the rsa keypair</h3>
 
-<p>Now you&#8217;re inside the .ssh folder, create a private and public keypair by typing:</p>
+<p>Now you"re inside the .ssh folder, create a private and public keypair by typing:</p>
 
 <pre><code>ssh-keygen -t rsa
 </code></pre>
 
-<p>When prompted &#8216;Enter file in which to save the key&#8217;, press return or enter to name the pair with the default name &#8216;id_rsa&#8217;.</p>
+<p>When prompted "Enter file in which to save the key", press return or enter to name the pair with the default name "id_rsa".</p>
 
-<p>Do the same for &#8216;Enter passphrase&#8217;, otherwise you will need to enter a passphrase each time you log in, which defeats the password-free purpose.</p>
+<p>Do the same for "Enter passphrase", otherwise you will need to enter a passphrase each time you log in, which defeats the password-free purpose.</p>
 
 <p>You will see something like the following:</p>
 
@@ -2496,11 +2496,11 @@ The key's randomart image is:
 +-----------------+
 </code></pre>
 
-<p>You normally won&#8217;t need the randomart image, so it can be ignored, or you can copy and save it in a text file.</p>
+<p>You normally won"t need the randomart image, so it can be ignored, or you can copy and save it in a text file.</p>
 
 <h3>Create a public key folder for a user on your server</h3>
 
-<p>You will need to do this for each user on the remote machine where you upload website files via a terminal. If you&#8217;re managing multiple websites, your server will likely have a user account for each website. If you only manage one, you only need to do this once.</p>
+<p>You will need to do this for each user on the remote machine where you upload website files via a terminal. If you"re managing multiple websites, your server will likely have a user account for each website. If you only manage one, you only need to do this once.</p>
 
 <p><strong>UPDATE 2019:</strong> shortcut `ssh-copy-id` should be available on most operating systems:</p>
 
@@ -2509,23 +2509,23 @@ The key's randomart image is:
 
 <h3>Previous instructions (redundant but retained for completeness)</h3>
 
-<p>Make sure you&#8217;re still in the .ssh folder and can see the keypair:</p>
+<p>Make sure you"re still in the .ssh folder and can see the keypair:</p>
 
 <pre><code>cd ~.ssh;ls
 </code></pre>
 
-<p>If you see &#8216;id_rsa.pub&#8217; and &#8216;id_rsa&#8217; both listed, login in to the remote user&#8217;s account on the server:</p>
+<p>If you see "id_rsa.pub" and "id_rsa" both listed, login in to the remote user"s account on the server:</p>
 
 <pre><code>ssh username@servername_or_ip
 </code></pre>
 
-<p>Enter the usual password, make sure you&#8217;re at the user&#8217;s root directory, and check for an .ssh directory:</p>
+<p>Enter the usual password, make sure you"re at the user"s root directory, and check for an .ssh directory:</p>
 
 <pre><code>cd ~
 ls -al
 </code></pre>
 
-<p>If there isn&#8217;t an &#8216;.ssh&#8217; directory, create it, set permissions that restrict everyone except that user, and <code>cd</code> (change directory) into it:</p>
+<p>If there isn"t an ".ssh" directory, create it, set permissions that restrict everyone except that user, and <code>cd</code> (change directory) into it:</p>
 
 <pre><code>mkdir .ssh
 chmod 700 .ssh
@@ -2534,35 +2534,35 @@ cd .ssh
 
 <h3>Upload the public key and save its contents</h3>
 
-<p>Create an &#8216;authorized_keys&#8217; file to hold your public key data and set the file&#8217;s permissions:</p>
+<p>Create an "authorized_keys" file to hold your public key data and set the file"s permissions:</p>
 
 <pre><code>touch authorized_keys
 chmod 600 authorized_keys
 </code></pre>
 
-<p>Confirm the exact path from the server&#8217;s root folder to the user&#8217;s .ssh folder:</p>
+<p>Confirm the exact path from the server"s root folder to the user"s .ssh folder:</p>
 
 <pre><code>pwd
 </code></pre>
 
-<p>Copy this path (something like <code>/home/username/.ssh</code>) and use it in the following command, which will securely copy (<code>scp</code>) your local public key file to the user&#8217;s .ssh folder. Use the same &#8216;username@servername&#8217; you used to log in via ssh:</p>
+<p>Copy this path (something like <code>/home/username/.ssh</code>) and use it in the following command, which will securely copy (<code>scp</code>) your local public key file to the user"s .ssh folder. Use the same "username@servername" you used to log in via ssh:</p>
 
 <pre><code>scp id_rsa.pub username@servername:/home/username/.ssh/id_rsa.pub
 </code></pre>
 
-<p>Use <code>ls</code> to check that the key has uploaded—if you see the two files &#8216;authorized_keys&#8217; and &#8216;id_rsa.pub&#8217;, enter the following command to copy the contents of your public key to the &#8216;authorized_keys&#8217; file:</p>
+<p>Use <code>ls</code> to check that the key has uploaded—if you see the two files "authorized_keys" and "id_rsa.pub", enter the following command to copy the contents of your public key to the "authorized_keys" file:</p>
 
 <pre><code>cat id_rsa.pub &gt;&gt;authorized_keys
 </code></pre>
 
-<p>If you enter <code>less authorized_keys</code> you should see a string of text, which means that your public key is now stored in &#8216;authorized_keys&#8217;. Type <code>q</code> to exit <code>less</code>, and delete your public key file:</p>
+<p>If you enter <code>less authorized_keys</code> you should see a string of text, which means that your public key is now stored in "authorized_keys". Type <code>q</code> to exit <code>less</code>, and delete your public key file:</p>
 
 <pre><code>rm id_rsa.pub
 </code></pre>
 
 <p>You should now be able to <code>logout</code> of ssh and login again as before, but without being prompted for a password.</p>
 
-<p>Note: if the user&#8217;s home directory on the server is accessed via NFS, then permissions for .ssh has to be 711 and &#8216;authorized_keys&#8217; 644. </p>
+<p>Note: if the user"s home directory on the server is accessed via NFS, then permissions for .ssh has to be 711 and "authorized_keys" 644. </p>
 
 <h3>Links and resources:</h3>
 
@@ -2699,11 +2699,11 @@ console.log("My name is %s and I am age %d. I like the colour %s.", userName, ag
 
 <ul>
 <li>Update your calendar either in iCloud or on a more recent OS or iOS device</li>
-<li>From your iCloud account click the &#8216;share&#8217; icon (right of the calendar name) on the calendar you want to access in Snow Leopard.</li>
-<li>Check &#8216;Public calendar&#8217; and note the first part of the URL, something like: webcal://p06-calendars.icloud.com/[…]</li>
-<li>In iCal in Snow Leopard, open Preferences, click &#8216;Accounts&#8217; and click the + (bottom left) to add a new account</li>
-<li>In the dialogue box &#8216;Account type&#8217; choose &#8216;Automatic&#8217; and enter the email address and password you use to sign in to iCloud e.g. my.name@me.com</li>
-<li>Once your login is authenticated, in &#8216;Server settings&#8217;, modify the first part of the URL above follows: p06-caldav.icloud.com and check &#8216;Use SSL&#8217;</li>
+<li>From your iCloud account click the "share" icon (right of the calendar name) on the calendar you want to access in Snow Leopard.</li>
+<li>Check "Public calendar" and note the first part of the URL, something like: webcal://p06-calendars.icloud.com/[…]</li>
+<li>In iCal in Snow Leopard, open Preferences, click "Accounts" and click the + (bottom left) to add a new account</li>
+<li>In the dialogue box "Account type" choose "Automatic" and enter the email address and password you use to sign in to iCloud e.g. my.name@me.com</li>
+<li>Once your login is authenticated, in "Server settings", modify the first part of the URL above follows: p06-caldav.icloud.com and check "Use SSL"</li>
 </ul>
 
 <h3 id="links_and_resources">Links and resources:</h3>
@@ -2779,7 +2779,7 @@ npm install -g ember-cli
 <p>Clone the repo: <br />
 <code>git clone /path_to_project</code></p>
 
-<p>Install the project&#8217;s Node and Bower package dependencies
+<p>Install the project"s Node and Bower package dependencies
 <code>npm install</code>
 <code>bower install</code></p>
 
@@ -2851,7 +2851,7 @@ npm install -g ember-cli
 
 <p>(If you do this before intalling the node module, you'll get <code>Install failed. Could not find addon with name: ember-cli-styles-reloader</code>)</p>
 
-<p>In your app, this adds <code>&quot;ember-cli-styles-reloader&quot;: &quot;0.1.6&quot;,</code> (or whatever version) to <code>package.json</code>.</p>
+<p>In your app, this adds <code>"ember-cli-styles-reloader": "0.1.6",</code> (or whatever version) to <code>package.json</code>.</p>
 
 <p>There's an option to animate style changes, but this seems excessive when it's enough to see the changes updated automatically. The ember-cli console outputs <code>Reloading saves-client.css only</code> when you change the stylesheet.</p>
 
@@ -2867,7 +2867,7 @@ npm install -g ember-cli
 
 <p>If Sublime Text 2 is in the Applications folder, and there's a <code>~/bin</code> directory in your path, make a symlink to <code>subl</code>:</p>
 
-<pre><code>ln -s &quot;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&quot; ~/bin/subl
+<pre><code>ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 </code></pre>
 
 <h3>Links and resources:</h3>
@@ -2887,12 +2887,12 @@ npm install -g ember-cli
 
 <p>Hit cmd-<sup>-E</sup> to get:</p>
 
-<pre><code>&lt;ul id=&quot;my-list&quot;&gt;
-  &lt;li class=&quot;list-item&quot;&gt;Item nr. 1&lt;/li&gt;
-  &lt;li class=&quot;list-item&quot;&gt;Item nr. 2&lt;/li&gt;
-  &lt;li class=&quot;list-item&quot;&gt;Item nr. 3&lt;/li&gt;
-  &lt;li class=&quot;list-item&quot;&gt;Item nr. 4&lt;/li&gt;
-  &lt;li class=&quot;list-item&quot;&gt;Item nr. 5&lt;/li&gt;
+<pre><code>&lt;ul id="my-list"&gt;
+  &lt;li class="list-item"&gt;Item nr. 1&lt;/li&gt;
+  &lt;li class="list-item"&gt;Item nr. 2&lt;/li&gt;
+  &lt;li class="list-item"&gt;Item nr. 3&lt;/li&gt;
+  &lt;li class="list-item"&gt;Item nr. 4&lt;/li&gt;
+  &lt;li class="list-item"&gt;Item nr. 5&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
 
@@ -2996,7 +2996,7 @@ $ popd
 ~/dir_1
 </code></pre>
 
-<p><code>pushd</code> &quot;pushes&quot; your current directory into a list for later, then changes to another directory, like saying &quot;save where I am, then go here&quot;</p>
+<p><code>pushd</code> "pushes" your current directory into a list for later, then changes to another directory, like saying "save where I am, then go here"</p>
 
 <p><code>popd</code> takes the last directory you saved with <code>pushd</code>, removes it from the list and takes you back there.</p>
 
@@ -3054,7 +3054,7 @@ Successfully installed Jinja2-2.8 Markdown-2.6.5 MarkupSafe-0.23 dayone-export-0
 
 <p>Then you simply go to the Day One files folder (mine's in Dropbox) (quotes are to handle the space in the 'Day One' folder name, but you could also do this 'Day\ One'):</p>
 
-<pre><code>cd &quot;~/Dropbox/Day One&quot;
+<pre><code>cd "~/Dropbox/Day One"
 </code></pre>
 
 <p>Then, in this case for a plain text file of entries tagged 'health':</p>
@@ -3165,7 +3165,7 @@ Branch new_branchname set up to track remote branch new_branchname from origin.
 
 <h2>Downgrade node in OS X with Homebrew</h2>
 
-<p>add &quot;versions&quot; to Homebrew if it's not already there:</p>
+<p>add "versions" to Homebrew if it's not already there:</p>
 
 <pre><code>$ brew tap homebrew/versions
 </code></pre>
@@ -3230,7 +3230,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <h2>MySQL password has expired</h2>
 
-<p>Typically, in a script shell, you get the message: &quot;Your password has expired. To log in you must change it using a client that supports expired passwords.&quot;</p>
+<p>Typically, in a script shell, you get the message: "Your password has expired. To log in you must change it using a client that supports expired passwords."</p>
 
 <p>From MySQL 5.7.4 to 5.7.10 (and beyond?) the default value for the <code>default_password_lifetime</code> variable is 360 (a year). For those versions, if you make no changes to this or to individual user accounts, all user passwords expire after 360 days.</p>
 
@@ -3296,7 +3296,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <p>After installing MariaDB using Homebrew, trying to start using <code>mysql -uroot</code> gives:</p>
 
-<pre><code>mysql: Can't read dir of '/usr/local/etc/my.cnf.d' (Errcode: 2 &quot;No such file or directory&quot;)
+<pre><code>mysql: Can't read dir of '/usr/local/etc/my.cnf.d' (Errcode: 2 "No such file or directory")
 Fatal error in defaults handling. Program aborted
 </code></pre>
 
@@ -3425,7 +3425,7 @@ pip install virtualenvwrapper
 <pre><code>pip install virtualenvwrapper
 </code></pre>
 
-<p>The recommendation is then to add the following lines to one of the bash initialisation files although <code>.bash_profile</code> is the recommended one (see &quot;Conflicting information&quot; below):</p>
+<p>The recommendation is then to add the following lines to one of the bash initialisation files although <code>.bash_profile</code> is the recommended one (see "Conflicting information" below):</p>
 
 <pre><code>export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
@@ -3559,14 +3559,14 @@ Could not find an activated virtualenv (required).
 <ul>
 <li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code></li>
 <li>create a bare GIT repo on the server (outside the site root)</li>
-<li>set up <code>deploy</code> in &quot;nanoc.yaml&quot; (as below)</li>
-<li>exclude &quot;output/&quot; from the nanoc site repo in local &quot;.gitignore&quot;</li>
-<li><code>git init</code> <em>inside</em> the &quot;output&quot; and…</li>
+<li>set up <code>deploy</code> in "nanoc.yaml" (as below)</li>
+<li>exclude "output/" from the nanoc site repo in local ".gitignore"</li>
+<li><code>git init</code> <em>inside</em> the "output" and…</li>
 <li>…<code>git remote set-url server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
-<li>create a &quot;.git/hooks/post-receive&quot; file inside the bare repo (as below)</li>
+<li>create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
 <li>make it executable with <code>chmod +x post-receive</code></li>
 </ul>
-<p><strong>in &quot;nanoc.yaml&quot;:</strong></p>
+<p><strong>in "nanoc.yaml":</strong></p>
 <pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
       <span class="hljs-symbol">default:</span>
         <span class="hljs-symbol">kind:</span> git
@@ -3574,8 +3574,8 @@ Could not find an activated virtualenv (required).
         <span class="hljs-symbol">branch:</span> master
         <span class="hljs-symbol">forced:</span> <span class="hljs-literal">true</span>
 </div></code></pre>
-<p>Not sure if &quot;forced&quot; is necessary, but it's pretty quick for even a large site anyway.</p>
-<p><strong>On the server in &quot;SITE_REPO.git/hooks/post-receive&quot;:</strong></p>
+<p>Not sure if "forced" is necessary, but it's pretty quick for even a large site anyway.</p>
+<p><strong>On the server in "SITE_REPO.git/hooks/post-receive":</strong></p>
 <pre><code class="language-bash"><div>    <span class="hljs-comment">#!/bin/sh</span>
     git --work-tree=/PATH_TO_SITE_ROOT --git-dir=PATH_TO_BARE_REPO.git checkout -f
 </div></code></pre>
@@ -3588,6 +3588,123 @@ Could not find an activated virtualenv (required).
 <h3 id="tags-1">Tags:</h3>
 <p>git, nanoc, server, deployment</p>
 
+<!-- START PASTE SOLUTIONS LOG -->
+
+<h2>Fix "nginx.service is masked"</h2>
+
+<p>use <code>sudo systemctl unmask nginx.service</code></p>
+
+<pre><code class="bash">root/# service nginx status
+  nginx.service
+   Loaded: masked (/dev/null; bad)
+   Active: inactive (dead) since Wed 2020-03-18 16:34:01 CET; 6h ago
+   [more info here]
+root/# service nginx start
+  Failed to start nginx.service: Unit nginx.service is masked.
+root/# sudo systemctl unmask nginx.service
+  Removed /etc/systemd/system/nginx.service.
+root/# service nginx start
+</code></pre>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units">How To Use Systemctl to Manage Systemd Services and Units</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>nginx, server, masked, unmask</p>
+
+<h2>Show hidden files in OS X</h2>
+
+<p>In *nix-based systems like OS X these are prefixed by a full stop (dot) <code>.</code> and the quickest way to show them is to click in the finder window where you want to see them, and his <code>CMD + SHIFT + .</code>. This toggles their visibility on/off.</p>
+
+<p>The older (and longer but permanent) way to show/hide them all is to open Terminal and type:</p>
+
+<p><code>defaults write com.apple.finder AppleShowAllFiles YES</code> or <code>NO</code></p>
+
+<p>Then restart the Finder:</p>
+
+<ul>
+<li>hold the ‘Option/alt’ key</li>
+<li>right click Finder icon in dock</li>
+<li>select ‘Relaunch’</li>
+</ul>
+
+<p>If you want a shortcut command in Terminal, the link below explains how.</p>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/">Quickly Show/Hide Hidden Files on macOS Sierra, OS X El Capitan &amp; Yosemite (Ian Lunn, 2014)</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>os x, apple, hidden files, finder</p>
+
+<h2>perl: warning: Setting locale failed</h2>
+
+<p>When running Perl process you get:</p>
+
+<pre><code class="bash">perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+</code></pre>
+
+<p>On Debian or Ubuntu:</p>
+
+<p>comment in the required locale: /etc/locale.gen (they may all be commented out by default)</p>
+
+<p>run: <code>locale-gen</code></p>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://stackoverflow.com/a/43903014/123033">How to fix a locale setting warning from Perl?</a></li>
+<li><a href="https://necotech.org/archives/988">perl: warning: Setting locale failed … LC_ALL = (unset) の解決案</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>perl, locale</p>
+
+<h2>List all installed Perl modules</h2>
+
+<p>Command-line (example from a running server):</p>
+
+<pre><code>instmodsh
+Available commands are:
+   l    - List all installed modules
+   m    - Select a module
+   q    - Quit the program
+cmd? l
+Installed modules are:
+   Archive::Zip
+   DateTime
+   DateTime::Locale
+   [...more here]
+   Mail::Sender
+   Params::Validate
+   Perl
+   YAML
+</code></pre>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://www.cyberciti.biz/faq/list-installed-perl-modules-unix-linux-appleosx-bsd/">Perl Command To List Installed CPAN Modules</a></li>
+<li><a href="https://www.linuxquestions.org/questions/linux-general-1/how-to-list-all-installed-perl-modules-216603/">How to list all installed Perl modules</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>perl, modules, cpan</p>
 
 <!-- END PASTE SOLUTIONS LOG -->
 				
