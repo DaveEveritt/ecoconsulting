@@ -137,7 +137,6 @@
 		
 		<p><a href="http://developers.whatwg.org/">HTML5: A technical specification for Web developers</a>.</p>
 		
-		<!--#exec cgi="/cgi-bin/comments.cgi" -->
 	</div>
 </div>
 </body>

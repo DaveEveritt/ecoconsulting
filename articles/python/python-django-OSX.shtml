@@ -231,7 +231,6 @@ underlying Python machinery: /Library/Frameworks/Python.framework.
 		<p>Many thanks to <a href="http://gregturner.org/">Greg Turner</a> and all those (Kent, Nehemiah, Joel, Chris, Hraban, Chris Barker and especially Ned) on the: <a href="http://mail.python.org/mailman/listinfo/pythonmac-sig">Pythonmac-SIG mailing list</a>.</p>
 		
 		<p><a href="/contact">Contact me</a> or comment below if you have anything to say about this tutorial.</p>
-		<!--#exec cgi="/cgi-bin/comments.cgi" -->
 
 	</div>
 </div>

@@ -68,7 +68,6 @@
 		</div>
 		
 		<p>3. now you can change the colour values in colours.cssi (or at the top of your single .cssi file) and have these changes appear in all the stylesheets that use these variables.</p>
-		<!--#exec cgi="/cgi-bin/comments.cgi" -->
 		
 	</div>
 </div>

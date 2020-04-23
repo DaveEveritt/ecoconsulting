@@ -4,7 +4,7 @@
 			<li><!--#if expr="${index}='research'" --><strong>research</strong><!--#else --><a <!--#if expr="${directory_name}='research'" -->class="here" <!--#endif -->href="/research/" >research</a><!--#endif --></li>
 			<li><!--#if expr="${index}='strategy'" --><strong>strategy</strong><!--#else --><a <!--#if expr="${directory_name}='strategy'" -->class="here" <!--#endif -->href="/strategy/" >strategy</a><!--#endif --></li>
 			<li><!--#if expr="${index}='webtech'"  --><strong>webtech</strong><!--#else  --><a <!--#if expr="${directory_name}='webtech'"  -->class="here" <!--#endif -->href="/webtech/" >webtech</a><!--#endif   --></li>
-			<li><!--#if expr="${index}='training'" --><strong>training</strong><!--#else --><a <!--#if expr="${directory_name}='training'" -->class="here" <!--#endif -->href="/training/" >training</a><!--#endif --></li>
+			<li><!--#if expr="${index}='training'" --><strong>training</strong><!--#else --><a <!--#if expr="${directory_name}='training'" -->class="here" <!--#endif -->href="/articles/" >training</a><!--#endif --></li>
 		</ul>
 		<ul>
 			<li><!--#if expr="${index}='about'"    --><strong>about</strong><!--#else    --><a <!--#if expr="${directory_name}='about'"    -->class="here" <!--#endif -->href="/about/" >about</a><!--#endif       --></li>

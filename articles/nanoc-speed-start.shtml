@@ -172,8 +172,6 @@
 		
 		<p>You don't have to use HTML in your content pages—nanoc can also read <a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>, <a href="http://redcloth.org/">Textile</a>, and several other markup languages that make it easier to edit web content. The <a href="http://nanoc.stoneship.org/docs/3-getting-started/#writing-pages-in-markdown">nanoc guide</a> covers this in detail, and although <a href="http://kramdown.rubyforge.org/">Kramdown</a> (Markdown to HTML) failed with an <code><a href="https://github.com/ddfreyne/nanoc/issues/87">uninitialized constant REXML</a></code> error on my OS X Leopard setup with Ruby 1.8.6, a prompt email from Kramdown developer Thomas Leitner provided the solution, now appended to the GitHub issue and fixed in the next Kramdown release.</p>
 		
-		<!--#exec cgi="/cgi-bin/comments.cgi" -->
-
 	</div>
 </div>
 <!--#include virtual="/includes/google_analytics.shtml"-->
