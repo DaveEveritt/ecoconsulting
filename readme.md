@@ -17,3 +17,4 @@ in process of being dragged into the 21srt century.
 - [ ] check links to 'webcoding first steps' text in 'downloads'
 - [ ] clean up and compare all resumes in 'documents'
 - [ ] change to HTML5
+- [ ] position: sticky on menu (test on 'solutions')
