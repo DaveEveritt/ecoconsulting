@@ -5,7 +5,7 @@ in process of being dragged into the 21srt century.
 ## TO DO
 
 - [ ] get automatic upload on push set up
-- [ ] check SwiftType errors for search
+- [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
 - [ ] clean up old redirects in .htaccess
 - [ ] create responsive menu
