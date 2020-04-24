@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-UK" xml:lang="en-UK">
+<!DOCTYPE html>
+<html lang="en-UK">
 <head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="An introdution to semantic HTML markup" --><!--#set var="directory_name" value="articles" -->
 <!--#include virtual="/includes/title_meta_global.shtml"-->
 <!--#include virtual="/includes/dc.shtml"-->
