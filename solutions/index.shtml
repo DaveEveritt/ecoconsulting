@@ -3586,8 +3586,6 @@ Could not find an activated virtualenv (required).
 <h3 id="tags-1">Tags:</h3>
 <p>git, nanoc, server, deployment</p>
 
-<!-- START PASTE SOLUTIONS LOG -->
-
 <h2>Fix "nginx.service is masked"</h2>
 
 <p>use <code>sudo systemctl unmask nginx.service</code></p>
@@ -3704,7 +3702,82 @@ Installed modules are:
 
 <p>perl, modules, cpan</p>
 
-<!-- END PASTE SOLUTIONS LOG -->
+<h2>Fix unwanted horizontal web page scrolling</h2>
+
+<p>Where this is caused by elements that are <strong>too wide</strong> for the viewport:</p>
+
+<ol>
+<li>open the website in a browser</li>
+<li>paste the JavaScript below into the browser console</li>
+<li>identify the offending elements from the red border</li>
+</ol>
+
+<pre><code class="javascript">let w = document.documentElement.offsetWidth;
+let t = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
+let b;
+while (t.nextNode()) {
+  b = t.currentNode.getBoundingClientRect();
+  if (b.right &gt; w || b.left &lt; 0) {
+    t.currentNode.style.setProperty('outline', '1px dotted red', 'important');
+    console.log(t.currentNode);
+  }
+}
+</code></pre>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li>Found on Reddit but link lost…</li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>web, development, design, css, viewport, html, scroll</p>
+
+<h2>GIT not recognising (so GitHub not getting) case changes in filenames</h2>
+
+<p>On the command-line, check whether <code>ignorecase</code> for GIT is set to true or false:</p>
+
+<pre><code>git config core.ignorecase
+</code></pre>
+
+<p>If it returns <code>true</code>, set it to <code>false</code>:</p>
+
+<pre><code>git config core.ignorecase false
+</code></pre>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://stackoverflow.com/a/8482021/123033">Is git not case sensitive?</a></li>
+<li><a href="https://stackoverflow.com/a/33732203/123033">Changing capitalization of filenames in Git</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>git, github, case-sensitivity, uppercase, lowercase, path, filenames, foldernames</p>
+
+<h2>Apple Mail crashes on opening</h2>
+
+<ol>
+<li>Open Mail while holding the Shift key, which opens it without any message or mailbox selected.</li>
+<li>If Mail opens with no windows visible, choose File &gt; New Viewer Window.</li>
+<li>Hide the message viewer portion of the window by dragging the thin separator bar between it and your list of messages until Mail shows only the list of messages, not the message viewer. You can now only see messages by double-clicking a message.</li>
+<li>Click the affected message once to select it without opening it, press Delete.</li>
+</ol>
+
+<h3>Links and resources</h3>
+
+<ul>
+<li><a href="https://www.macworld.com/article/1162877/mail-crashes.html">Bugs &amp; Fixes: Solving Mac OS X Mail Crashes</a></li>
+<li><a href="https://support.apple.com/en-gb/HT203542">If Mail unexpectedly quits when viewing certain messages</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>apple, mail, email, crash</p>
+
+<!-- PASTE NEW SOLUTIONS HERE -->
 				
 	</div>
 </div>
