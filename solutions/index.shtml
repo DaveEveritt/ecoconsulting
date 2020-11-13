@@ -100,7 +100,7 @@ to <br />
 
 <p>Apache2, SSI, includes, server side includes, xbithack</p>
 
-<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can"t find flatpages/default.html, even though it's in a TEMPLATE_DIRS path</h2>
+<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can't find flatpages/default.html, even though it's in a TEMPLATE_DIRS path</h2>
 
 <p>Wherever the templates directories are, there needs to be a directory inside it named the same as the project e.g.</p>
 
@@ -113,7 +113,7 @@ to <br />
 
 <p>django, templates</p>
 
-<h2 id="django_can8217t_display_admindocs_from_the_link_in_the_admin_screens">Django can"t display admindocs from the link in the admin screens</h2>
+<h2 id="django_can8217t_display_admindocs_from_the_link_in_the_admin_screens">Django can't display admindocs from the link in the admin screens</h2>
 
 <p>ensure <code>docutils</code> is installed (use <code>pip</code> or <code>easy_install</code>) then add <code>django.contrib.admindocs</code> to <code>INSTALLED_APPS</code>.</p>
 
@@ -231,7 +231,7 @@ Switches used above:
 <code>-p</code> prompt for pw
 <code>-u (name)</code> MySQL username</p></li>
 <li><p>Set up new database (e.g. <code>wedb</code>) and assign to a MySQL user (e.g. <code>webdev</code>); <br />
-<strong>if</strong> the user doesn"t yet exist (or to change their password): <br />
+<strong>if</strong> the user doesn't yet exist (or to change their password): <br />
 <code>mysql&gt; grant all on wedb.* to webdev@localhost identified by "webdevpass";</code> <br />
 <strong>if</strong> the user does exist: <br />
 <code>mysql&gt; grant all on wedb.* to webdev@localhost;</code> <br />
@@ -813,13 +813,13 @@ a:hover { color: #666; }
 });
 </code></pre>
 
-<p>Now, hovering over the links won"t show an initial sudden css colour change (to <code>#666</code>) instead of a fade. Adding the <code>.js</code> class to the wrapper div means that this effect can also be applied to other links inside it - just add their selectors to the <code>$("#menu li a")</code> part like this: <code>$("#menu li a, #submenu li a")</code>.</p>
+<p>Now, hovering over the links won't show an initial sudden css colour change (to <code>#666</code>) instead of a fade. Adding the <code>.js</code> class to the wrapper div means that this effect can also be applied to other links inside it - just add their selectors to the <code>$("#menu li a")</code> part like this: <code>$("#menu li a, #submenu li a")</code>.</p>
 
 <p>"View source" will not show the JQuery-generated <code>class="js"</code> addition to the "wrapper" id - you will need to inspect the generated source code (right-click > "inspect element" in Safari [other browsers?]).</p>
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://api.jquery.com/addClass/">JQuery API .addClass() page (my post didn"t appear)</a>, <br />
+<p><a href="http://api.jquery.com/addClass/">JQuery API .addClass() page (my post didn't appear)</a>, <br />
 <a href="http://api.jquery.com/mouseenter/">JQuery mouseenter function</a></p>
 
 <h3>Tags:</h3>
@@ -876,7 +876,7 @@ quit: q
 
 <p>Perl, CPAN</p>
 
-<h2 id="wget_isn8217t_installed_by_default_on_os_x">wget isn"t installed by default on OS X</h2>
+<h2 id="wget_isn8217t_installed_by_default_on_os_x">wget isn't installed by default on OS X</h2>
 
 <p>solution:
 use <code>curl</code> instead, or install <code>wget</code>. <code>curl -O</code> recreates remote dirs locally.</p>
@@ -948,7 +948,7 @@ vmstat 30 -a
 Check: <br />
 Utilities > Java > Java Preferences <br />
 drag 1.6 to the top and check the box, but also leave 1.5 checked. <br />
-If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
+If 1.6 isn't there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <p>Remove (e.g.) Java 1.6</p>
 
@@ -1011,7 +1011,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <p>python, list comprehension, example</p>
 
-<h2 id="why_documentwrite_isn8217t_the_best_method">Why document.write isn"t the best method</h2>
+<h2 id="why_documentwrite_isn8217t_the_best_method">Why document.write isn't the best method</h2>
 
 <p>There are better ways to incorporate strings into HTML content, such as <code>.innerHTML</code> and <code>.createElement</code> or HTML cloning patterns - <code>document.write</code> should be avoided because:</p>
 
@@ -1031,7 +1031,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 <h2 id="javacript_html_script_tag_blocks_uses_abuses_and_hints">Javacript HTML script tag blocks: uses, abuses and hints</h2>
 
 <ol>
-<li><p>Don"t add HTML comments <code>&lt;!-- //--&gt;</code> - these haven"t been necessary for years. Also, technically the comment contains a javascript decrement: <code>--</code> .</p></li>
+<li><p>Don't add HTML comments <code>&lt;!-- //--&gt;</code> - these haven't been necessary for years. Also, technically the comment contains a javascript decrement: <code>--</code> .</p></li>
 <li><p>Within Javascript, this: <code>&lt;/</code> should always be escaped thus: <code>&lt;\/</code></p></li>
 <li><p>Put the <code>src</code> attribute first: <code>script src="url"</code></p></li>
 <li><p><code>type="text/javascript"</code> is optional - the browser knows what to do</p></li>
@@ -1061,7 +1061,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <p><code>chmod</code> <em>only</em> files to be parsed (i.e. containing SSI directives) to <code>744</code>.</p>
 
-<p>Make sure included files themselves are saved with utf-8 encoding from the text editor. Otherwise (even if the parent html page is utf-8) they"ll be imported with their file encoding, and won"t even respond to Apache directives like <code>AddDefaultCharset</code>.</p>
+<p>Make sure included files themselves are saved with utf-8 encoding from the text editor. Otherwise (even if the parent html page is utf-8) they"ll be imported with their file encoding, and won't even respond to Apache directives like <code>AddDefaultCharset</code>.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1191,7 +1191,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <h2 id="png_file_with_alpha_transparency_and_opacity_fades_to_black_in_internet_explorer">PNG file with alpha transparency and opacity fades to black in Internet Explorer</h2>
 
-<p>Don"t use an ie-specific <code>opacity</code> filter in css for elements having a background png image with alpha channel transparency. There is a fix (see link) using an IE filter and rgba, which can be activated using Javascript/JQuery or placed in a CSS file.</p>
+<p>Don't use an ie-specific <code>opacity</code> filter in css for elements having a background png image with alpha channel transparency. There is a fix (see link) using an IE filter and rgba, which can be activated using Javascript/JQuery or placed in a CSS file.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1203,7 +1203,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 
 <h2 id="border_radius_fails_for_images_in_firefox">Border-radius fails for images in Firefox</h2>
 
-<p>wrap the image in a <code>span</code> with the same height and width as the image, apply <code>border-radius</code> to the <code>span</code> and use the image as a background to the <code>span</code>. The xhtml-only SVG clipping path method works, but fails with <code>box-shadow</code> (adding the path the the outer border of the shadow), and isn"t future-proof (i.e. FF 4 supports <code>border-radius</code> for images).</p>
+<p>wrap the image in a <code>span</code> with the same height and width as the image, apply <code>border-radius</code> to the <code>span</code> and use the image as a background to the <code>span</code>. The xhtml-only SVG clipping path method works, but fails with <code>box-shadow</code> (adding the path the the outer border of the shadow), and isn't future-proof (i.e. FF 4 supports <code>border-radius</code> for images).</p>
 
 <h3>Links and resources:</h3>
 
@@ -1365,7 +1365,7 @@ then choose "New Snippet" from the add + button (bottom left) and use:</p>
 
 <p>where <code>editme</code> is the default editable value. If you add a new snippet shortcut in the "Key Equivalent" field (e.g. <code>ctrl-shift-alt-W</code>) you can then wrap any selection in an editable pair of words.</p>
 
-<p>Note: once the shortcut is allocated, you can"t edit a snippet in place - you need to start again (I think - couldn"t find a way around that).</p>
+<p>Note: once the shortcut is allocated, you can't edit a snippet in place - you need to start again (I think - couldn't find a way around that).</p>
 
 <h3>Links and resources:</h3>
 
@@ -1375,7 +1375,7 @@ then choose "New Snippet" from the add + button (bottom left) and use:</p>
 
 <p>TextMate, snippet, wrap</p>
 
-<h2 id="itunes_won8217t_accept_album_artwork_or_wma_files">iTunes won"t accept album artwork or wma files</h2>
+<h2 id="itunes_won8217t_accept_album_artwork_or_wma_files">iTunes won't accept album artwork or wma files</h2>
 
 <p>Convert files to m4a (the free version of Switch works)</p>
 
@@ -1392,8 +1392,8 @@ then choose "New Snippet" from the add + button (bottom left) and use:</p>
 <p>The "quickstart" on the MongoDB site could be clearer. Here's a condensed version with more info.</p>
 
 <ol>
-<li><p>Get the URL (copy the URL, don"t click) for the latest download for your system from: http://www.mongodb.org/downloads  </p></li>
-<li><p>Open Terminal and go to where you keep source files (good to create a directory if you don"t have it already) e.g.: <code>cd ~/src</code> then type <code>curl</code>, the URL you"ve copied, <code>&gt;</code> (between spaces) and the filename you"ll save it as e.g. (for the 64-bit version of Mongo 1.8.1): <br />
+<li><p>Get the URL (copy the URL, don't click) for the latest download for your system from: http://www.mongodb.org/downloads  </p></li>
+<li><p>Open Terminal and go to where you keep source files (good to create a directory if you don't have it already) e.g.: <code>cd ~/src</code> then type <code>curl</code>, the URL you"ve copied, <code>&gt;</code> (between spaces) and the filename you"ll save it as e.g. (for the 64-bit version of Mongo 1.8.1): <br />
 <code>curl http://fastdl.mongodb.org/osx/mongodb-osx-x86_64-1.8.1.tgz &gt; mongo.tgz</code></p></li>
 <li><p>Make the default directory for MongoDB to store it's data - type: <br />
 <code>mkdir -p /data/db</code> <br />
@@ -1444,10 +1444,10 @@ In the MongoDB shell that's now started up, create and retrieve a test document 
 <p>Downgrade to Rack 1.2.0: <br />
 <code>sudo gem uninstall -v 1.2.2 rack</code></p>
 
-<p>or, if you don"t already have Rack 1.2.0: <br />
+<p>or, if you don't already have Rack 1.2.0: <br />
 <code>sudo gem install -v 1.2.0 rack</code></p>
 
-<p>The Github fix for Rack (see links) needs: <code>bacon</code>, <code>memcache-client</code>, <code>thin</code> and <code>fcgi</code>, but the latter won"t install with <code>gem</code>, as it needs the fcgi lib, although apparently you can install <code>fcgi-devel</code> instead (e.g. Gentoo): <br />
+<p>The Github fix for Rack (see links) needs: <code>bacon</code>, <code>memcache-client</code>, <code>thin</code> and <code>fcgi</code>, but the latter won't install with <code>gem</code>, as it needs the fcgi lib, although apparently you can install <code>fcgi-devel</code> instead (e.g. Gentoo): <br />
 <code>yum install fcgi-devel</code></p>
 
 <p>Could install Ruby 1.8.7 but <code>readline</code> issues on Tiger (OS X 10.4) are a pain.</p>
@@ -1457,7 +1457,7 @@ In the MongoDB shell that's now started up, create and retrieve a test document 
 <p><a href="https://github.com/sferik/rack/commit/fc4e2ae1a9b87a25d7bd3b88b0a25f9951ceee66">Rack fix for Ruby 1.8.6</a>, <br />
 <a href="http://www.imminentweb.com/technologies/setup-ruby-rails-behind-apache">How to set up Apache with FastCGI and Ruby bindings</a>, <br />
 <a href="https://rubyforge.org/tracker/index.php?func=detail&amp;aid=18274&amp;group_id=926&amp;atid=3638">FastCGI gem installation not possible under Windows?</a>, <br />
-<a href="http://fedoraforum.org/forum/showthread.php?t=195233">Rails: can"t install fcgi?</a>, <br />
+<a href="http://fedoraforum.org/forum/showthread.php?t=195233">Rails: can't install fcgi?</a>, <br />
 <a href="http://blog.angelbob.com/posts/39-Compiling-Ruby-1-8-7-on-a-PowerBook-G4-with-Mac-OS-X-1-4---published-ruby">Compiling Ruby 1.8.7 on a PowerBook G4 with Mac OS X 10.4</a></p>
 
 <h3>Tags:</h3>
@@ -1612,18 +1612,18 @@ Go to the dir where you want the link and type:</p>
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://stackoverflow.com/questions/5798549/why-cant-i-start-the-mongodb">Stack Overflow: Why can"t I start the mongodb</a></p>
+<p><a href="http://stackoverflow.com/questions/5798549/why-cant-i-start-the-mongodb">Stack Overflow: Why can't I start the mongodb</a></p>
 
 <h3>Tags:</h3>
 
 <p>mongo, mongodb, permissions</p>
 
-<h2 id="mongo_32_bit_won8217t_run_on_os_x_10411_tiger">Mongo 32-bit won"t run on OS X 10.4.11 (Tiger)</h2>
+<h2 id="mongo_32_bit_won8217t_run_on_os_x_10411_tiger">Mongo 32-bit won't run on OS X 10.4.11 (Tiger)</h2>
 
 <p>Download and use this: <br />
 <a href="http://downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz">downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz</a></p>
 
-<p>&#8220;We"ll end up having a separate build for tiger - so the 32-bit regular os x build isn"t expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though.&#8221; - Michael Dirolf</p>
+<p>&#8220;We"ll end up having a separate build for tiger - so the 32-bit regular os x build isn't expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though.&#8221; - Michael Dirolf</p>
 
 <h3>Links and resources:</h3>
 
@@ -1680,7 +1680,7 @@ Go to the dir where you want the link and type:</p>
 <li>Remove any tough stems from the watercress and chop the rest finely.</li>
 <li>Sift together the flour, baking powder, mustard, cayenne, sugar and salt in a large bowl. Stir in the cheese.</li>
 <li>Lightly beat the eggs and milk together and add the flour mixture with the melted butter and watercress.</li>
-<li>Stir until just mixed, it's important that you don"t over-mix though, or the muffins will be tough.</li>
+<li>Stir until just mixed, it's important that you don't over-mix though, or the muffins will be tough.</li>
 <li>Divide the dough between the muffin cases and bake in the oven for 25 minutes.</li>
 <li>Allow to cool on a wire rack - then enjoy!</li>
 </ul>
@@ -1789,7 +1789,7 @@ require 'oci8'     # NOTE: file required (oci8.rb) not same
 
 <h2 id="get_safari_to_show_a_new_favicon">Get Safari to show a new favicon</h2>
 
-<p>Safari tends to hang on to the version of a favicon loaded when a website is first visited. Go to <code>~/Library/Safari</code> and move the file "WebpageIcons.db". Reload the page, then replace the file. If this doesn"t work, you may need to go to <em>History > Show All History</em> and delete all pages showing the icon you want to replace, and try again.</p>
+<p>Safari tends to hang on to the version of a favicon loaded when a website is first visited. Go to <code>~/Library/Safari</code> and move the file "WebpageIcons.db". Reload the page, then replace the file. If this doesn't work, you may need to go to <em>History > Show All History</em> and delete all pages showing the icon you want to replace, and try again.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1893,7 +1893,7 @@ RewriteRule ^(.*)$ http://mynewdomain.com/$1 [R=301,L]
 
 <p><strong>Snow Leopard 10.6:</strong> go to <em>Home/Library/Services</em>.</p>
 
-<p>Create any of these folders if they don"t exist.</p>
+<p>Create any of these folders if they don't exist.</p>
 
 <p>Download <a href="http://dl.dropbox.com/u/1173209/RAR.selected.files.workflow.rar">this Automator script</a> and put it in the <em>Finder</em> folder above (the megaupload.com download is not available).</p>
 
@@ -2099,7 +2099,7 @@ var my_thing = new Thing(eg_number, "eg_string");
 <p><code>rvm alias create default ruby-1.9.2-p290</code>
 or in latest RVM docs(?): <br />
 <code>rvm --default use 1.9.2-p290</code>
-which sets the default Ruby for all new terminal windows (the alias method didn"t do this on OS X 10.5.8 for new windows?).</p>
+which sets the default Ruby for all new terminal windows (the alias method didn't do this on OS X 10.5.8 for new windows?).</p>
 
 <ul>
 <li>Go back to system Ruby: <code>rvm use system</code></li>
@@ -2193,7 +2193,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 
 <h2 id="github_error_ssl_certificate_problem_verify_that_the_ca_cert_is_ok">github error: SSL certificate problem, verify that the CA cert is OK</h2>
 
-<p>Quick fix (don"t use <code>--global</code> if it's just for one repo) disable the SSL CERT verfication:
+<p>Quick fix (don't use <code>--global</code> if it's just for one repo) disable the SSL CERT verfication:
 <code>git config --global http.sslVerify false</code></p>
 
 <h3>Links and resources:</h3>
@@ -2219,9 +2219,9 @@ script by hand.  Please inform the package's author and the EasyInstall
 maintainers to find out if a fix or workaround is available.
 </code></pre>
 
-<p>the issue for me was that <code>scipy</code> requires Fortran, which doesn"t come with OS X and wasn"t installed on my (Leopard) system with Xcode 3.1.4.</p>
+<p>the issue for me was that <code>scipy</code> requires Fortran, which doesn't come with OS X and wasn't installed on my (Leopard) system with Xcode 3.1.4.</p>
 
-<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng's instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there's an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for "OS X 10.4 or higher" on this "tools for R" page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn"t install inside a virtual env</em> with no site packages. Sigh.</p>
+<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng's instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there's an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for "OS X 10.4 or higher" on this "tools for R" page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn't install inside a virtual env</em> with no site packages. Sigh.</p>
 
 <p>Fortran is also required for the R language.</p>
 
@@ -2446,7 +2446,7 @@ end
 
 <h2 id="usingrsaforsshsftprsyncetc">Using RSA for ssh, sftp, rsync, etc. without a password</h2>
 
-<p>If you're developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc's <code>nanoc deploy</code> command) you can set things up so you don"t have to enter (or remember) the user's password every time.</p>
+<p>If you're developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc's <code>nanoc deploy</code> command) you can set things up so you don't have to enter (or remember) the user's password every time.</p>
 
 <p>Open a command-line terminal while logged as the user who will run scp, ssh or rsync (i.e. when making/uploading websites).</p>
 
@@ -2494,13 +2494,13 @@ The key's randomart image is:
 +-----------------+
 </code></pre>
 
-<p>You normally won"t need the randomart image, so it can be ignored, or you can copy and save it in a text file.</p>
+<p>You normally won't need the randomart image, so it can be ignored, or you can copy and save it in a text file.</p>
 
-<h3>Create a public key folder for a user on your server</h3>
+<h3>Create a public key folder for a user on your server (they will need to accept your key)</h3>
 
 <p>You will need to do this for each user on the remote machine where you upload website files via a terminal. If you're managing multiple websites, your server will likely have a user account for each website. If you only manage one, you only need to do this once.</p>
 
-<p><strong>UPDATE 2019:</strong> shortcut `ssh-copy-id` should be available on most operating systems:</p>
+<p><strong>UPDATE 2019:</strong> shortcut <code>ssh-copy-id</code> should be available on most operating systems:</p>
 
 <pre><code>ssh-copy-id -i /path_to_key_here/.ssh/id_rsa.pub user@server_or_domain</code> optional port:<code> -p 778899
 </code></pre>
@@ -2525,7 +2525,7 @@ The key's randomart image is:
 ls -al
 </code></pre>
 
-<p>If there isn"t an ".ssh" directory, create it, set permissions that restrict everyone except that user, and <code>cd</code> (change directory) into it:</p>
+<p>If there isn't an ".ssh" directory, create it, set permissions that restrict everyone except that user, and <code>cd</code> (change directory) into it:</p>
 
 <pre><code>mkdir .ssh
 chmod 700 .ssh
