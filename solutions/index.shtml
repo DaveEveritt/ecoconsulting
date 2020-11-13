@@ -2505,6 +2505,8 @@ The key's randomart image is:
 <pre><code>ssh-copy-id -i /path_to_key_here/.ssh/id_rsa.pub user@server_or_domain</code> optional port:<code> -p 778899
 </code></pre>
 
+<p>Test this by logging in with <code>ssh -p '778899' 'user@server_or_domain'</code> (port if necessary)</p>
+
 <h3>Previous instructions (redundant but retained for completeness)</h3>
 
 <p>Make sure you're still in the .ssh folder and can see the keypair:</p>
@@ -3531,6 +3533,8 @@ Could not find an activated virtualenv (required).
 <p>SSH has a built-in command for this:</p>
 
 <p><code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code></p>
+
+<p>Test this by logging in with <code>ssh -p '778899' 'user@server_or_domain'</code> (port if necessary)</p>
 
 <h3>Links and resources:</h3>
 
