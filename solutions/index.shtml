@@ -2502,7 +2502,7 @@ The key's randomart image is:
 
 <p><strong>UPDATE 2019:</strong> shortcut `ssh-copy-id` should be available on most operating systems:</p>
 
-<pre><code>ssh-copy-id -i /path_to_key_here/.ssh/id_rsa.pub user@server_or_domain
+<pre><code>ssh-copy-id -i /path_to_key_here/.ssh/id_rsa.pub user@server_or_domain</code> optional port:<code> -p 778899
 </code></pre>
 
 <h3>Previous instructions (redundant but retained for completeness)</h3>
