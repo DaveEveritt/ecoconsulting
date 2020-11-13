@@ -100,7 +100,7 @@ to <br />
 
 <p>Apache2, SSI, includes, server side includes, xbithack</p>
 
-<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can"t find flatpages/default.html, even though it"s in a TEMPLATE_DIRS path</h2>
+<h2 id="django_can8217t_find_flatpages_defaulthtml_even_though_it8217s_in_a_template_dirs_path">Django can"t find flatpages/default.html, even though it's in a TEMPLATE_DIRS path</h2>
 
 <p>Wherever the templates directories are, there needs to be a directory inside it named the same as the project e.g.</p>
 
@@ -143,7 +143,7 @@ to <br />
 
 <p>git, deleted files</p>
 
-<h2 id="use_django_from_trunk_in_your_user_directory_instead_of_from_python8217s_site_packages_directory">Use Django from trunk in your user directory instead of from Python"s site-packages directory</h2>
+<h2 id="use_django_from_trunk_in_your_user_directory_instead_of_from_python8217s_site_packages_directory">Use Django from trunk in your user directory instead of from Python's site-packages directory</h2>
 
 <p>E.g. <code>~yourusername/src/django-trunk</code>, then you can update Django from trunk with <code>svn update</code>.</p>
 
@@ -168,9 +168,9 @@ to <br />
 
 <p>django, svn, trunk</p>
 
-<h2 id="install_south_from_trunk_when_it8217s_already_there_from_easy_install">Install South from trunk when it"s already there from easy_install</h2>
+<h2 id="install_south_from_trunk_when_it8217s_already_there_from_easy_install">Install South from trunk when it's already there from easy_install</h2>
 
-<p>Delete the egg from Python"s <code>site-packages</code>, and the relevant line in the <code>easy-install.pth</code> file.</p>
+<p>Delete the egg from Python's <code>site-packages</code>, and the relevant line in the <code>easy-install.pth</code> file.</p>
 
 <pre><code>$ svn co https://svn.aeracode.org/svn/south/trunk south
 $ setup.py develop (to run in it's svn dir)
@@ -259,7 +259,7 @@ then log out&#8230; <br />
 
 <p>mysql, database</p>
 
-<h2 id="find_what8217s_on_python8217s_system_path">Find what"s on Python"s system path</h2>
+<h2 id="find_what8217s_on_python8217s_system_path">Find what's on Python's system path</h2>
 
 <p>In the Python shell:</p>
 
@@ -277,7 +277,7 @@ then log out&#8230; <br />
 
 <p>For HTML:
   escape backslashes in closing tags
-for XHTML (although it"s now dead):</p>
+for XHTML (although it's now dead):</p>
 
 <pre><code>&lt;script type="text/javascript"&gt;
     &lt;![CDATA[
@@ -330,7 +330,7 @@ https://github.com/nodebox/nodebox/issues/closed#issue/2</p>
 
 <p>For classes that call others, "bin" should be in the <code>CLASSPATH</code> because classes are used during the actual compile as they"re created. Then you can jar up the classes, or recompile a new version. You can use <code>-sourcepath</code> and <code>-classpath</code>.</p>
 
-<p>If there"s a file that uses source.java in: <code>src/dir1/dir3/another.java</code> then this path is required too: <code>src/dir1/dir3/</code> (separate multiple paths with a colon <code>:</code>).</p>
+<p>If there's a file that uses source.java in: <code>src/dir1/dir3/another.java</code> then this path is required too: <code>src/dir1/dir3/</code> (separate multiple paths with a colon <code>:</code>).</p>
 
 <p>If working with multiple projects or versions, keep paths away from <code>CLASSPATH</code> or the default Java class directory to avoid old/new class collisions, and consider using Ant or Maven which use XML to manage projects.</p>
 
@@ -520,7 +520,7 @@ or (Debian) <br />
 or: <br />
 <code>ps aux</code> (list jobs) <br />
 <code>ps</code> (list jobs with id) <br />
-<code>w</code> (see what"s going on) <br />
+<code>w</code> (see what's going on) <br />
 <code>%1</code> (1 = job number)</p>
 
 <p>Or interrupt the foreground job before it completes: <br />
@@ -556,7 +556,7 @@ or: <br />
 
 <p>General Apache &amp; mod_wsgi instructions:</p>
 
-<p>Do this NOT in the DocumentRoot directory, but in a place (in the user"s directory) where Apache can be made to have read access to the wsgi file and the containing directory.</p>
+<p>Do this NOT in the DocumentRoot directory, but in a place (in the user's directory) where Apache can be made to have read access to the wsgi file and the containing directory.</p>
 
 <ol>
 <li><p>create a (test) WSGI application script file e.g. "test.wsgi" and put this in it:  </p>
@@ -568,7 +568,7 @@ or: <br />
                         ("Content-Length", str(len(output)))]
     start<em>response(status, response</em>headers)
     return [output]`</p></li>
-<li><p>(a) put your wsgi script in a directory other than your site"s root directory, add the <code>WSGIScriptAlias</code> line to either your apache config file (httpd.conf) or your site"s <code>VirtualHost</code> container (e.g. Debian/Ubuntu: <code>/etc/apache2/sites-enabled/</code>) and allow Apache to access it e.g. for mysite.com/test:</p>
+<li><p>(a) put your wsgi script in a directory other than your site's root directory, add the <code>WSGIScriptAlias</code> line to either your apache config file (httpd.conf) or your site's <code>VirtualHost</code> container (e.g. Debian/Ubuntu: <code>/etc/apache2/sites-enabled/</code>) and allow Apache to access it e.g. for mysite.com/test:</p>
 
 <p><VirtualHost 94.76.200.197:80>
   ServerName blog.mysite.org
@@ -618,7 +618,7 @@ mysite.com/test:</p>
 <li><p>restart Apache and visit: mysite.com/test or (for the DocumentRoot setup) mysite.com</p></li>
 </ol>
 
-<p>For django see Graham Dumpleton"s guide (on ecoconsulting.co.uk?) "grahamd-django-modwsgi.txt"</p>
+<p>For django see Graham Dumpleton's guide (on ecoconsulting.co.uk?) "grahamd-django-modwsgi.txt"</p>
 
 <h3>Links and resources:</h3>
 
@@ -957,7 +957,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 % sudo rm /System/Library/Frameworks/JavaVM.framework/Versions/1.6
 </code></pre>
 
-<p>That"s it - you"ll have 1.5 as the default again. If you have a folder named "Java SE 6" in <code>/Applications/Utilities/Java</code>, delete that too.</p>
+<p>That's it - you"ll have 1.5 as the default again. If you have a folder named "Java SE 6" in <code>/Applications/Utilities/Java</code>, delete that too.</p>
 
 <p>Scott Kovatch, Apple Inc., Java Runtime Classes</p>
 
@@ -1220,7 +1220,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 <p>For Joomla 1.6, find the template: <br />
 <code>/component/com_content/views/article/tmpl/default.php</code></p>
 
-<p>Use <code>$this-&gt;item-&gt;parent</code> to wrap the <code>h2</code> tag in a link to the item"s parent page:</p>
+<p>Use <code>$this-&gt;item-&gt;parent</code> to wrap the <code>h2</code> tag in a link to the item's parent page:</p>
 
 <pre><code>&lt;h2&gt;
   &lt;?php
@@ -1230,7 +1230,7 @@ If 1.6 isn"t there, install "Java for Mac OS X 10.5 Update 7"</p>
 &lt;/h2&gt;
 </code></pre>
 
-<p>Update: in a later version of Joomla 1.6 this gives an empty "?id=" suffix to the URL, so here"s the solution for the actual URL part above:</p>
+<p>Update: in a later version of Joomla 1.6 this gives an empty "?id=" suffix to the URL, so here's the solution for the actual URL part above:</p>
 
 <pre><code>str_replace("?id=", "", JRoute::_(ContentHelperRoute::getArticleRoute($this-&gt;parent)))
 </code></pre>
@@ -1389,16 +1389,16 @@ then choose "New Snippet" from the add + button (bottom left) and use:</p>
 
 <h2 id="install_mongodb_on_os_x">Install MongoDB on OS X</h2>
 
-<p>The "quickstart" on the MongoDB site could be clearer. Here"s a condensed version with more info.</p>
+<p>The "quickstart" on the MongoDB site could be clearer. Here's a condensed version with more info.</p>
 
 <ol>
 <li><p>Get the URL (copy the URL, don"t click) for the latest download for your system from: http://www.mongodb.org/downloads  </p></li>
 <li><p>Open Terminal and go to where you keep source files (good to create a directory if you don"t have it already) e.g.: <code>cd ~/src</code> then type <code>curl</code>, the URL you"ve copied, <code>&gt;</code> (between spaces) and the filename you"ll save it as e.g. (for the 64-bit version of Mongo 1.8.1): <br />
 <code>curl http://fastdl.mongodb.org/osx/mongodb-osx-x86_64-1.8.1.tgz &gt; mongo.tgz</code></p></li>
-<li><p>Make the default directory for MongoDB to store it"s data - type: <br />
+<li><p>Make the default directory for MongoDB to store it's data - type: <br />
 <code>mkdir -p /data/db</code> <br />
 (<code>-p</code> also creates the intermediate "data" directory) <br />
-If you want see what"s there after you"ve used MongoDB, type: <br />
+If you want see what's there after you"ve used MongoDB, type: <br />
 <code>cd /data/db;ls -al</code></p></li>
 <li><p>Add a couple of aliases to your <code>.bash_profile</code>, <code>.bashrc</code>, <code>.bash_login</code> (or wherever you keep your custom bash stuff) e.g. for the above version of MongoDB downloaded to ~/src: <br />
 <code>alias mongod="/Users/yourusername/src/mongodb-osx-x86_64-1.8.1/bin/mongod"</code> <br />
@@ -1407,7 +1407,7 @@ If you want see what"s there after you"ve used MongoDB, type: <br />
 <code>mongod</code> <br />
 then open another Terminal window and type: <br />
 <code>mongo</code> <br />
-In the MongoDB shell that"s now started up, create and retrieve a test document "foo": <br />
+In the MongoDB shell that's now started up, create and retrieve a test document "foo": <br />
 <code>&gt; db.foo.save( { a : 1 } )</code> <br />
 <code>&gt; db.foo.find()</code></p></li>
 </ol>
@@ -1538,7 +1538,7 @@ if you don’t know how to use document database specific features such as map/r
 <p><a href="http://rhnh.net/2010/07/13/relational-or-nosql-with-rails">Relational Or NoSQL With Rails? (Xavier Shay: "Robot Has No Heart")</a>, <br />
 <a href="http://en.wikipedia.org/wiki/NoSQL">Wikipedia: NoSQL</a>, <br />
 <a href="http://www.xaprb.com/blog/2010/03/08/nosql-doesnt-mean-non-relational/">NoSQL doesn’t mean non-relational</a>, <br />
-<a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">Carlo Strozzi"s original NoSQL (1998)</a></p>
+<a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">Carlo Strozzi's original NoSQL (1998)</a></p>
 
 <h3>Tags:</h3>
 
@@ -1553,7 +1553,7 @@ GNU bash, version 2.05b.0(1)-release (powerpc-apple-darwin8.0)
 Copyright (C) 2002 Free Software Foundation, Inc.
 </code></pre>
 
-<p>(yeah, I know that"s a really old version of bash I was running!)</p>
+<p>(yeah, I know that's a really old version of bash I was running!)</p>
 
 <h3>Links and resources:</h3>
 
@@ -1600,12 +1600,12 @@ Go to the dir where you want the link and type:</p>
 
 <h2 id="mongo_8216unable_to_create_open_lock_file8217">Mongo "Unable to create / open lock file"</h2>
 
-<p>If you"re running mongo under a user, and there"s an error on running <code>mongod</code> like this:</p>
+<p>If you're running mongo under a user, and there's an error on running <code>mongod</code> like this:</p>
 
 <pre><code>"Unable to create / open lock file for lockfilepath:<br>/data/db/mongod.lock errno:13 Permission denied, terminating"
 </code></pre>
 
-<p>change the owner of mongo"s data directory:</p>
+<p>change the owner of mongo's data directory:</p>
 
 <pre><code>sudo chown `id -u` /data/db
 </code></pre>
@@ -1635,7 +1635,7 @@ Go to the dir where you want the link and type:</p>
 
 <h2 id="ruby_on_rails_fails_with_8220could_not_open_library_8216libmagic1dylib82178221">Ruby on Rails fails with &#8220;Could not open library "libmagic.1.dylib"&#8221;</h2>
 
-<p>No need to install the whole of <code>ImageMagick</code> (with it"s dependencies), you can install the missing library from: <br />
+<p>No need to install the whole of <code>ImageMagick</code> (with it's dependencies), you can install the missing library from: <br />
 <a href="ftp://ftp.astron.com/pub/file/file-5.04.tar.gz">ftp.astron.com/pub/file/file-5.04.tar.gz</a></p>
 
 <p>The script from the link below (by Max Howell, author of Homebrew) can be adapted for use without Homebrew.</p>
@@ -1650,7 +1650,7 @@ Go to the dir where you want the link and type:</p>
 
 <h2 id="ruby_version_manager_rvm_install_problems_on_os_x_104_tiger">Ruby Version Manager (RVM) install problems on OS X 10.4 (Tiger)</h2>
 
-<p>There"s a version of the install script for this OS on the Google Groups RVM list.</p>
+<p>there's a version of the install script for this OS on the Google Groups RVM list.</p>
 
 <h3>Links and resources:</h3>
 
@@ -1680,7 +1680,7 @@ Go to the dir where you want the link and type:</p>
 <li>Remove any tough stems from the watercress and chop the rest finely.</li>
 <li>Sift together the flour, baking powder, mustard, cayenne, sugar and salt in a large bowl. Stir in the cheese.</li>
 <li>Lightly beat the eggs and milk together and add the flour mixture with the melted butter and watercress.</li>
-<li>Stir until just mixed, it"s important that you don"t over-mix though, or the muffins will be tough.</li>
+<li>Stir until just mixed, it's important that you don"t over-mix though, or the muffins will be tough.</li>
 <li>Divide the dough between the muffin cases and bake in the oven for 25 minutes.</li>
 <li>Allow to cool on a wire rack - then enjoy!</li>
 </ul>
@@ -1691,7 +1691,7 @@ Go to the dir where you want the link and type:</p>
 
 <h3>Tags:</h3>
 
-<p>recipes, muffins, scones, goat"s cheese, goat"s milk</p>
+<p>recipes, muffins, scones, goat's cheese, goat's milk</p>
 
 <h2 id="find_the_obscure_privacy_settings_in_linkedin">Find the obscure privacy settings in LinkedIn</h2>
 
@@ -1897,7 +1897,7 @@ RewriteRule ^(.*)$ http://mynewdomain.com/$1 [R=301,L]
 
 <p>Download <a href="http://dl.dropbox.com/u/1173209/RAR.selected.files.workflow.rar">this Automator script</a> and put it in the <em>Finder</em> folder above (the megaupload.com download is not available).</p>
 
-<p>You can now right- or ctrl-click on a folder or file in the finder and (from the bottom of the resulting menu) choose <em>More > Automator > RAR selected files</em>. It"s slower than creating a zip archive (so if it"s a large file or folder, give it time), but it works.</p>
+<p>You can now right- or ctrl-click on a folder or file in the finder and (from the bottom of the resulting menu) choose <em>More > Automator > RAR selected files</em>. It's slower than creating a zip archive (so if it's a large file or folder, give it time), but it works.</p>
 
 <p>To just <em>unrar</em> on OS X, use <a href="http://gp.home.xs4all.nl/Site/MacPAR_deLuxe.html">MacPAR</a>, <a href="http://www.unrarx.com/">UnrarX</a> or <a href="http://wakaba.c3.cx/s/apps/unarchiver.html">The Unarchiver</a>.</p>
 
@@ -1957,7 +1957,7 @@ Uninstalling /usr/local/homebrew/Cellar/pkg-config/0.25...
 
 <h3>Links and resources:</h3>
 
-<p><a href="https://github.com/mxcl/homebrew/issues/7465">GitHub: Add an option to <code>brew rm</code> to uninstall / remove a package, including all it"s dependencies.</a>
+<p><a href="https://github.com/mxcl/homebrew/issues/7465">GitHub: Add an option to <code>brew rm</code> to uninstall / remove a package, including all it's dependencies.</a>
 <a href="http://stackoverflow.com/questions/7323261/uninstall-remove-a-homebrew-package-including-all-its-dependencies">StackOverflow: Uninstall / remove a Homebrew package including all its dependencies</a></p>
 
 <h3>Tags:</h3>
@@ -2173,7 +2173,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 <p>Compiling Java code is tricky because you need to keep track of several related but different things:</p>
 
 <ul>
-<li>The target file you"re compiling.</li>
+<li>The target file you're compiling.</li>
 <li>The directory where the compiler looks for .java files that the target file imports.</li>
 <li>The directory where the compiler looks for .class files the target file imports.</li>
 <li>The directory where the compiler puts the compiled output.</li>
@@ -2181,7 +2181,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 
 <p>By default, the javac compiler thinks these are all the current working directory, which is almost never what you want. Consequently, you need to explicitly specify each of these elements when you compile.</p>
 
-<p>If you use the Java CLASSPATH (because you"re only compiling to the same directories every time, say if you only have one Java project), it needs both the source and target directory because the compiler needs to find the <code>.class</code> and <code>.java</code> files each target file imports (check this).</p>
+<p>If you use the Java CLASSPATH (because you're only compiling to the same directories every time, say if you only have one Java project), it needs both the source and target directory because the compiler needs to find the <code>.class</code> and <code>.java</code> files each target file imports (check this).</p>
 
 <h3>Links and resources:</h3>
 
@@ -2193,7 +2193,7 @@ dpkg -s {package-name} | grep Status find out if Debian package is installed or 
 
 <h2 id="github_error_ssl_certificate_problem_verify_that_the_ca_cert_is_ok">github error: SSL certificate problem, verify that the CA cert is OK</h2>
 
-<p>Quick fix (don"t use <code>--global</code> if it"s just for one repo) disable the SSL CERT verfication:
+<p>Quick fix (don"t use <code>--global</code> if it's just for one repo) disable the SSL CERT verfication:
 <code>git config --global http.sslVerify false</code></p>
 
 <h3>Links and resources:</h3>
@@ -2221,7 +2221,7 @@ maintainers to find out if a fix or workaround is available.
 
 <p>the issue for me was that <code>scipy</code> requires Fortran, which doesn"t come with OS X and wasn"t installed on my (Leopard) system with Xcode 3.1.4.</p>
 
-<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng"s instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there"s an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for "OS X 10.4 or higher" on this "tools for R" page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn"t install inside a virtual env</em> with no site packages. Sigh.</p>
+<p>A search for the latter error turned up a red herring: <a href="http://bugs.python.org/setuptools/issue93">issue93 in setuptools</a>; while searching for <a href="http://www.calvinx.com/2012/11/02/virtualenv-with-numpy-scipy/">numpy and scipy on OS X might turn up Calvin Cheng's instructions</a>, which are more useful, except that the link to the <a href="http://gcc.gnu.org/wiki/GFortranBinaries#MacOS">OS X GFortran binaries at gcc.gnu.org</a> appears to be broken (for me, gcc.gnu.org never loaded), but there's an <a href="http://cran.r-project.org/bin/macosx/tools/">alternative source from a page on R for OS X</a>, although (unsure of whether 32- or 64-bit was the way to go for my OS X 10.5 system) I used the <a href="http://r.research.att.com/tools/">GNU Fortran installer for "OS X 10.4 or higher" on this "tools for R" page</a> (although the latest GFortran 4.2.4 is also offered for 10.5, and these are all OS X .dmg installers). I also used the <a href="http://sourceforge.net/projects/scipy/">OS X scipy installer</a>, and all was well. However, my virtualenv now has to use my system Python libraries, as <em>scipy wouldn"t install inside a virtual env</em> with no site packages. Sigh.</p>
 
 <p>Fortran is also required for the R language.</p>
 
@@ -2240,7 +2240,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 <h3>Links and resources:</h3>
 
 <p><a href="http://stackoverflow.com/questions/9381784/autoscaling-an-svg-embedded-in-html-on-window-resize">Autoscaling an SVG embedded in HTML on window resize</a>,
-<a href="http://www.justinmccandless.com/blog/Making+Sense+of+SVG+viewBox's+Madness">Making Sense of SVG viewBox"s Madness</a></p>
+<a href="http://www.justinmccandless.com/blog/Making+Sense+of+SVG+viewBox's+Madness">Making Sense of SVG viewBox's Madness</a></p>
 
 <h3>Tags:</h3>
 
@@ -2260,7 +2260,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <h2 id="clear_screen_while_in_the_python_shell">Clear screen while in the python shell</h2>
 
-<p>Use the system"s command in *nix:</p>
+<p>Use the system's command in *nix:</p>
 
 <pre><code>&gt;&gt;&gt; import os
 &gt;&gt;&gt; os.system("clear")
@@ -2276,7 +2276,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <h3>Links and resources:</h3>
 
-<p><a href="http://stackoverflow.com/a/8846657/123033">Any way to clear python"s IDLE window?</a></p>
+<p><a href="http://stackoverflow.com/a/8846657/123033">Any way to clear python's IDLE window?</a></p>
 
 <h3>Tags:</h3>
 
@@ -2307,7 +2307,7 @@ where first two parameters (<code>0 0</code>) are the origins of the viewBox, th
 
 <p>Python, __init__, self</p>
 
-<h2 id="twoexamplesusingrubysinject">Two examples using Ruby"s inject</h2>
+<h2 id="twoexamplesusingrubysinject">Two examples using Ruby's inject</h2>
 
 <p>A function to add any list of numbers:</p>
 
@@ -2446,13 +2446,13 @@ end
 
 <h2 id="usingrsaforsshsftprsyncetc">Using RSA for ssh, sftp, rsync, etc. without a password</h2>
 
-<p>If you"re developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc"s <code>nanoc deploy</code> command) you can set things up so you don"t have to enter (or remember) the user"s password every time.</p>
+<p>If you're developing websites and frequently logging into the server via a command line to upload files (e.g. for static site generator nanoc's <code>nanoc deploy</code> command) you can set things up so you don"t have to enter (or remember) the user's password every time.</p>
 
 <p>Open a command-line terminal while logged as the user who will run scp, ssh or rsync (i.e. when making/uploading websites).</p>
 
 <p>To find out if you already have an rsa keypair enter <code>cd ~;ls -al</code> - if you see an .ssh folder, enter <code>cd .ssh;ls</code> and check for the keys: id_rsa and id_rsa.pub</p>
 
-<p>If there is no .ssh folder, make sure you"re at the root level, create it and enter it:</p>
+<p>If there is no .ssh folder, make sure you're at the root level, create it and enter it:</p>
 
 <pre><code>cd ~
 mkdir .ssh
@@ -2461,7 +2461,7 @@ cd .ssh
 
 <h3>Create the rsa keypair</h3>
 
-<p>Now you"re inside the .ssh folder, create a private and public keypair by typing:</p>
+<p>Now you're inside the .ssh folder, create a private and public keypair by typing:</p>
 
 <pre><code>ssh-keygen -t rsa
 </code></pre>
@@ -2498,7 +2498,7 @@ The key's randomart image is:
 
 <h3>Create a public key folder for a user on your server</h3>
 
-<p>You will need to do this for each user on the remote machine where you upload website files via a terminal. If you"re managing multiple websites, your server will likely have a user account for each website. If you only manage one, you only need to do this once.</p>
+<p>You will need to do this for each user on the remote machine where you upload website files via a terminal. If you're managing multiple websites, your server will likely have a user account for each website. If you only manage one, you only need to do this once.</p>
 
 <p><strong>UPDATE 2019:</strong> shortcut `ssh-copy-id` should be available on most operating systems:</p>
 
@@ -2507,17 +2507,17 @@ The key's randomart image is:
 
 <h3>Previous instructions (redundant but retained for completeness)</h3>
 
-<p>Make sure you"re still in the .ssh folder and can see the keypair:</p>
+<p>Make sure you're still in the .ssh folder and can see the keypair:</p>
 
 <pre><code>cd ~.ssh;ls
 </code></pre>
 
-<p>If you see "id_rsa.pub" and "id_rsa" both listed, login in to the remote user"s account on the server:</p>
+<p>If you see "id_rsa.pub" and "id_rsa" both listed, login in to the remote user's account on the server:</p>
 
 <pre><code>ssh username@servername_or_ip
 </code></pre>
 
-<p>Enter the usual password, make sure you"re at the user"s root directory, and check for an .ssh directory:</p>
+<p>Enter the usual password, make sure you're at the user's root directory, and check for an .ssh directory:</p>
 
 <pre><code>cd ~
 ls -al
@@ -2532,18 +2532,18 @@ cd .ssh
 
 <h3>Upload the public key and save its contents</h3>
 
-<p>Create an "authorized_keys" file to hold your public key data and set the file"s permissions:</p>
+<p>Create an "authorized_keys" file to hold your public key data and set the file's permissions:</p>
 
 <pre><code>touch authorized_keys
 chmod 600 authorized_keys
 </code></pre>
 
-<p>Confirm the exact path from the server"s root folder to the user"s .ssh folder:</p>
+<p>Confirm the exact path from the server's root folder to the user's .ssh folder:</p>
 
 <pre><code>pwd
 </code></pre>
 
-<p>Copy this path (something like <code>/home/username/.ssh</code>) and use it in the following command, which will securely copy (<code>scp</code>) your local public key file to the user"s .ssh folder. Use the same "username@servername" you used to log in via ssh:</p>
+<p>Copy this path (something like <code>/home/username/.ssh</code>) and use it in the following command, which will securely copy (<code>scp</code>) your local public key file to the user's .ssh folder. Use the same "username@servername" you used to log in via ssh:</p>
 
 <pre><code>scp id_rsa.pub username@servername:/home/username/.ssh/id_rsa.pub
 </code></pre>
@@ -2560,7 +2560,7 @@ chmod 600 authorized_keys
 
 <p>You should now be able to <code>logout</code> of ssh and login again as before, but without being prompted for a password.</p>
 
-<p>Note: if the user"s home directory on the server is accessed via NFS, then permissions for .ssh has to be 711 and "authorized_keys" 644. </p>
+<p>Note: if the user's home directory on the server is accessed via NFS, then permissions for .ssh has to be 711 and "authorized_keys" 644. </p>
 
 <h3>Links and resources:</h3>
 
@@ -2777,7 +2777,7 @@ npm install -g ember-cli
 <p>Clone the repo: <br />
 <code>git clone /path_to_project</code></p>
 
-<p>Install the project"s Node and Bower package dependencies
+<p>Install the project's Node and Bower package dependencies
 <code>npm install</code>
 <code>bower install</code></p>
 
