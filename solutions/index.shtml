@@ -3555,7 +3555,7 @@ Could not find an activated virtualenv (required).
 <h2 id="deploy-a-website-to-a-server-using-git">Deploy a website to a server using GIT</h2>
 <p>This method works for any site, but is specific to the structure set up by static site generator <a href="https://nanoc.ws/">Nanoc</a>. It was sparked by repeated issues with rsync.</p>
 <ul>
-<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code></li>
+<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port if necessary:<code> -p 99988</code>)</li>
 <li>create a bare GIT repo on the server (outside the site root)</li>
 <li>set up <code>deploy</code> in "nanoc.yaml" (as below)</li>
 <li>exclude "output/" from the nanoc site repo in local ".gitignore"</li>
