@@ -74,7 +74,7 @@
 		<p>Currently, these are a few resources I would recommend for learning to actually build websites with HTML, CSS and Javascript:</p>
 
 		<dl title="books and websites on web design and coding">
-			<dt><a href="https://www.amazon.co.uk/gp/redirect.html?ie=UTF8&amp;location=https%3A%2F%2Fwww.amazon.co.uk%2FTranscending-CSS-Design-Voices-Matter%2Fdp%2F0321410971%2F&&amp;tag=daveeveritt&&amp;linkCode=ur2&&amp;camp=1634&&amp;creative=6738">Transcending CSS: The Fine Art of Web Design</a><img src="https://www.assoc-amazon.co.uk/e/ir?t=daveeveritt&amp;l=ur2&amp;o=2" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></dt>
+			<dt><a target="_blank" href="https://www.amazon.co.uk/gp/product/0321410971/?&_encoding=UTF8&tag=daveeveritt&linkCode=ur2&linkId=34b67e2ac78fb51f182163b9155f74e6&camp=1634&creative=6738">Transcending CSS: The Fine Art of Web Design</a></dt>
 			<dd>This book stops you worrying about how sites appear in various browsers and eases you into using <a href="./semantic_markup.shtml" title="Eco Consulting article on writing well-formed code">well-structured, semantic HTML</a> and the full range of CSS possibilities. It outlines the kind of web code we should all be implementing now.</dd>
 			
 			<dt><a href="https://teamtreehouse.com/">Team TreeHouse</a></dt>
