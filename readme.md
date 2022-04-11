@@ -1,9 +1,10 @@
 # Eco Consulting website
 
-in process of being dragged into the 21srt century.
+in process of being dragged slowly into the 21st century…
 
 ## TO DO
 
+- [ ] remake as a mobile-first responsive site
 - [ ] get GIT upload on push set up
 - [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
@@ -13,7 +14,6 @@ in process of being dragged into the 21srt century.
 - [ ] check broken links to 'training/' to 'articles/' (e.g. in 'examples/')
 - [ ] move meaa to a 'projects' (or something) folder
 - [ ] move romans 3d to 'projects' (or something) and set .htaccess redirect
-- [ ] rework templates into nanoc(?) layouts
 - [ ] decide whether to start again or adapt existing
 - [ ] check links to 'webcoding first steps' text in 'downloads'
 - [ ] clean up and compare all resumes in 'documents'
@@ -23,4 +23,4 @@ in process of being dragged into the 21srt century.
 ## TO DONE
 
 - [x] update DOCTYPE to HTML5
-
+- [x] update Amazon Affiliate links
