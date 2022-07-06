@@ -4,18 +4,18 @@ in process of being dragged slowly into the 21st century…
 
 ## TO DO
 
+- [ ] decide whether to start again or adapt existing
+- [ ] make mobile-first responsive
+- [ ] create responsive menu
 - [ ] Sort includes: DC.shtml, meta.shtml to use vars
 - [ ] add page-specific: keywords, descriptions, DC:subject, DC:description
 - [ ] include title in local page head sections, not as a var
-- [ ] remake as a mobile-first responsive site
 - [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
 - [ ] move .htaccess [redirects to NGINX](https://bobcares.com/blog/redirect-using-nginx/)
-- [ ] create responsive menu
 - [ ] move meaa to a 'projects' (or something) folder
 - [ ] move romans 3d to 'projects' (or something) and set NGINX redirect
-- [ ] decide whether to start again or adapt existing
-- [ ] check links to 'webcoding first steps' text in 'downloads'
+- [ ] check links in my booklet to 'webcoding first steps' in 'downloads'
 - [ ] clean up and compare all resumes in 'documents'
 - [ ] position: sticky on menu (test on 'solutions')
 
