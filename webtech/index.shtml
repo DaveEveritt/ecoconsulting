@@ -10,7 +10,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content" class="headerpic">
+	<main class="headerpic">
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<img src="/images/screenshot-strips.png" alt="screenshot-strips" width="775" height="110" />
@@ -33,7 +33,7 @@
 		
 		<p>One of the often-repurposed elements of the websites we build is a customisable Content Management System, including mailing list management. Such systems work best when built around specific requirements, so we work with clients to make a system that works exactly for you - no unnecessary complexity and no feature-bloat.</p>
 
-	</div>
+	</main>
 </div>
 </body>
 </html>

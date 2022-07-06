@@ -10,7 +10,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>CSSI - variables in CSS files using Apache SSI</h1>
@@ -19,7 +19,7 @@
 		
 		<p class="someclass">A 'someclass' paragraph that demonstrates the css variable colour.</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

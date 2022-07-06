@@ -11,7 +11,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>Sync two macs</h1>
@@ -47,7 +47,7 @@
 			<li><a href="http://www.google.com/search?q=Sync+two+Macs&amp;hl=en&amp;client=opera&amp;rls=en&amp;hs=Oq4&amp;start=10&amp;sa=N">Google search</a></li>
 		</ul>
 				
-	</div>
+	</main>
 </div>
 </body>
 </html>

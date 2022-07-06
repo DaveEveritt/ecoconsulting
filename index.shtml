@@ -11,7 +11,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content" class="home">
+	<main class="home">
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>Web services, patience and attention to detail<br /><small>for the arts, cultural, educational, voluntary and ethical sectors</small></h1>
@@ -51,7 +51,7 @@
   		<p><cite>Much as everyone thinks they want financial security, the happiest people are not those who have it, but those who like what they do.</cite></p>
   		<p class="author"> - <a href="http://www.paulgraham.com/love.html">Paul Graham, <cite>How to do What You Love</cite></a></p>
 		</blockquote>
-	</div>
+	</main>
 </div>
 </body>
 </html>

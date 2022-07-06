@@ -9,14 +9,14 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>That's a forbidden area.</h1>
 		
 		<p>That resource is not accessible, so please use the menu to revisit the site.</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

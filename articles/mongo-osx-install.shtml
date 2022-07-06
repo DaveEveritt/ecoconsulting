@@ -10,7 +10,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>Installing MongoDB on OS X <!--#include virtual="/includes/addthis.shtml"--></h1>
@@ -72,7 +72,7 @@
 		
 		<p class="tags">MongoDB, OS X, bash, Terminal, Leopard, Snow Leopard</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

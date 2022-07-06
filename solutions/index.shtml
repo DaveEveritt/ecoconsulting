@@ -13,7 +13,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<h1>Web, server, command-line and more: solutions log <!--#include virtual="/includes/addthis.shtml"--></h1>
@@ -3785,7 +3785,7 @@ You might need <code>sudo</code> to run the command successfully.
 
 <!-- PASTE NEW SOLUTIONS HERE -->
 				
-	</div>
+	</main>
 </div>
 </body>
 </html>

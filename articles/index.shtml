@@ -10,7 +10,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<h1>Articles &amp; resources</h1>
@@ -103,7 +103,7 @@
 			<dd>An article written for PerlBuzz that asks '<a href="http://perlbuzz.com/2008/08/why-do-designers-fail-to-adopt-perl.html">Why do designers fail to adopt Perl?</a>' but goes into the 'designers v developers' issue, frameworks, templates, and why things should - and sometimes aren't - separated.</dd>
 		</dl>
 
-	</div>
+	</main>
 </div>
 </body>
 </html>

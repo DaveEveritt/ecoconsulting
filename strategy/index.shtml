@@ -9,7 +9,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content" class="headerpic">
+	<main class="headerpic">
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<img src="../images/strategy.png" alt="strategy" width="775" height="110" />
@@ -56,7 +56,7 @@
 			<dd>ACE dis strategy local and national</dd>
 		</dl>
 -->		
-	</div>
+	</main>
 </div>
 </body>
 </html>

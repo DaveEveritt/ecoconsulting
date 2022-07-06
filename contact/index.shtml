@@ -15,7 +15,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
    
-   <div id="content">
+   <main>
       <!--#include virtual="/includes/top_rule.shtml"-->
 
       <h1>contact eco consulting (email and message required)</h1>

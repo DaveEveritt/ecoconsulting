@@ -10,7 +10,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>Simple guidelines for freelancing <!--#include virtual="/includes/addthis.shtml"--></h1>
@@ -41,7 +41,7 @@
 		</dl>
 
 		<!--#exec cgi="/cgi-bin/comments.cgi" -->
-	</div>
+	</main>
 </div>
 </body>
 </html>

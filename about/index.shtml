@@ -9,7 +9,7 @@
 <div id="container">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>About Eco Consulting</h1>
@@ -28,7 +28,7 @@
 		
 		<p>It's easy to forget that books, magazines and other publications still require design and production skills - not everything is on the web! We undertake design and print publishing work, in collaboration with the extremely competitively-priced and ethical <a href="http://www.russellpress.com/">Russell Press</a> of Nottingham (established in 1968 by the Bertrand Russell Peace Foundation).</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

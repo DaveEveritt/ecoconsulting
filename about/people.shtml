@@ -10,7 +10,7 @@
 
 <div id="container">
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>Who we are: associates and freelancers</h1>
@@ -21,7 +21,7 @@
 		
 <!-- Sean Cuttlefish, Alex Youniverse, Ben Daglish, Fania -->
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

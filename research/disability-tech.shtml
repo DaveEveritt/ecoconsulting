@@ -9,7 +9,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<div style="width:142px; padding:4px; margin-left:8px; margin-right:12px; margin-bottom:12px; float:right; text-align:center; border:1px #636 solid;">
@@ -46,7 +46,7 @@
 			<tr><td><a href="./papers/pervasive-technology.pdf">pervasive-technology.pdf</a></td><td>PDF</td><td>695k</td><td>PDF of above</td></tr>
 		</table><br>
 		<br>
-	</div>
+	</main>
 </div>
 </body>
 </html>

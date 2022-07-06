@@ -14,14 +14,14 @@
 
 <div id="container">
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>HEADING</h1>
 		
 		<p>a_paragraph</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <div id="container" class="research headerpic">
 <!--#set var="index" value="$directory_name" --><!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content" class="headerpic">
+	<main class="headerpic">
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<img src="../images/research.png" alt="research" width="775" height="110" />
@@ -33,7 +33,7 @@
 			<li><a href="./papers/dis-strategy-web-tech.rtf">Web, Information and Technology draft discussion paper</a> (format: RTF. <cite>Disability Arts Strategy Group</cite>, Arts Council England, 2004).</li>
 		</ul>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>

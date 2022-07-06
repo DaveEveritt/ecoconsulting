@@ -13,7 +13,7 @@
 
 <div id="container">
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<h1>Minimal Django 0.96 and Python 2.5.1 install for Mac OS X 10.4</h1>
@@ -229,7 +229,7 @@ underlying Python machinery: /Library/Frameworks/Python.framework.
 		
 		<p>Mail me at deveritt[at]innotts[dot]co[dot]uk (or <a href="/contact">use the contact form</a>) if you have anything to say about this tutorial.</p>
 
-	</div>
+	</main>
 </div>
 </body>
 </html>

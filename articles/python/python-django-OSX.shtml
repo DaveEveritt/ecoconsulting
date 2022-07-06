@@ -10,7 +10,7 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
 		<h1>Minimal Django and Python for Mac OS X 10.4 <!--#include virtual="/includes/addthis.shtml"--></h1>
@@ -230,7 +230,7 @@ underlying Python machinery: /Library/Frameworks/Python.framework.
 		
 		<p><a href="/contact">Contact me</a> or comment below if you have anything to say about this tutorial.</p>
 
-	</div>
+	</main>
 </div>
 </body>
 </html>

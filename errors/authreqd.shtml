@@ -9,14 +9,14 @@
 <div id="container">
 <!--#include virtual="/includes/menu.shtml"-->
 	
-	<div id="content">
+	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
 		<h1>You can't go there.</h1>
 		
 		<p>That resource requires authorization.</p>
 		
-	</div>
+	</main>
 </div>
 </body>
 </html>
