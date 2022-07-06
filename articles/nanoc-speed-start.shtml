@@ -172,27 +172,5 @@
 		
 	</div>
 </div>
-<!--#include virtual="/includes/google_analytics.shtml"-->
 </body>
 </html>
-
-<!--
-uninitialized constant REXML::Parsers::BaseParser::UNAME_STR (NameError)
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown/html.rb:23
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown/paragraph.rb:27
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
-       from /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/parser/kramdown.rb:312
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/document.rb:90:in `const_get'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/lib/kramdown/document.rb:90:in `initialize'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/bin/kramdown:72:in `new'
-       from /usr/local/lib/ruby/gems/1.8/gems/kramdown-0.13.4/bin/kramdown:72
-       from /usr/local/bin/kramdown:19:in `load'
-       from /usr/local/bin/kramdown:19
-       
-The problem causing the stack trace below seems to be easy to fix since the same issue was reported for RedHat Linux and Ruby 1.8.5 some time ago (see `lib/kramdown/compatibility.rb` and change `== '1.8.5'` to `<= '1.8.6'`). Will do this for the next release.
--->

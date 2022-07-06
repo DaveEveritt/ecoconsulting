@@ -10,7 +10,7 @@ in process of being dragged slowly into the 21st century…
 - [ ] remake as a mobile-first responsive site
 - [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
-- [ ] now NGINX, clean up old redirects in .htaccess
+- [ ] move .htaccess [redirects to NGINX](https://bobcares.com/blog/redirect-using-nginx/)
 - [ ] create responsive menu
 - [ ] update div id="content" to main tag
 - [ ] check broken links to 'training/' to 'articles/' (e.g. in 'examples/')
