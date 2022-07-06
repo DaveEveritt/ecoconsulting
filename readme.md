@@ -4,11 +4,13 @@ in process of being dragged slowly into the 21st century…
 
 ## TO DO
 
+- [ ] Sort includes: DC.shtml, meta.shtml to use vars
+- [ ] add page-specific: keywords, descriptions, DC:subject, DC:description
+- [ ] include title in local page head sections, not as a var
 - [ ] remake as a mobile-first responsive site
-- [ ] get GIT upload on push set up
 - [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
-- [ ] clean up old redirects in .htaccess
+- [ ] now NGINX, clean up old redirects in .htaccess
 - [ ] create responsive menu
 - [ ] update div id="content" to main tag
 - [ ] check broken links to 'training/' to 'articles/' (e.g. in 'examples/')
@@ -22,5 +24,7 @@ in process of being dragged slowly into the 21st century…
 
 ## TO DONE
 
+- [x] get GIT upload on push set up
 - [x] update DOCTYPE to HTML5
 - [x] update Amazon Affiliate links
+
