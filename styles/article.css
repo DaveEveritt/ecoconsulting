@@ -1,4 +1,4 @@
-#article #content { color: inherit; line-height: 1.5em; }
+#article main { color: inherit; line-height: 1.5em; }
 #article p.credit { color: #160; font-size: 0.8em; }
 #article h2#notes { margin-top: 3em; border-top: 1px #999 solid; }
 #article dl dt { color: #160; }
@@ -32,5 +32,5 @@
 #article.solutions h3 + p { margin-top: 0; }
 #article.solutions code { background: #eee; }
 #article.solutions p > code { padding: 0 0.5em; }
-#article.solutions #content * { margin-left: 0px; }
-#article.solutions #content pre { background: #eee; margin-left: 20px; padding-left: 10px; }
+#article.solutions main * { margin-left: 0px; }
+#article.solutions main pre { background: #eee; margin-left: 20px; padding-left: 10px; }
