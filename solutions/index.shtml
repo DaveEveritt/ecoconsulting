@@ -3781,6 +3781,27 @@ while (t.nextNode()) {
 
 <p>apple, mail, email, crash</p>
 
+<h2>Get GIT to see case changes in filenames</h2>
+
+<p>Mac OS X files named “MyFile” and “my file” are seen as the same on that system. If you rename one to the other, git will not see the change, so the following is necessary to enable git to see the difference.</p>
+
+<p><code class="input">sudo git config --global --get core.ignorecase
+Password:
+false
+</code></p>
+
+<p>“false” means that git will see filenames with case differences as different or changed.</p>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://stackoverflow.com/a/33732203/123033">Stack Overflow: Set ignorecase to false in git config </a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>git, case-sensitive, ignorecase, OS X</p>
+
 <!-- PASTE NEW SOLUTIONS HERE -->
 				
 	</div>
