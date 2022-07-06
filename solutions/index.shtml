@@ -3750,6 +3750,8 @@ while (t.nextNode()) {
 <pre><code>git config core.ignorecase false
 </code></pre>
 
+You might need `sudo` to run the command successfully.
+
 <h3>Links and resources:</h3>
 
 <ul>
