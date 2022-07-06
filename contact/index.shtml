@@ -19,8 +19,10 @@
       <!--#include virtual="/includes/top_rule.shtml"-->
 
       <h1>contact eco consulting (email and message required)</h1>
+
+      <p>Contact form disabled for now</p>
 <!--       <form id="email" action="/cgi-bin/formmail.cgi" method="get" title="contact eco consulting"> -->
-      <form id="email" action="?" method="POST" title="contact eco consulting">
+      <!-- <form id="email" action="?" method="POST" title="contact eco consulting">
          <table>
          <tr>
             <td class="alignright">Name (optional):</td>
@@ -59,14 +61,14 @@
                 data-callback="YourOnSubmitFn">
                 Submit
               </button>
-<!--               <input type="submit" name="button" value="send message" /> -->
+              <input type="submit" name="button" value="send message" />
               <input type="reset"  name="button" value="clear all" title="clear all your input" />
               </p>
             </td>
          </tr>
          </table>
       </form>
-   </div>
+   </div> -->
 </div>
 </body>
 </html>
