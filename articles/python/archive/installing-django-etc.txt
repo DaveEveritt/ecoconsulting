@@ -34,7 +34,7 @@ to establish this), which has an easy_install utility that works a treat with Dj
 
 sudo easy_install http://www.djangoproject.com/download/0.96/tarball/
 
-in a terminal window (and enter your password when prompted) to install django 0.96 (thanks, Ned Deily! (http://www.ecoconsulting.co.uk/training/python/osx-django-install-new.txt)
+in a terminal window (and enter your password when prompted) to install django 0.96 (thanks, Ned Deily! (http://www.ecoconsulting.co.uk/articles/python/osx-django-install-ned)
 
 [DIVERSION_1]
 if python -V gives a higher version (e.g. Python 2.6)

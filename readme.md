@@ -12,18 +12,21 @@ in process of being dragged slowly into the 21st century…
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
 - [ ] move .htaccess [redirects to NGINX](https://bobcares.com/blog/redirect-using-nginx/)
 - [ ] create responsive menu
-- [ ] update div id="content" to main tag
-- [ ] check broken links to 'training/' to 'articles/' (e.g. in 'examples/')
 - [ ] move meaa to a 'projects' (or something) folder
-- [ ] move romans 3d to 'projects' (or something) and set .htaccess redirect
+- [ ] move romans 3d to 'projects' (or something) and set NGINX redirect
 - [ ] decide whether to start again or adapt existing
 - [ ] check links to 'webcoding first steps' text in 'downloads'
 - [ ] clean up and compare all resumes in 'documents'
 - [ ] position: sticky on menu (test on 'solutions')
-- [ ] update solutions with `ssh-copy-id -i ~/.ssh/id_rsa.pub username@92.222.73.21 -p 0000`
+
+## Solutions to add
+
+- [ ] SSH key copy `ssh-copy-id -i ~/.ssh/id_rsa.pub username@92.222.73.21 -p 0000`
 
 ## TO DONE
 
+- [x] check broken links to 'training/' to 'articles/' (e.g. in 'examples/')
+- [x] update div id="content" to main tag
 - [x] get GIT upload on push set up
 - [x] update DOCTYPE to HTML5
 - [x] update Amazon Affiliate links
