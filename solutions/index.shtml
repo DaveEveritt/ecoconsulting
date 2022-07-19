@@ -3790,14 +3790,14 @@ You might need <code>sudo</code> to run the command successfully.
 <pre><code>git config core.ignorecase false
 </code></pre>
   
-<p>…then changing case in filenames, then pushing to GitHub, the old filenames are preserved as <em>separate files</em> even though they don't appear in your local repository. Setting <code>git config core.ignorecase false</code> overrides Windows and Mac OS X behaviour that ignores case changes.</p>
+<p>…then changing case in filenames and pushing to GitHub, the old filenames are preserved as <em>separate files</em> even though they don't appear in the local repository. Setting <code>git config core.ignorecase false</code> overrides Windows and Mac OS X behaviour that ignores case changes and isn't recommended.</p>
 
-<p>Ypu need to explicitly tell git to update case changes on filenames by using <code>git mv</code> instead of globally setting ignorecase:</p>
+<p>Instead, you need to <strong>explicitly tell git to update case changes in filenames</strong> by using <code>git mv</code> instead of globally setting ignorecase:</p>
 
 <pre><code>git mv Contact-Me.html contact-me.html
 </code></pre>
 
-<p>However, this can be tedious when many files have had case changes, so here's a more thorough method that will force git to see the changes and push them to GitHub:</p>
+<p>However, this can be tedious when <em>many files have had case changes</em>, so <strong>clearing the git cache</strong> will force git to see the changes and push them to GitHub:</p>
 
 <pre><code>git rm -rf --cached .
 git add .
