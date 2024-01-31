@@ -6,7 +6,6 @@ git push server master
 
 ## TO DO
 
-- [ ] decide whether to start again or adapt existing
 - [ ] make mobile-first responsive
 - [ ] create responsive menu
 - [ ] Sort includes: DC.shtml, meta.shtml to use vars
@@ -18,8 +17,11 @@ git push server master
 - [ ] move meaa to a 'projects' (or something) folder
 - [ ] move romans 3d to 'projects' (or something) and set NGINX redirect
 - [ ] check links in my booklet to 'webcoding first steps' in 'downloads'
-- [ ] clean up and compare all resumes in 'documents'
+- [ ] clean up and compare resumes in 'documents'
 - [ ] position: sticky on menu (test on 'solutions')
+- [ ] Add Lea Verou's http://prismjs.com/ to code examples, `<pre><code class="language-css">code here…`
+- [ ] Add testimonials
+- [ ] Add better stills to home page e.g. 3D stuff
 
 ## Solutions to add
 
