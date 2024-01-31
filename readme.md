@@ -2,6 +2,8 @@
 
 in process of being dragged slowly into the 21st century…
 
+git push server master
+
 ## TO DO
 
 - [ ] decide whether to start again or adapt existing

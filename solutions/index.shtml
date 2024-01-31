@@ -3817,6 +3817,46 @@ git push
 
 <p>git, case-sensitive, case change, capitalization</p>
 
+<h2>Bitwarden extension not appearing in Safari</h2>
+
+<p>If the Bitwarden extension isn’t appearing after a Safari update in “Safari &gt; Settings &gt; Extensions”, and you previously enabled it, go to:</p>
+
+<p>“Safari &gt; Settings &gt; Developer” and check “Allow unsigned extensions”.</p>
+
+<p>If the Bitwarden extension is already installed, you can paste this command into Terminal to check that it exists:</p>
+
+<p><code class="input">
+  pluginkit -mAvvv -p com.apple.Safari.web-extension
+</code></p>
+
+<p>The readout might look something like this:</p>
+
+<pre><code>     com.bitwarden.desktop.safari(2024.1.0)
+                Path = /Applications/Bitwarden.app/Contents/PlugIns/safari.appex
+                UUID = 66A4F876-7E61-4715-9C1F-EA61B6ACBA08
+           Timestamp = 2024-01-30 17:02:58 +0000
+                 SDK = com.apple.Safari.web-extension
+       Parent Bundle = /Applications/Bitwarden.app
+        Display Name = Bitwarden
+          Short Name = Bitwarden
+         Parent Name = Bitwarden
+            Platform = macOS
+</code></pre>
+
+<p>There are many suggestions out there about this, involving re-installs etc., but this gets around the issues of needing to install Bitwarden only from the App store. The links below are for reference only and do not follow the above procedure.</p>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://community.bitwarden.com/t/how-to-install-safari-extension/41787/2">How to install safari extension</a></li>
+<li><a href="https://community.bitwarden.com/t/solved-safari-extension-lost-after-upgrade-to-1-25/26875/20">Safari extension lost after upgrade…</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>bitwarden, safari, extension, plugin</p>
+
+
 <!-- PASTE NEW SOLUTIONS HERE -->
 				
 	</main>
