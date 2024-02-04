@@ -3821,7 +3821,7 @@ git push
 
 <p>If the Bitwarden extension isn’t appearing after a Safari update in “Safari &gt; Settings &gt; Extensions”, and you previously enabled it, go to:</p>
 
-<p>“Safari &gt; Settings &gt; Developer” and check “Allow unsigned extensions”.</p>
+<p>"Safari &gt; Settings &gt; Developer" and check "Allow unsigned extensions".</p>
 
 <p>If the Bitwarden extension is already installed, you can paste this command into Terminal to check that it exists:</p>
 
