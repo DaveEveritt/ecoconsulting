@@ -3856,6 +3856,28 @@ git push
 
 <p>bitwarden, safari, extension, plugin</p>
 
+<h2><code>git branch -a</code> shows deleted branches</h2>
+
+<p>To remove these stale branches:</p>
+
+<ul>
+<li><code>git remote prune origin</code> removes all stale branches</li>
+<li><code>git branch -d -r origin/branch_name</code> remove specific branch</li>
+</ul>
+
+<p>Set a config flag to do it automatically in ".git/config": <code>git config -global fetch. prune true</code> or remotely for origin: <code>git config remote.origin.prune true</code></p>
+
+<h3>Links and resources:</h3>
+
+<ul>
+<li><a href="https://stackoverflow.com/q/19636380/123033">How to delete "remote" branch that still shows locally?</a></li>
+<li><a href="https://stackoverflow.com/q/6127328/123033">How do I delete all Git branches which have been merged?</a></li>
+</ul>
+
+<h3>Tags:</h3>
+
+<p>git, branch, prune, delete, remote, merged</p>
+
 
 <!-- PASTE NEW SOLUTIONS HERE -->
 				
