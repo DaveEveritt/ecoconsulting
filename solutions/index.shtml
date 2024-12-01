@@ -3560,16 +3560,19 @@ Could not find an activated virtualenv (required).
 <p>This method works for any site, but is specific to the structure set up by static site generator <a href="https://nanoc.ws/">Nanoc</a>. It was sparked by repeated issues with rsync.</p>
 <ul>
 <li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port if necessary:<code> -p 99988</code>)</li>
-<li>create a bare GIT repo on the server (outside the site root)</li>
-<li>set up <code>deploy</code> in "nanoc.yaml" (as below)</li>
-<li>exclude "output/" from the nanoc site repo in local ".gitignore"</li>
-<li><code>git init</code> <em>inside</em> the "output" and…</li>
-<li>…<code>git remote set-url server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
-<li>create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
+<li>create a bare GIT repo on the server (outside the site root) <code>git init --bare</code></li>
+<li>add deployment settings in "nanoc.yaml" (see below)</li>
+<li>add "output/" to the top-level local ".gitignore" in the nanoc site repo</li>
+<li><em>inside</em> the "output" folder: <code>git init</code> and add the remote:</li>
+<li><code>git remote add server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
+<li>check the remote with <code>git remote -v</code></li>
+<li>the local branch name in "output" must match the server branch, if not, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
+<li>add and commit at least one file to initialise the branch</li>
+<li>on the server, create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
 <li>make it executable with <code>chmod +x post-receive</code></li>
 </ul>
 <p><strong>in "nanoc.yaml":</strong></p>
-<pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
+`<pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
       <span class="hljs-symbol">default:</span>
         <span class="hljs-symbol">kind:</span> git
         <span class="hljs-symbol">remote:</span> <span class="hljs-symbol">ssh:</span>/<span class="hljs-regexp">/USER@IP:PORT/</span>PATH_TO_BARE_REPO.git
