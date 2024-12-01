@@ -3559,20 +3559,20 @@ Could not find an activated virtualenv (required).
 <h2 id="deploy-a-website-to-a-server-using-git">Deploy a website to a server using GIT</h2>
 <p>This method works for any site, but is specific to the structure set up by static site generator <a href="https://nanoc.ws/">Nanoc</a>. It was sparked by repeated issues with rsync.</p>
 <ul>
-<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port if necessary:<code> -p 99988</code>)</li>
+<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port number if necessary e.g.:<code> -p 99988</code>)</li>
 <li>create a bare GIT repo on the server (outside the site root) <code>git init --bare</code></li>
 <li>add deployment settings in "nanoc.yaml" (see below)</li>
 <li>add "output/" to the top-level local ".gitignore" in the nanoc site repo</li>
-<li><em>inside</em> the "output" folder: <code>git init</code> and add the remote:</li>
+<li><em>inside</em> the "output" folder create another git repo: <code>git init</code> and add the remote:</li>
 <li><code>git remote add server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
-<li>check the remote with <code>git remote -v</code></li>
-<li>the local branch name in "output" must match the server branch, if not, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
-<li>add and commit at least one file to initialise the branch</li>
+<li>check the remote with <code>git remote -v</code>—it should show your target server details</li>
+<li>if the local git branch name in "output" doesn’t match the server branch name, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
+<li>add and commit at least one file in "output" to register the branch</li>
 <li>on the server, create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
 <li>make it executable with <code>chmod +x post-receive</code></li>
 </ul>
 <p><strong>in "nanoc.yaml":</strong></p>
-`<pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
+<pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
       <span class="hljs-symbol">default:</span>
         <span class="hljs-symbol">kind:</span> git
         <span class="hljs-symbol">remote:</span> <span class="hljs-symbol">ssh:</span>/<span class="hljs-regexp">/USER@IP:PORT/</span>PATH_TO_BARE_REPO.git
@@ -3584,8 +3584,7 @@ Could not find an activated virtualenv (required).
 <pre><code class="language-bash"><div>    <span class="hljs-comment">#!/bin/sh</span>
     git --work-tree=/PATH_TO_SITE_ROOT --git-dir=PATH_TO_BARE_REPO.git checkout -f
 </div></code></pre>
-<p>Now, <code>nanoc deploy</code> will push changes made by <code>nanoc compile</code> to the server, with no need to ever manually update the git repo inside the "output" folder.</p>
-  
+<p>Once files are generated in the "output" folder with <code>nanoc compile</code>, <code>nanoc deploy</code> will push these and any future changes to the server, with no need to ever manually update the git repo inside "output".</p>
 <p>For regular sites, ignore the Nanoc-specific settings, as you can create a global <code>git pushall</code> alias on your local system to push to the server and the live site with one command.</p>
 <h3 id="links-and-resources-1">Links and resources:</h3>
 <ul>
