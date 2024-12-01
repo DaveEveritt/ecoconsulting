@@ -3565,7 +3565,7 @@ Could not find an activated virtualenv (required).
 <li>add "output/" to the top-level local ".gitignore" in the nanoc site repo</li>
 <li><em>inside</em> the "output" folder create another git repo: <code>git init</code> and add the remote:</li>
 <li><code>git remote add server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
-<li>check the remote with <code>git remote -v</code>—it should show your target server details</li>
+<li>check the remote with <code>git remote -v</code> - this will show the server details you just added</li>
 <li>if the local git branch name in "output" doesn’t match the server branch name, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
 <li>add and commit at least one file in "output" to register the branch</li>
 <li>on the server, create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
