@@ -3584,9 +3584,9 @@ Could not find an activated virtualenv (required).
 <pre><code class="language-bash"><div>    <span class="hljs-comment">#!/bin/sh</span>
     git --work-tree=/PATH_TO_SITE_ROOT --git-dir=PATH_TO_BARE_REPO.git checkout -f
 </div></code></pre>
-<p>Now, <code>nanoc deploy</code> will push changes to the server, with no need to manually updete the got repo inside the "output" folder</p>
+<p>Now, <code>nanoc deploy</code> will push changes made by <code>nanoc compile</code> to the server, with no need to ever manually update the git repo inside the "output" folder.</p>
   
-<p>For regular sites, ignore the nanoc-specific settings, as you can create a global <code>git pushall</code> alias on your local system to push to the server and the live site with one command.</p>
+<p>For regular sites, ignore the Nanoc-specific settings, as you can create a global <code>git pushall</code> alias on your local system to push to the server and the live site with one command.</p>
 <h3 id="links-and-resources-1">Links and resources:</h3>
 <ul>
 <li><a href="https://fania.eu/#cheats">Fania.eu/#cheats -&gt; Git Deployment</a></li>
