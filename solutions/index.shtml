@@ -709,7 +709,7 @@ type new text here then close single quote
 
 <p>Empty <code>''</code> not needed on Centos (and possibly other Linux?)</p>
 
-<p>or for recursive within dirs (omitting &#8221; for non OS X):</p>
+<p>or for recursive within dirs (omitting " for non OS X):</p>
 
 <pre><code>find ./ -name "*.html" | xargs sed -i 's/&lt;br \/&gt;/&lt;br&gt;/' *html
 </code></pre>
@@ -768,7 +768,7 @@ Common one-line sed scripts:
 
 <p>The code snippets below are provided as examples, with CSS and Javascript comments.</p>
 
-<p>The menu is an unordered list with a .menu class attribute, inside the usual &#8220;wrapper&#8221; div:</p>
+<p>The menu is an unordered list with a .menu class attribute, inside the usual "wrapper" div:</p>
 
 <pre><code>&lt;div id="wrapper"&gt;
   &lt;ul class="#menu"&gt;
@@ -1494,7 +1494,7 @@ CustomLog "|/usr/sbin/rotatelogs /home/USER_NAME/logs/access.log.%Y-%m-%d 5M" co
 
 <p>Summary with direct quotes from article (see refs):</p>
 
-<p>NoSQL is a bit of a catch-all: there’s a big difference between key/value stores and document databases&#8221;</p>
+<p>NoSQL is a bit of a catch-all: there’s a big difference between key/value stores and document databases"</p>
 
 <p>relational gives you solid transactions and joins, NoSQL is fast and scales. &#8230;a many-to-many relationship in a relational database might look like:</p>
 
@@ -1531,7 +1531,7 @@ Tags(id, name)
 <p>Add the remaining, and last 3 links, to my NoSQL Google doc:
 if you don’t know how to use document database specific features such as map/reduce, or how to model your data &#8230; to take advantage of them, you won’t be able to adequately evaluate those databases. Similarly, if you don’t know how to use pessimistic locking or referential integrity in a relational database, you will not see how much time and effort it could be saving you over trying to implement such robustness in a NoSQL database that wasn’t designed for it.</p>
 
-<p>&#8220;the most common interpretation of &#8220;NoSQL&#8221; is &#8220;non-relational&#8221;, although NoSQL is not meant as anti-RDBMS, but emphasizes the advantages of Key-Value Stores, Document Databases, and Graph Databases&#8221; &#8220;Typical RDBMS implementations are tuned either for small but frequent read/write transactions or for large batch transactions with rare write accesses. NoSQL on the other hand, services heavy read/write workloads&#8221; - WIkipedia</p>
+<p>"the most common interpretation of "NoSQL" is "non-relational", although NoSQL is not meant as anti-RDBMS, but emphasizes the advantages of Key-Value Stores, Document Databases, and Graph Databases" "Typical RDBMS implementations are tuned either for small but frequent read/write transactions or for large batch transactions with rare write accesses. NoSQL on the other hand, services heavy read/write workloads" - WIkipedia</p>
 
 <h3>Links and resources:</h3>
 
@@ -1623,7 +1623,7 @@ Go to the dir where you want the link and type:</p>
 <p>Download and use this: <br />
 <a href="http://downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz">downloads.mongodb.org/osx/mongodb-osx-i386-tiger-latest.tgz</a></p>
 
-<p>&#8220;We"ll end up having a separate build for tiger - so the 32-bit regular os x build isn't expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though.&#8221; - Michael Dirolf</p>
+<p>"We"ll end up having a separate build for tiger - so the 32-bit regular os x build isn't expected to work. We should be getting the tiger build up and running for people to test sometime today. Building from source should also work though." - Michael Dirolf</p>
 
 <h3>Links and resources:</h3>
 
@@ -1633,7 +1633,7 @@ Go to the dir where you want the link and type:</p>
 
 <p>mongo, mongodb, tiger, OS X 10.4</p>
 
-<h2 id="ruby_on_rails_fails_with_8220could_not_open_library_8216libmagic1dylib82178221">Ruby on Rails fails with &#8220;Could not open library "libmagic.1.dylib"&#8221;</h2>
+<h2 id="ruby_on_rails_fails_with_8220could_not_open_library_8216libmagic1dylib82178221">Ruby on Rails fails with "Could not open library "libmagic.1.dylib""</h2>
 
 <p>No need to install the whole of <code>ImageMagick</code> (with it's dependencies), you can install the missing library from: <br />
 <a href="ftp://ftp.astron.com/pub/file/file-5.04.tar.gz">ftp.astron.com/pub/file/file-5.04.tar.gz</a></p>
@@ -3556,36 +3556,47 @@ Could not find an activated virtualenv (required).
 </ul>
 <h3 id="tags">Tags:</h3>
 <p>chown, chgrp, linux, directory</p>
-<h2 id="deploy-a-website-to-a-server-using-git">Deploy a website to a server using GIT</h2>
+<h2 id="deploy-a-website-to-a-server-using-git">Deploy a website to a server using Git</h2>
 <p>This method works for any site, but is specific to the structure set up by static site generator <a href="https://nanoc.ws/">Nanoc</a>. It was sparked by repeated issues with rsync.</p>
+
 <ul>
-<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port number if necessary e.g.:<code> -p 99988</code>)</li>
-<li>create a bare GIT repo on the server (outside the site root) <code>git init --bare</code></li>
+<li>copy the SSH key from the server <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@server</code> (append port number if necessary e.g.: <code>-p 99988</code>)</li>
+<li>create a bare Git repo on the server (outside the site root) <code>git init --bare</code></li>
 <li>add deployment settings in "nanoc.yaml" (see below)</li>
-<li>add "output/" to the top-level local ".gitignore" in the nanoc site repo</li>
+<li>add "output/" to the top-level local ".gitignore" in the Nanoc site repo</li>
 <li><em>inside</em> the "output" folder create another git repo: <code>git init</code> and add the remote:</li>
 <li><code>git remote add server ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git</code></li>
 <li>check the remote with <code>git remote -v</code> - this will show the server details you just added</li>
-<li>if the local git branch name in "output" doesn’t match the server branch name, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
-<li>add and commit at least one file in "output" to register the branch</li>
+<li>if the local Git branch name in "output" doesn’t match the server branch name, change it e.g. from <code>master</code> to <code>main</code>: <code>git branch -m master main</code></li>
+<li>add and commit at least one file in "output" (e.g. a favicon) to register the branch</li>
 <li>on the server, create a ".git/hooks/post-receive" file inside the bare repo (as below)</li>
 <li>make it executable with <code>chmod +x post-receive</code></li>
 </ul>
-<p><strong>in "nanoc.yaml":</strong></p>
-<pre><code class="language-ruby"><div>    <span class="hljs-symbol">deploy:</span>
-      <span class="hljs-symbol">default:</span>
-        <span class="hljs-symbol">kind:</span> git
-        <span class="hljs-symbol">remote:</span> <span class="hljs-symbol">ssh:</span>/<span class="hljs-regexp">/USER@IP:PORT/</span>PATH_TO_BARE_REPO.git
-        <span class="hljs-symbol">branch:</span> master
-        <span class="hljs-symbol">forced:</span> <span class="hljs-literal">true</span>
-</div></code></pre>
-<p>Not sure if "forced" is necessary, but it's pretty quick for even a large site anyway.</p>
-<p><strong>On the server in "SITE_REPO.git/hooks/post-receive":</strong></p>
-<pre><code class="language-bash"><div>    <span class="hljs-comment">#!/bin/sh</span>
+
+<h3>in "nanoc.yaml":</h3>
+
+<pre><code class="yaml">    deploy:
+      default:
+        kind: git
+        remote: ssh://USER@IP:PORT/PATH_TO_BARE_REPO.git
+        branch: master
+        forced: true
+</code></pre>
+
+<p>Not sure if “forced” is necessary, but it’s pretty quick for even a large site anyway.</p>
+
+<h3>On the server</h3>
+
+<p>in "SITE_REPO.git/hooks/post-receive":</p>
+
+<pre><code class="bash">    #!/bin/sh
     git --work-tree=/PATH_TO_SITE_ROOT --git-dir=PATH_TO_BARE_REPO.git checkout -f
-</div></code></pre>
-<p>Once files are generated in the "output" folder with <code>nanoc compile</code>, <code>nanoc deploy</code> will push these and any future changes to the server, with no need to ever manually update the git repo inside "output".</p>
+</code></pre>
+
+<p>Once <code>nanoc compile</code> generates files in the "output" folder, <code>nanoc deploy</code> will now push these (and any future updates) to the server, with no need to ever manually update the git repo inside "output".</p>
+
 <p>For regular sites, ignore the Nanoc-specific settings, as you can create a global <code>git pushall</code> alias on your local system to push to the server and the live site with one command.</p>
+
 <h3 id="links-and-resources-1">Links and resources:</h3>
 <ul>
 <li><a href="https://fania.eu/#cheats">Fania.eu/#cheats -&gt; Git Deployment</a></li>
