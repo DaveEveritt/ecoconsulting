@@ -3,7 +3,7 @@
 <head><!--#set var="updater_name" value="Dave Everitt" --><!--#set var="contributor_name" value="Dave Everitt" --><!--#set var="page_name" value="Solutions Log" --><!--#set var="directory_name" value="solutions" -->
 <!--#set var="description" value="A solutions log covering many web technologies, command-line and library install issues" -->
 <!--#set var="keywords" value="solutions,log,web,python,apache,OS X," -->
-<!--#set var="dc_subject" value="A solutions log for many web technologies and command-line issues" -->
+<!--#set var="dc_subject" value="A solutions log for web technologies and command-line issues" -->
 <!--#include virtual="/includes/title_meta_article.shtml"-->
 <!--#include virtual="/includes/dc_article.shtml"-->
 <link rel="stylesheet" type="text/css" href="/styles/article.css" />
@@ -18,13 +18,13 @@
 
 		<h1>Web, server, command-line and more: solutions log <!--#include virtual="/includes/addthis.shtml"--></h1>
 
-		<p class="credit"><a href="/contact">Dave Everitt</a> 23 Jun 2013, last updated <span id="updated"></span></p>
+		<p class="credit"><a href="/contact">Dave Everitt</a>, last updated <span id="updated"></span></p>
     <script>
    	let lastmod = new Date(document.lastModified);
    	updated.innerHTML = lastmod.toString().substring(0,15);
     </script>
 
-		<p class="intro">Anyone who has to solve problems regularly is advised to keep a <em>solutions log</em>, so they never have to think ‘how did I do that last time?’ I haven't yet put up mine in a searchable or indexed way, so here's a massive long page.</p>
+		<p class="intro">Anyone who has to solve problems regularly is advised to keep a <em>solutions log</em>, which solves the ‘how did I do that last time?’ problem! I haven't yet put this up a searchable or indexed way, so here's a massive long page, with each heading as a bookmarkable ID (hash-hyphenated-title).</p>
 
 <!-- START PASTE SOLUTIONS LOG -->
 
