@@ -346,9 +346,9 @@ main .comments p input:hover {
   main,
   main #rules {
     float: none;
-    width: 98%;
-    margin-left: 0;
-    padding-left: 0;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0;
   }
   #menu {
     float: none;
