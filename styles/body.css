@@ -343,7 +343,8 @@ main .comments p input:hover {
 
 /* ----- 1024px up ----- */
 @media (max-width: 1024px) {
-  #container {
+  #container,
+  #menu {
     width: 100%;
   }
   #container,
@@ -358,6 +359,6 @@ main .comments p input:hover {
     width: 98%;
   }
   #menu {
-    text-align: right;
+    width: auto;
   }
 }
