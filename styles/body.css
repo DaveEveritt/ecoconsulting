@@ -348,6 +348,7 @@ main .comments p input:hover {
     width: 100%;
   }
   #container,
+  main,
   main #rules,
   #menu {
     float: none;
