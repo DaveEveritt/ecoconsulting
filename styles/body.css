@@ -348,9 +348,6 @@ main .comments p input:hover {
     margin: 0 auto;
     padding: 0;
   }
-  main {
-    clear: left;
-  }
   main,
   main #rules {
     float: none;
@@ -360,6 +357,7 @@ main .comments p input:hover {
   }
   #menu {
     float: none;
+    width: 100%;
     text-align: right;
   }
 }
