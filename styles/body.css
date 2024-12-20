@@ -359,7 +359,7 @@ main .comments p input:hover {
     padding: 0;
     width: 98%;
   }
-  #menu {
-    width: auto;
+  main #rules {
+    width: 100%;
   }
 }
