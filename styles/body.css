@@ -350,6 +350,7 @@ main .comments p input:hover {
     float: none;
   }
   #container,
+  main,
   main #rules {
     margin: 0 auto;
     padding: 0;
