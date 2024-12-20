@@ -343,6 +343,14 @@ main .comments p input:hover {
 
 /* ----- 1024px up ----- */
 @media (max-width: 1024px) {
+  #container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main {
+    clear: left;
+  }
   main,
   main #rules {
     float: none;
