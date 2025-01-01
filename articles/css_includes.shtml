@@ -13,7 +13,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
-		<h1>CSS constants/variables with SSI: CSSI! <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>CSS constants/variables with SSI: CSSI!</h1>
 		
 		<p class="credit">Dave Everitt 1 September 2008, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
 		

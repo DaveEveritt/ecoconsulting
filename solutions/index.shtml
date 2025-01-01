@@ -18,7 +18,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
-		<h1>Web, server, command-line and more: solutions log <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>Web, server, command-line and more: solutions log</h1>
 
 		<p class="credit"><a href="/contact">Dave Everitt</a>, last updated <span id="updated"></span></p>
     <script>

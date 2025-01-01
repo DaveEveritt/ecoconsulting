@@ -13,7 +13,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
-		<h1>Minimal Django and Python for Mac OS X 10.4 <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>Minimal Django and Python for Mac OS X 10.4</h1>
 		
 		<p class="credit"><a href="/contact">Dave Everitt</a> 3 Feb 2005, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
 		

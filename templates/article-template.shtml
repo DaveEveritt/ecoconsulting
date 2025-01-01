@@ -16,7 +16,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
-		<h1>MAIN_HEADING <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>MAIN_HEADING</h1>
 		
 		<p class="credit"><a href="/contact">Dave Everitt</a> 00 Mmm YYYY, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
 		

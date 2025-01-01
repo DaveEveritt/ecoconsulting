@@ -15,7 +15,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 		
-		<h1>Agile project management tips <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>Agile project management tips</h1>
 				
 		<p class="credit">Dave Everitt, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
 

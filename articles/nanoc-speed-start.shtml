@@ -16,7 +16,7 @@
 	<main>
 		<!--#include virtual="/includes/top_rule.shtml"-->
 
-		<h1>Get up and running with nanoc on OS X <!--#include virtual="/includes/addthis.shtml"--></h1>
+		<h1>Get up and running with nanoc on OS X</h1>
 		
 		<p class="credit"><a href="/contact">Dave Everitt</a> 22 Jan 2012, last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" --></p>
 		
