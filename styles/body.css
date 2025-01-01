@@ -49,6 +49,10 @@ a:active {
   text-align: right;
   vertical-align: top;
 }
+#docsearch {
+  display: flex;
+  justify-content: flex-end;
+}
 main {
   width: 774px;
   margin-left: 26px;
