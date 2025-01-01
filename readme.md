@@ -4,6 +4,8 @@ Now retired, but useful sections being dragged slowly into the 21st century…
 
 ## TO DO
 
+- [ ] add a sitemap XML doc
+- [ ] make Algolia search to H2 levels
 - [ ] create responsive menu
 - [ ] Sort includes: DC.shtml, meta.shtml to use vars
 - [ ] add page-specific: keywords, descriptions, DC:subject, DC:description
