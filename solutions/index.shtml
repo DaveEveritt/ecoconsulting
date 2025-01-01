@@ -2795,7 +2795,7 @@ npm install -g ember-cli
 
 <p>ember, bower, git</p>
 
-<h2>Can't sign in to FaceTime on OS X</h2>
+<h2 id="cant-sign-in-to-facetime-on-os-x">Can't sign in to FaceTime on OS X</h2>
 
 <p>Open System Preferences -&gt; Network</p>
 
@@ -2815,7 +2815,7 @@ npm install -g ember-cli
 
 <p>facetime, OS X, login</p>
 
-<h2>Set up a keyboard shortcut for tab cycling in Atom</h2>
+<h2 id="set-up-a-keyboard-shortcut-for-tab-cycling-in-atom">Set up a keyboard shortcut for tab cycling in Atom</h2>
 
 <p>Atom has an annoying way of selecting tabs. To get this working like it does in Sublime, TextMate and other apps, go to:</p>
 
@@ -2845,7 +2845,7 @@ npm install -g ember-cli
 
 <p>atom, tabs, keyboard shortcut</p>
 
-<h2>Make CSS styles auto-reload in Ember-cli</h2>
+<h2 id="make-css-styles-auto-reload-in-ember-cli">Make CSS styles auto-reload in Ember-cli</h2>
 
 <p>Install ember-cli-styles-reloader to reload (css|scss|sass|less|styl) without reloading the entire ember-cli app</p>
 
@@ -2869,7 +2869,7 @@ npm install -g ember-cli
 
 <p>ember, ember-cli, css, styles, reload</p>
 
-<h2>Enable command line tool <code>subl</code> for Sublime Text</h2>
+<h2 id="enable-command-line-tool-subl-for-sublime-text">Enable command line tool <code>subl</code> for Sublime Text</h2>
 
 <p>If Sublime Text 2 is in the Applications folder, and there's a <code>~/bin</code> directory in your path, make a symlink to <code>subl</code>:</p>
 
@@ -2884,7 +2884,7 @@ npm install -g ember-cli
 
 <p>Sublime Text, Sublime, subl, terminal, command line</p>
 
-<h2>Create an incremented HTML list in Atom with Emmet</h2>
+<h2 id="create-an-incremented-html-list-with-emmet">Create an incremented HTML list with Emmet</h2>
 
 <p>Emmet uses CSS-style shortcuts combined with parameters (over-specific example to illustrate):</p>
 
@@ -2913,7 +2913,7 @@ npm install -g ember-cli
 
 <p>atom, atom editor, emmet, emmet.io</p>
 
-<h2>Regex to replace LaTex quotes (`') with typographic quotes</h2>
+<h2 id="regex-to-replace-latex-quotes-with-typographic-quotes">Regex to replace LaTex quotes (`') with typographic quotes</h2>
 
 <p>Example: the Atom editor follows Javascript Regex syntax, so (to find words, hyphens, commas and spaces enclosed in quotes):</p>
 
@@ -2929,7 +2929,7 @@ npm install -g ember-cli
 
 <p>latex, atom, atom editor, regular expression, regex</p>
 
-<h2>Uninstall the version 3 or older Xcode ‘Developer’ Folder and Contents</h2>
+<h2 id="uninstall-the-version-3-or-older-xcode-developer-folder-and-contents">Uninstall the version 3 or older Xcode ‘Developer’ Folder and Contents</h2>
 
 <p>XCode 4.x is installed in <code>/Applications/</code>, while XCode 3.x is installed in <code>/Developer/</code>.</p>
 
@@ -2953,7 +2953,7 @@ npm install -g ember-cli
 
 <p>xcode, apple, os x, developer tools</p>
 
-<h2>Create multiple folders/directories from a text file of names</h2>
+<h2 id="create-multiple-folders-directories-from-a-text-file-of-names">Create multiple folders/directories from a text file of names</h2>
 
 <p>A quick way to create a load of directories with specific names on the command line.</p>
 
@@ -2972,7 +2972,7 @@ npm install -g ember-cli
 
 <p>mkdir, folders, directories, create, terminal, xargs</p>
 
-<h2>Using pushd and popd to switch directories</h2>
+<h2 id="use-pushd-and-popd-to-switch-directories">Use `pushd` and `popd` to switch directories</h2>
 
 <p>When using the command line this is a quick way to move into other directories, then return quickly to the one you’re in.</p>
 
@@ -3024,7 +3024,7 @@ $ pwd
 
 <p>pushd, popd, terminal, directories</p>
 
-<h2>How to filter and export XML DayOne entries</h2>
+<h2 id="how-to-filter-and-export-xml-dayone-entries">How to filter and export XML DayOne entries</h2>
 
 <p>There's [jrnl(https://maebert.github.io/jrnl/)], which looks like a great command-line journalling tool, but I couldn't find out how to <a href="https://maebert.github.io/jrnl/export.html">export only certain tagged entries</a>.</p>
 
@@ -3076,7 +3076,7 @@ Successfully installed Jinja2-2.8 Markdown-2.6.5 MarkupSafe-0.23 dayone-export-0
 
 <p>dayone, day one, export, python</p>
 
-<h2>Copy a folder and contents in Bash</h2>
+<h2 id="copy-a-folder-and-contents-in-bash">Copy a folder and contents in Bash</h2>
 
 <pre><code>cp -r [source folder] [destination directory]/[foldername]/
 </code></pre>
@@ -3091,7 +3091,7 @@ Successfully installed Jinja2-2.8 Markdown-2.6.5 MarkupSafe-0.23 dayone-export-0
 
 <p>bash, os x, terminal, copy, folder</p>
 
-<h2>Set movie poster frame in QuickTime 10</h2>
+<h2 id="set-movie-poster-frame-in-quicktime-10">Set movie poster frame in QuickTime 10</h2>
 
 <p>This feature apparently disappeared, but you can do the following:</p>
 
@@ -3111,7 +3111,7 @@ Successfully installed Jinja2-2.8 Markdown-2.6.5 MarkupSafe-0.23 dayone-export-0
 
 <p>quicktime, movie, poster, frame</p>
 
-<h2>Push a new branch to GitHub and set the local branch to track it</h2>
+<h2 -d="push-a-new-branch-to-github-and-set-the-local-branch-to-track-it">Push a new branch to GitHub and set the local branch to track it</h2>
 
 <p>You need to set the remote on GitHub</p>
 
@@ -3132,7 +3132,7 @@ Branch new_branchname set up to track remote branch new_branchname from origin.
 
 <p>github, git, remote, branch, push</p>
 
-<h2>Auto-generating a table of contents (TOC) in Quark XPress</h2>
+<h2 id="auto-generate-a-table-of-contents-in-quark-xpress">Auto-generate a table of contents (TOC) in Quark XPress</h2>
 
 <p>Note: if your project is a book, see the first link from Quark for addition instructions.</p>
 
@@ -3169,7 +3169,7 @@ Branch new_branchname set up to track remote branch new_branchname from origin.
 
 <p>quark, xpress, contents, toc, generate</p>
 
-<h2>Downgrade node in OS X with Homebrew</h2>
+<h2 id="downgrade-node-in-os-x-with-homebrew">Downgrade node in OS X with Homebrew</h2>
 
 <p>add "versions" to Homebrew if it's not already there:</p>
 
@@ -3213,7 +3213,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <p>node, homebrew, downgrade, version</p>
 
-<h2>To open “CS5ServiceManager” you need to install the legacy Java SE 6 runtime</h2>
+<h2 id="to-open-cs5servicemanager-you-need-to-install-the-legacy-java-se-6-runtime">To open “CS5ServiceManager” you need to install the legacy Java SE 6 runtime</h2>
 
 <p>Trying to launch any Adobe CS5 app brings up a warning about Adobe CS5Service Manager wanting the old Java 6. Installing OS X (from Lion onwards) comes without Java, which is needed for Adobe's update manager. If you don't need to update Adobe software (e.g. because your're running CS5 on OS X 10.11) you can remove it in Terminal:</p>
 
@@ -3234,7 +3234,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <p>adobe, java, cs5servicemanager, OS X</p>
 
-<h2>MySQL password has expired</h2>
+<h2 id="mysql-password-has-expired">MySQL password has expired</h2>
 
 <p>Typically, in a script shell, you get the message: "Your password has expired. To log in you must change it using a client that supports expired passwords."</p>
 
@@ -3271,7 +3271,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <p>mysql, password, expired</p>
 
-<h2>Use a project-specific version of Ember and Ember-cli</h2>
+<h2 id="use-a-project-specific-version-of-ember-and-ember-cli">Use a project-specific version of Ember and Ember-cli</h2>
 
 <p>To avoid the globally installed version of Ember (installed with <code>npm install -g ember</code>) first, install ember-cli in the project with npm, then install Ember using Bower, than initialise the project:</p>
 
@@ -3298,7 +3298,7 @@ Caskroom/versions/node012                        Caskroom/versions/node5
 
 <p>ember, ember-cli, javascript</p>
 
-<h2>MariaDB/MySQL Homebrew: <code>Can't read dir of '/usr/local/etc/my.cnf.d'</code></h2>
+<h2 id="mariadb-mysql-homebrew-cant-read-dir-of-usr-local-etc-my-cnf-d'">MariaDB/MySQL Homebrew: <code>Can't read dir of '/usr/local/etc/my.cnf.d'</code></h2>
 
 <p>After installing MariaDB using Homebrew, trying to start using <code>mysql -uroot</code> gives:</p>
 
@@ -3326,7 +3326,7 @@ Fatal error in defaults handling. Program aborted
 
 <p>mariadb, mysql, homebrew, os x</p>
 
-<h2>Installing Python 2.7 on OS X with Homebrew</h2>
+<h2 id="installing-python-2.7-on-os-x-with-homebrew">Installing Python 2.7 on OS X with Homebrew</h2>
 
 <p>For a clean version of OS X (10.13 High Sierra), with XCode and <a href="https://docs.brew.sh/Installation">Homebrew</a> installed.</p>
 
@@ -3498,7 +3498,7 @@ Could not find an activated virtualenv (required).
 
 <p>python, virtualenv, virtualenvwrapper, bash, bash_profile</p>
 
-<h2>pip install MySQL-python fails</h2>
+<h2 id="pip-install-mysql-python-fails">pip install MySQL-python fails</h2>
 
 <p>MySQL-python is outdated and can fail to install with a stack trace that ends <code>error: command 'clang' failed with exit status 1</code>. It appears <code>mysqlclient</code> (forked and updated from MySQLdb and also with python3.3+ support) is a good replacement:</p>
 
@@ -3516,7 +3516,7 @@ Could not find an activated virtualenv (required).
 
 <p>python, MySQL, MySQL-python, mysqlclient</p>
 
-<h2>Get out of vi/vim editor for GIT in VSCode (or anywhere)</h2>
+<h2 id="get-out-of-vi-vim-editor-for-git-in-vscode-or-anywhere">Get out of vi/vim editor for GIT in VSCode (or anywhere)</h2>
 
 <p>Typically when a commit message comes up, say after a merge, vi or vim appears (or your default editor - this is for vi/vim).</p>
 
@@ -3534,7 +3534,7 @@ Could not find an activated virtualenv (required).
 
 <p>vi, vim, vscode, git, osx</p>
 
-<h2>Upload SSH key to server</h2>
+<h2 id="upload-ssh-key-to-server">Upload SSH key to server</h2>
 
 <p>SSH has a built-in command for this:</p>
 
@@ -3611,7 +3611,7 @@ Could not find an activated virtualenv (required).
 <h3 id="tags-1">Tags:</h3>
 <p>git, nanoc, server, deployment</p>
 
-<h2>Fix "nginx.service is masked"</h2>
+<h2 id="fix-nginx-service-is-masked">Fix nginx.service is masked"</h2>
 
 <p>use <code>sudo systemctl unmask nginx.service</code></p>
 
@@ -3637,7 +3637,7 @@ root/# service nginx start
 
 <p>nginx, server, masked, unmask</p>
 
-<h2>Show hidden files in OS X</h2>
+<h2 id="show-hidden-files-in-os-x">Show hidden files in OS X</h2>
 
 <p>In *nix-based systems like OS X these are prefixed by a full stop (dot) <code>.</code> and the quickest way to show them is to click in the finder window where you want to see them, and his <code>CMD + SHIFT + .</code>. This toggles their visibility on/off.</p>
 
@@ -3665,7 +3665,7 @@ root/# service nginx start
 
 <p>os x, apple, hidden files, finder</p>
 
-<h2>perl: warning: Setting locale failed</h2>
+<h2 id="perl-warning-setting-locale-failed">perl: warning: Setting locale failed</h2>
 
 <p>When running Perl process you get:</p>
 
@@ -3695,7 +3695,7 @@ perl: warning: Falling back to the standard locale ("C").
 
 <p>perl, locale</p>
 
-<h2>List all installed Perl modules</h2>
+<h2 id="list-all-installed-perl-modules">List all installed Perl modules</h2>
 
 <p>Command-line (example from a running server):</p>
 
@@ -3727,7 +3727,7 @@ Installed modules are:
 
 <p>perl, modules, cpan</p>
 
-<h2>Fix unwanted horizontal web page scrolling</h2>
+<h2 id="fix-unwanted-horizontal-web-page-scrolling">Fix unwanted horizontal web page scrolling</h2>
 
 <p>Where this is caused by elements that are <strong>too wide</strong> for the viewport:</p>
 
@@ -3759,7 +3759,7 @@ while (t.nextNode()) {
 
 <p>web, development, design, css, viewport, html, scroll</p>
 
-<h2>GIT not recognising (so GitHub not getting) case changes in filenames</h2>
+<h2 id="git-not-seeing-so-github-not-getting-filename-case-changes">GIT not seeing (so GitHub not getting) filename case changes</h2>
 
 <p>On the command-line, check whether <code>ignorecase</code> for GIT is set to true or false:</p>
 
@@ -3784,7 +3784,7 @@ You might need <code>sudo</code> to run the command successfully.
 
 <p>git, github, case-sensitivity, uppercase, lowercase, path, filenames, foldernames</p>
 
-<h2>Apple Mail crashes on opening</h2>
+<h2 id="apple-Mail-crashes-on-opening">Apple Mail crashes on opening</h2>
 
 <ol>
 <li>Open Mail while holding the Shift key, which opens it without any message or mailbox selected.</li>
@@ -3804,7 +3804,7 @@ You might need <code>sudo</code> to run the command successfully.
 
 <p>apple, mail, email, crash</p>
 
-<h2>GitHub retains duplicate files after case changes</h2>
+<h2 id="github-retains-duplicate-files-after-case-changes">GitHub retains duplicate files after case changes</h2>
 
 <p>After setting:</p>
 
@@ -3838,7 +3838,7 @@ git push
 
 <p>git, case-sensitive, case change, capitalization</p>
 
-<h2>Bitwarden extension not appearing in Safari</h2>
+<h2 id="bitwarden-extension-not-appearing-in-safari">Bitwarden extension not appearing in Safari</h2>
 
 <p>If the Bitwarden extension isn’t appearing after a Safari update in “Safari &gt; Settings &gt; Extensions”, and you previously enabled it, go to:</p>
 
@@ -3877,7 +3877,7 @@ git push
 
 <p>bitwarden, safari, extension, plugin</p>
 
-<h2><code>git branch -a</code> shows deleted branches</h2>
+<h2 id="git-branch--a-shows-deleted-branches"><code>git branch -a</code> shows deleted branches</h2>
 
 <p>To remove these stale branches:</p>
 
