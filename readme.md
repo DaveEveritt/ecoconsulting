@@ -1,17 +1,13 @@
 # Eco Consulting website
 
-in process of being dragged slowly into the 21st century…
-
-git push server master
+Now retired, but useful sections being dragged slowly into the 21st century…
 
 ## TO DO
 
-- [ ] make mobile-first responsive
 - [ ] create responsive menu
 - [ ] Sort includes: DC.shtml, meta.shtml to use vars
 - [ ] add page-specific: keywords, descriptions, DC:subject, DC:description
 - [ ] include title in local page head sections, not as a var
-- [ ] redo [SwiftType setup](https://github.com/swiftype/swiftype-search-jquery) for search
 - [ ] change 'ecoconsulting.co.uk' to 'ecoconsulting.uk'
 - [ ] move .htaccess [redirects to NGINX](https://bobcares.com/blog/redirect-using-nginx/)
 - [ ] move meaa to a 'projects' (or something) folder
