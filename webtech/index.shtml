@@ -21,10 +21,10 @@
 		
 		<h2>Web hosting</h2>
 
-		<p>Simple, low-cost effective web hosting: &pound;50 (or &pound;40 if you're a poor artist, a non-profit (or a friend!) + &pound;5 one-off setup fee. We can manage your domain name for &pound;17 per year, including email forwarding and automatic annual renewal.</p>
+		<p>Simple, low-cost effective web hosting: £50 (or £40 if you're a poor artist, a non-profit, or friend!) + £5 one-off setup fee. We can manage your domain name for &pound;17 per year, including email forwarding and automatic annual renewal.</p>
 		
 		<p>Over 99.9% uptime with <a href="https://rimuhosting.com/?r=144508441621768363463973495138451658958"><img style="position:relative;top:3px;" src="https://rimuhosting.com/images/promo/rimuhosting_80_15.png" alt="VPS and dedicated hosting by RimuHosting" /></a> - the friendly, helpful company who host the BBC's experimental projects. Also see their <a href="https://rimuhosting.com/vps-servers?r=144508441621768363463973495138451658958">VPS</a> and <a href="https://rimuhosting.com/dedicated-servers?r=144508441621768363463973495138451658958">Dedicated server</a> plans.</p>
-
+		
 		<h2>Technical services</h2>
 
 		<p>Eco Consulting draws on a group of associates (companies and individuals) who are specialists in everything from Information Architecture and interaction design to database and web application programming. Our clients range from small local businesses (who we like to support) to national projects and organisations.</p>
@@ -35,5 +35,15 @@
 
 	</main>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+docsearch({
+	appId: "56D5BE28IR",
+	apiKey: "01069d316d320be93cda03c532c4c65b",
+	indexName: "ecoconsulting-co",
+	container: "#docsearch",
+	debug: false 
+});
+</script>
 </body>
 </html>

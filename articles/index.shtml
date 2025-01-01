@@ -105,5 +105,15 @@
 
 	</main>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+docsearch({
+	appId: "56D5BE28IR",
+	apiKey: "01069d316d320be93cda03c532c4c65b",
+	indexName: "ecoconsulting-co",
+	container: "#docsearch",
+	debug: false 
+});
+</script>
 </body>
 </html>

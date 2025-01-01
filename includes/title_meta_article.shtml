@@ -5,3 +5,5 @@
 <meta name="description" content="<!--#echo var='description'-->" />
 <meta name="keywords" lang="en" content="<!--#echo var='keywords'-->" />
 <link rel="stylesheet" type="text/css" href="/styles/body.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+<link rel="preconnect" href="https://56D5BE28IR-dsn.algolia.net" crossorigin />

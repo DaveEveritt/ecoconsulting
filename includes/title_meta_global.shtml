@@ -4,5 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description"        content="Research, strategy, consultancy in emerging technology and arts-disability, standards-compliant web software for the arts: <!--#echo var='site_title'-->, <!--#echo var='page_name'-->" />
 <meta name="keywords" lang="en" content="arts information web standards design emerging technology innovation innovative disability creativity culture eco consulting" />
-<meta name="keyphrases"         content="information design, emerging technology, arts consultancy, creative thinking, web software, website design, Eco Consulting" />
 <link rel="stylesheet" type="text/css" href="/styles/body.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+<link rel="preconnect" href="https://56D5BE28IR-dsn.algolia.net" crossorigin />
