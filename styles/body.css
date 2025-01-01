@@ -170,7 +170,7 @@ main table {
 } /* yep, could do this better, but... */
 
 main h1 {
-  margin-left: 0;
+  margin: 0;
   font-size: 1.4em;
 }
 main h2 {
