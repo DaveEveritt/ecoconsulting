@@ -1849,7 +1849,7 @@ e.g. for 7.84 as a % of 29.75 = 26.35 <code>=((7.84/29.75)%)*10000</code></p>
 
 <h2 id="convert_markdown_to_html_using_kramdown">Convert Markdown to HTML using Kramdown:</h2>
 
-<p>E.g. enerate an HTML file "my<em>web</em>file.html" from a markdown file "my<em>md</em>file.md":</p>
+<p>E.g. generate an HTML file "my<em>web</em>file.html" from a markdown file "my<em>md</em>file.md":</p>
 
 <pre><code>kramdown my_md_file.md | cat &gt; my_web_file.html
 </code></pre>
